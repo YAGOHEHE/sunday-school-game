@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Icono B — Bocadillos Jugamos y 玩</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&amp;family=Noto+Sans+SC:wght@900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#BE185D}a:hover{color:#9D174D}
+</style>
+</helmet>
+<div style="width: 560px; height: 700px; box-sizing: border-box; background: #F5F3EE; color: #1F1D2B; font-family: 'Fredoka', system-ui, sans-serif; padding: 40px; display: flex; flex-direction: column; align-items: center; gap: 28px">
+<svg width="400" height="400" viewBox="0 0 1024 1024" role="img" aria-label="Icono: bocadillo amarillo con la palabra ¡Juguemos! y bocadillo blanco con el carácter wan, jugar">
+<rect x="100" y="100" width="824" height="824" rx="185" fill="{{bg}}"></rect>
+<rect x="175" y="200" width="580" height="260" rx="100" fill="#FFD43B"></rect>
+<path d="M260 440 L225 550 L370 458 Z" fill="#FFD43B"></path>
+<text x="465" y="332" text-anchor="middle" dominant-baseline="central" font-family="Fredoka, sans-serif" font-weight="700" font-size="116" textLength="510" lengthAdjust="spacingAndGlyphs" fill="#1F1D2B">¡Juguemos!</text>
+<rect x="400" y="490" width="420" height="320" rx="104" fill="#FFFFFF"></rect>
+<path d="M735 785 L795 880 L645 800 Z" fill="#FFFFFF"></path>
+<text x="610" y="652" text-anchor="middle" dominant-baseline="central" font-family="'Noto Sans SC', sans-serif" font-weight="900" font-size="220" fill="{{bg}}">玩</text>
+</svg>
+<div style="display: flex; align-items: flex-end; gap: 24px">
+<svg width="128" height="128" viewBox="0 0 1024 1024" aria-hidden="true"><rect x="100" y="100" width="824" height="824" rx="185" fill="{{bg}}"></rect><rect x="175" y="200" width="580" height="260" rx="100" fill="#FFD43B"></rect><path d="M260 440 L225 550 L370 458 Z" fill="#FFD43B"></path><text x="465" y="332" text-anchor="middle" dominant-baseline="central" font-family="Fredoka, sans-serif" font-weight="700" font-size="116" textLength="510" lengthAdjust="spacingAndGlyphs" fill="#1F1D2B">¡Juguemos!</text><rect x="400" y="490" width="420" height="320" rx="104" fill="#FFFFFF"></rect><path d="M735 785 L795 880 L645 800 Z" fill="#FFFFFF"></path><text x="610" y="652" text-anchor="middle" dominant-baseline="central" font-family="'Noto Sans SC', sans-serif" font-weight="900" font-size="220" fill="{{bg}}">玩</text></svg>
+<svg width="64" height="64" viewBox="0 0 1024 1024" aria-hidden="true"><rect x="100" y="100" width="824" height="824" rx="185" fill="{{bg}}"></rect><rect x="175" y="200" width="580" height="260" rx="100" fill="#FFD43B"></rect><path d="M260 440 L225 550 L370 458 Z" fill="#FFD43B"></path><text x="465" y="332" text-anchor="middle" dominant-baseline="central" font-family="Fredoka, sans-serif" font-weight="700" font-size="116" textLength="510" lengthAdjust="spacingAndGlyphs" fill="#1F1D2B">¡Juguemos!</text><rect x="400" y="490" width="420" height="320" rx="104" fill="#FFFFFF"></rect><path d="M735 785 L795 880 L645 800 Z" fill="#FFFFFF"></path><text x="610" y="652" text-anchor="middle" dominant-baseline="central" font-family="'Noto Sans SC', sans-serif" font-weight="900" font-size="220" fill="{{bg}}">玩</text></svg>
+<svg width="32" height="32" viewBox="0 0 1024 1024" aria-hidden="true"><rect x="100" y="100" width="824" height="824" rx="185" fill="{{bg}}"></rect><rect x="175" y="200" width="580" height="260" rx="100" fill="#FFD43B"></rect><path d="M260 440 L225 550 L370 458 Z" fill="#FFD43B"></path><text x="465" y="332" text-anchor="middle" dominant-baseline="central" font-family="Fredoka, sans-serif" font-weight="700" font-size="116" textLength="510" lengthAdjust="spacingAndGlyphs" fill="#1F1D2B">¡Juguemos!</text><rect x="400" y="490" width="420" height="320" rx="104" fill="#FFFFFF"></rect><path d="M735 785 L795 880 L645 800 Z" fill="#FFFFFF"></path><text x="610" y="652" text-anchor="middle" dominant-baseline="central" font-family="'Noto Sans SC', sans-serif" font-weight="900" font-size="220" fill="{{bg}}">玩</text></svg>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px">
+<span style="font-size: 24px; font-weight: 700">B · Bocadillos ¡Juguemos! y 玩</span>
+<span style="font-size: 15px; color: #5E5B6B">Dos idiomas conversando: «¡Juguemos!» y «jugar» en chino</span>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"bg":{"editor":"color","default":"#BE185D","options":["#BE185D","#6D3FD0","#15803D"]},"$preview":{"width":560,"height":700}}'>
+class Component extends DCLogic {
+renderVals() {
+return { bg: this.props.bg ?? '#BE185D' };
+}
+}
+</script>
+</body>
+</html>

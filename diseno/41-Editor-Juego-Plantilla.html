@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Editor de juego — plantilla</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#6D3FD0}a:hover{color:#4C2A9A}
+</style>
+</helmet>
+<div style="width: 880px; height: 640px; box-sizing: border-box; background: #FFFFFF; color: #1F1D2B; font-family: 'Fredoka', 'Noto Sans SC', system-ui, sans-serif; display: flex; flex-direction: column">
+
+<header style="display: flex; align-items: center; gap: 12px; padding: 18px 28px; border-bottom: 1px solid #ECE8DF">
+<span style="font-size: 26px">🪤</span>
+<span style="font-size: 20px; font-weight: 700">Editar: Trampas mentales</span>
+<span style="flex: 1"></span>
+<div role="tablist" aria-label="Secciones" style="display: flex; gap: 4px; background: #F0EDE5; border-radius: 12px; padding: 4px">
+<button role="tab" style="border: 0; background: transparent; border-radius: 9px; padding: 0 12px; min-height: 34px; font: inherit; font-size: 14px; color: #5E5B6B">Ficha</button>
+<button role="tab" style="border: 0; background: transparent; border-radius: 9px; padding: 0 12px; min-height: 34px; font: inherit; font-size: 14px; color: #5E5B6B">Herramientas</button>
+<button role="tab" aria-selected="true" style="border: 0; background: #FFFFFF; border-radius: 9px; padding: 0 12px; min-height: 34px; font: inherit; font-size: 14px; font-weight: 600; color: #1F1D2B">Modo juego</button>
+</div>
+</header>
+
+<fieldset style="flex: 1; border: 0; margin: 0; padding: 22px 28px; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-size: 13px; font-weight: 600; letter-spacing: 0.06em; color: #5E5B6B; padding: 0; margin-bottom: 10px">PLANTILLA EN EL MODO JUEGO</legend>
+
+<label style="display: flex; align-items: center; gap: 14px; border: 1px solid #ECE8DF; border-radius: 16px; padding: 12px 14px; min-height: 56px">
+<input type="radio" name="tpl" style="width: 20px; height: 20px; accent-color: #6D3FD0">
+<span style="width: 56px; height: 36px; border-radius: 8px; background: #FFFFFF; border: 1px solid #DAD5C9"></span>
+<span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 16px; font-weight: 600">Automática</span><span style="font-size: 13px; color: #5E5B6B">Tarjeta, porque la herramienta principal es «Mazo»</span></span>
+</label>
+<label style="display: flex; align-items: center; gap: 14px; border: 1px solid #ECE8DF; border-radius: 16px; padding: 12px 14px; min-height: 56px">
+<input type="radio" name="tpl" style="width: 20px; height: 20px; accent-color: #6D3FD0">
+<span style="width: 56px; height: 36px; border-radius: 8px; background: #6D3FD0"></span>
+<span style="flex: 1; font-size: 16px; font-weight: 600">Palabra</span>
+</label>
+<label style="display: flex; align-items: center; gap: 14px; border: 1px solid #ECE8DF; border-radius: 16px; padding: 12px 14px; min-height: 56px">
+<input type="radio" name="tpl" style="width: 20px; height: 20px; accent-color: #6D3FD0">
+<span style="width: 56px; height: 36px; border-radius: 8px; background: #0B0B0F"></span>
+<span style="flex: 1; font-size: 16px; font-weight: 600">Reloj</span>
+</label>
+<label style="display: flex; align-items: center; gap: 14px; border: 2px solid #6D3FD0; background: #F7F3FF; border-radius: 16px; padding: 11px 13px; min-height: 56px">
+<input type="radio" name="tpl" checked style="width: 20px; height: 20px; accent-color: #6D3FD0">
+<span style="width: 56px; height: 36px; border-radius: 8px; background: #1C1C24; display: flex; align-items: center; justify-content: flex-end; padding-right: 5px; box-sizing: border-box; gap: 2px"><span style="width: 10px; height: 26px; border-radius: 3px; background: #2A2A35"></span></span>
+<span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 16px; font-weight: 600">Concurso por equipos <span style="font-family: 'Noto Sans SC', sans-serif; font-weight: 500; color: #5E5B6B">团队竞赛</span></span><span style="font-size: 13px; color: #5E5B6B">Plantilla propia · Tarjeta + marcador</span></span>
+<span style="font-size: 12px; background: #EEE6FD; color: #5B2DBF; border-radius: 999px; padding: 4px 10px; font-weight: 600">MÍA</span>
+</label>
+
+<div style="display: flex; gap: 16px; align-items: center; margin-top: 6px">
+<a href="Plantillas-Editor.dc.html" style="font-size: 15px; font-weight: 600">Crear o editar plantillas…</a>
+<span style="font-size: 13px; color: #9A3412; background: #FFE8D9; border-radius: 10px; padding: 6px 10px">Esta plantilla usa Marcador: se añadirá a las herramientas del juego.</span>
+</div>
+</fieldset>
+
+<footer style="display: flex; justify-content: flex-end; gap: 10px; padding: 16px 28px; border-top: 1px solid #ECE8DF">
+<button style="border: 1px solid #DAD5C9; background: #FFFFFF; color: #1F1D2B; border-radius: 12px; padding: 0 18px; min-height: 44px; font: inherit; font-size: 15px">Cancelar</button>
+<button style="border: 0; background: #6D3FD0; color: #FFFFFF; border-radius: 12px; padding: 0 18px; min-height: 44px; font: inherit; font-size: 15px; font-weight: 600">Guardar juego</button>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":880,"height":640}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
