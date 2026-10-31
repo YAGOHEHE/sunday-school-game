@@ -1,0 +1,892 @@
+{
+  "games": [
+    {
+      "id": "quien-viene-detras",
+      "icon": "🚪",
+      "title": {
+        "es": "¿Quién viene detrás?",
+        "zh": "猜猜后面是谁"
+      },
+      "category": "conocerse",
+      "minMinutes": 15,
+      "maxMinutes": 20,
+      "objective": {
+        "es": "Que los participantes se conozcan mejor y presten atención a los detalles de los demás.",
+        "zh": "让大家更了解彼此，并留意其他人的细节。"
+      },
+      "steps": [
+        {
+          "es": "Todos se colocan en fila frente a una puerta. Durante 3–5 minutos, cada persona conversa con quien tiene detrás: de dónde es, qué le gusta, a qué se dedica, alguna anécdota.",
+          "zh": "所有人在一扇门前排成一列。用3–5分钟时间，每个人和身后的人聊天：来自哪里、喜欢什么、平时做什么、一个小故事。"
+        },
+        {
+          "es": "Entra la primera persona. Al otro lado, el presentador le hace una pregunta sobre la persona que viene detrás en la fila (por ejemplo: «¿Cuál es su comida favorita?»).",
+          "zh": "第一个人走进门。门的另一边，主持人问他一个关于排在他后面那个人的问题（例如：「他最喜欢的食物是什么？」）。"
+        },
+        {
+          "es": "Si acierta, se queda dentro. Si falla, sale y queda eliminada.",
+          "zh": "答对就留在屋里。答错就出去，被淘汰。"
+        },
+        {
+          "es": "Entra la siguiente persona y se repite la dinámica hasta que pasen todos. La última persona de la fila responde sobre la primera.",
+          "zh": "下一个人进去，重复这个过程，直到所有人都进去过。队伍最后一个人回答关于第一个人的问题。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "Preguntas de distinta dificultad: el nombre es fácil; un sueño o un miedo es difícil.",
+          "zh": "问题可以有不同难度：名字最简单，梦想或害怕的事情最难。"
+        },
+        {
+          "es": "Un comodín por persona para pedir una pista.",
+          "zh": "每人一张万能牌，可以请求一个提示。"
+        },
+        {
+          "es": "Que los eliminados vuelvan a la fila y tengan una segunda oportunidad con otra persona.",
+          "zh": "让被淘汰的人回到队伍里，和另一个人再来一次机会。"
+        },
+        {
+          "es": "Las preguntas de comportamiento son predicciones: el presentador las hace antes de que entre la persona de detrás, y la respuesta se comprueba cuando cruza la puerta. Para que funcionen, la persona de detrás no debe escuchar la pregunta.",
+          "zh": "行为类问题是预测：主持人在后面的人进门之前提问，等他走过门时再核对答案。要让它有效，后面的人不能听到这个问题。"
+        }
+      ],
+      "variants": [
+        {
+          "title": {
+            "es": "Pregunta del compañero",
+            "zh": "同伴的问题"
+          },
+          "objective": {
+            "es": "Que cada persona decida qué quiere que los demás sepan de ella y cuánto confía en que la han escuchado.",
+            "zh": "让每个人决定想让别人了解自己的哪些事，并看看自己有多相信别人真的听进去了。"
+          },
+          "steps": [
+            {
+              "es": "Todos conversan en la fila con quien tienen detrás durante 3–5 minutos.",
+              "zh": "所有人在队伍里和身后的人聊3–5分钟。"
+            },
+            {
+              "es": "Antes de que empiece el juego, cada persona escribe en un papel una pregunta sobre sí misma y su respuesta, y se lo entrega al presentador sin enseñárselo a nadie.",
+              "zh": "游戏开始前，每个人在纸上写一个关于自己的问题和答案，然后交给主持人，不给任何人看。"
+            },
+            {
+              "es": "Cuando alguien entra, el presentador le hace la pregunta que eligió la persona que viene detrás.",
+              "zh": "有人进门时，主持人问他的，是后面那个人写的问题。"
+            },
+            {
+              "es": "Si acierta, se queda dentro; si falla, sale.",
+              "zh": "答对就留下；答错就出去。"
+            }
+          ],
+          "tips": [
+            {
+              "es": "Que la persona que eligió la pregunta también quede eliminada si su compañero falla, para que no ponga preguntas imposibles.",
+              "zh": "如果同伴答错，出题的人也一起被淘汰，这样大家就不会出太难的问题。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "es": "Fila desordenada",
+            "zh": "打乱的队伍"
+          },
+          "objective": {
+            "es": "Que todos presten atención a varias personas, porque nadie sabe sobre quién le van a preguntar.",
+            "zh": "让每个人都留意身边的几个人，因为没人知道会被问到谁。"
+          },
+          "steps": [
+            {
+              "es": "Todos conversan en la fila con quien tienen delante y detrás durante 5 minutos.",
+              "zh": "所有人在队伍里和前后的人聊5分钟。"
+            },
+            {
+              "es": "El presentador cambia el orden de la fila al azar.",
+              "zh": "主持人随机打乱队伍的顺序。"
+            },
+            {
+              "es": "Cuando alguien entra, el presentador le pregunta por la persona que ahora tiene detrás, que puede ser alguien con quien apenas habló.",
+              "zh": "有人进门时，主持人问他关于现在排在他后面的人的问题，这个人可能是他几乎没说过话的人。"
+            },
+            {
+              "es": "Si acierta, se queda dentro; si falla, sale.",
+              "zh": "答对就留下；答错就出去。"
+            }
+          ],
+          "tips": [
+            {
+              "es": "Una segunda ronda de conversación más corta (1–2 minutos) después de desordenar la fila, para que tengan una última oportunidad de conocer a su nuevo compañero.",
+              "zh": "打乱队伍后，再进行一轮较短的聊天（1–2分钟），让大家有最后一次机会认识新的同伴。"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Conversación",
+            "zh": "聊天时间"
+          },
+          "seconds": 300
+        },
+        {
+          "kind": "deck",
+          "title": {
+            "es": "Banco de preguntas",
+            "zh": "问题库"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Aspecto",
+                "zh": "外貌"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿De qué color tiene los ojos?",
+                    "zh": "眼睛是什么颜色的？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿De qué color tiene el pelo?",
+                    "zh": "头发是什么颜色的？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Tiene el pelo liso, ondulado o rizado?",
+                    "zh": "头发是直的、微卷还是卷的？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Lleva el pelo suelto, recogido o corto?",
+                    "zh": "头发是披着、扎起来还是短发？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Lleva flequillo?",
+                    "zh": "有刘海吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Lleva gafas?",
+                    "zh": "戴眼镜吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Tiene pecas?",
+                    "zh": "有雀斑吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Le salen hoyuelos al sonreír?",
+                    "zh": "笑的时候会有酒窝吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Lleva pendientes?",
+                    "zh": "戴耳环吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Es zurdo o diestro?",
+                    "zh": "是左撇子还是右撇子？"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Lo que lleva puesto",
+                "zh": "身上穿戴的东西"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿De qué color son sus zapatillas?",
+                    "zh": "他的运动鞋是什么颜色的？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿De qué marca son sus zapatillas?",
+                    "zh": "他的运动鞋是什么牌子的？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Lleva algún accesorio (pulsera, reloj, collar, gorra)?",
+                    "zh": "戴了什么配饰吗（手环、手表、项链、帽子）？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Su camiseta tiene algún dibujo o texto?",
+                    "zh": "他的T恤上有图案或文字吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Lleva pantalón largo, corto o falda?",
+                    "zh": "穿的是长裤、短裤还是裙子？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Lleva chaqueta o sudadera?",
+                    "zh": "穿夹克或卫衣了吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿De qué color es su mochila?",
+                    "zh": "他的书包是什么颜色的？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿De qué color son sus calcetines?",
+                    "zh": "他的袜子是什么颜色的？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Lleva algo de color rojo?",
+                    "zh": "身上有红色的东西吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Lleva el móvil encima?",
+                    "zh": "身上带手机了吗？"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Hobbies",
+                "zh": "兴趣爱好"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿Qué es lo que más le gusta hacer en su tiempo libre?",
+                    "zh": "空闲时间最喜欢做什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Toca algún instrumento?",
+                    "zh": "会弹什么乐器吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Colecciona algo?",
+                    "zh": "有收集什么东西的爱好吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Le gusta dibujar o pintar?",
+                    "zh": "喜欢画画吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál es su libro favorito?",
+                    "zh": "最喜欢的书是哪本？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Prefiere quedarse en casa o salir con amigos?",
+                    "zh": "更喜欢待在家还是和朋友出去？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Sabe cocinar algo? ¿Qué?",
+                    "zh": "会做什么菜吗？是什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Hace manualidades?",
+                    "zh": "会做手工吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué suele hacer los fines de semana?",
+                    "zh": "周末通常做什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Tiene alguna afición poco común?",
+                    "zh": "有什么不太常见的爱好吗？"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Películas y series",
+                "zh": "电影和剧集"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿Cuál es su película favorita?",
+                    "zh": "最喜欢的电影是哪部？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué serie está viendo ahora?",
+                    "zh": "现在在追什么剧？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál es su personaje favorito de una película o serie?",
+                    "zh": "最喜欢的电影或剧里的角色是谁？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Prefiere terror, comedia o acción?",
+                    "zh": "更喜欢恐怖片、喜剧还是动作片？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué película ha visto más veces?",
+                    "zh": "看过最多遍的电影是哪部？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué película le hizo llorar?",
+                    "zh": "哪部电影让他哭过？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Prefiere ver películas en el cine o en casa?",
+                    "zh": "更喜欢去电影院看还是在家看？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál es su película de animación favorita?",
+                    "zh": "最喜欢的动画电影是哪部？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué serie recomendaría a todo el mundo?",
+                    "zh": "你会向所有人推荐哪部剧？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué personaje de ficción le gustaría ser?",
+                    "zh": "想变成哪个虚构角色？"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Música",
+                "zh": "音乐"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿Cuál es su artista o grupo favorito?",
+                    "zh": "最喜欢的歌手或乐队是谁？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué canción escucharía en bucle?",
+                    "zh": "会循环播放哪首歌？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué género de música no soporta?",
+                    "zh": "最受不了哪种音乐风格？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Canta en la ducha?",
+                    "zh": "洗澡时会唱歌吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿A qué concierto le gustaría ir?",
+                    "zh": "最想去看哪场演唱会？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Escucha música mientras estudia?",
+                    "zh": "学习时会听音乐吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué canción le pone de buen humor?",
+                    "zh": "哪首歌能让他心情变好？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Dónde escucha música (Spotify, YouTube, radio…)?",
+                    "zh": "在哪里听音乐（Spotify、YouTube、电台……）？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Sabe bailar algún baile?",
+                    "zh": "会跳什么舞吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué canción le daría vergüenza admitir que le gusta?",
+                    "zh": "哪首歌他会不好意思承认自己喜欢？"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Videojuegos y apps",
+                "zh": "电子游戏和应用"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿Cuál es su videojuego favorito?",
+                    "zh": "最喜欢的电子游戏是哪款？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué app usa más en el móvil?",
+                    "zh": "手机上用得最多的应用是什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Juega más en consola, ordenador o móvil?",
+                    "zh": "更常在主机、电脑还是手机上玩？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué red social usa más?",
+                    "zh": "最常用的社交软件是哪个？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Prefiere jugar solo o con amigos?",
+                    "zh": "更喜欢单人玩还是和朋友一起玩？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál fue su primer videojuego?",
+                    "zh": "他玩的第一款电子游戏是什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué personaje de videojuego le gustaría ser?",
+                    "zh": "想变成哪个游戏角色？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Tiene algún streamer o youtuber favorito?",
+                    "zh": "有最喜欢的直播主或 YouTuber 吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Prefiere juegos de acción, estrategia o deportes?",
+                    "zh": "更喜欢动作、策略还是体育类游戏？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuántas horas al día usa el móvil, más o menos?",
+                    "zh": "大概每天用手机多少小时？"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Deportes",
+                "zh": "运动"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿Practica algún deporte?",
+                    "zh": "有练什么运动吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál es su equipo o deportista favorito?",
+                    "zh": "最喜欢的球队或运动员是谁？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué deporte nunca practicaría?",
+                    "zh": "哪项运动他绝对不会去练？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Desde cuándo practica su deporte?",
+                    "zh": "从什么时候开始练这项运动的？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Prefiere deportes individuales o de equipo?",
+                    "zh": "更喜欢单人运动还是团队运动？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Ha ganado alguna medalla o trofeo?",
+                    "zh": "得过奖牌或奖杯吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Ve deportes por televisión? ¿Cuál?",
+                    "zh": "会看电视转播的体育比赛吗？看哪项？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Sabe nadar?",
+                    "zh": "会游泳吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué deporte le gustaría probar?",
+                    "zh": "想尝试哪项运动？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Prefiere correr o montar en bici?",
+                    "zh": "更喜欢跑步还是骑自行车？"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Comida",
+                "zh": "食物"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿Cuál es su comida favorita?",
+                    "zh": "最喜欢的食物是什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué comida odia?",
+                    "zh": "最讨厌什么食物？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Prefiere dulce o salado?",
+                    "zh": "更喜欢甜的还是咸的？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Pizza con piña: sí o no?",
+                    "zh": "披萨加菠萝：要还是不要？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál es su postre favorito?",
+                    "zh": "最喜欢的甜点是什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué suele desayunar?",
+                    "zh": "早餐通常吃什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál es su comida rápida favorita?",
+                    "zh": "最喜欢的快餐是什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Le gusta el picante?",
+                    "zh": "喜欢吃辣吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál es su fruta favorita?",
+                    "zh": "最喜欢的水果是什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué comida pediría para su cumpleaños?",
+                    "zh": "生日时会点什么菜？"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Sueños y futuro",
+                "zh": "梦想和未来"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿Qué quiere ser de mayor?",
+                    "zh": "长大想当什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿A qué país le gustaría viajar?",
+                    "zh": "最想去哪个国家旅行？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Si pudiera tener un superpoder, ¿cuál elegiría?",
+                    "zh": "如果能拥有一种超能力，会选哪种？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué haría si ganara un millón?",
+                    "zh": "如果赢了一百万，会做什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿A qué famoso le gustaría conocer?",
+                    "zh": "最想见哪位名人？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿En qué ciudad le gustaría vivir?",
+                    "zh": "想住在哪个城市？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué le gustaría aprender a hacer?",
+                    "zh": "想学会做什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué le gustaría estudiar?",
+                    "zh": "想学什么专业？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Si pudiera viajar en el tiempo, ¿a qué época iría?",
+                    "zh": "如果能穿越时空，会去哪个年代？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Si fuera un animal, ¿cuál sería?",
+                    "zh": "如果变成一种动物，会是什么？"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Curiosidades",
+                "zh": "趣事"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿Tiene algún talento oculto?",
+                    "zh": "有什么隐藏的才艺吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál es la cosa más rara que ha comido?",
+                    "zh": "吃过最奇怪的东西是什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué es algo que nadie adivinaría de él o ella?",
+                    "zh": "有什么事是别人绝对猜不到的？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Tiene algún miedo poco común?",
+                    "zh": "有什么不太常见的害怕的东西吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál es el emoji que más usa?",
+                    "zh": "最常用的表情符号是哪个？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Ha estado en otro país? ¿En cuál?",
+                    "zh": "去过别的国家吗？去过哪个？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Sabe decir algo en otro idioma?",
+                    "zh": "会说别的语言吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Tiene algún apodo?",
+                    "zh": "有绰号吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál es su número favorito?",
+                    "zh": "最喜欢的数字是几？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Es madrugador o dormilón?",
+                    "zh": "是早起的人还是爱睡懒觉的人？"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Comportamiento",
+                "zh": "行为"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿Con qué pie entrará por la puerta?",
+                    "zh": "他会先迈哪只脚进门？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuál será la primera palabra que dirá al entrar?",
+                    "zh": "进门后说的第一句话是什么？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Saludará al presentador con la mano, con la voz o no saludará?",
+                    "zh": "会用手、用声音打招呼，还是不打招呼？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Sonreirá al entrar?",
+                    "zh": "进门时会笑吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Se tocará el pelo o la cara en los primeros segundos?",
+                    "zh": "前几秒会摸头发或脸吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Mirará primero al presentador o a los que ya están dentro?",
+                    "zh": "先看主持人还是先看屋里的人？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Entrará rápido o despacio?",
+                    "zh": "进门快还是慢？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Meterá las manos en los bolsillos?",
+                    "zh": "会把手插进口袋吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Se reirá antes de responder?",
+                    "zh": "回答之前会先笑吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cruzará los brazos?",
+                    "zh": "会抱起手臂吗？"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

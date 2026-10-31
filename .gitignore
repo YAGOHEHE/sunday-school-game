@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# SwiftPM / Xcode
+App/.build/
+.build/
+.swiftpm/
+*.xcuserstate
+xcuserdata/
+DerivedData/
+
+# Artefactos generados por scripts/make_app.sh y make_dmg.sh
+build/

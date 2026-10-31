@@ -1,0 +1,1939 @@
+{
+  "challenges": [
+    {
+      "es": "Habla como un robot durante 10 segundos",
+      "zh": "像机器人一样说话10秒"
+    },
+    {
+      "es": "Canta una canción infantil",
+      "zh": "唱一首儿歌"
+    },
+    {
+      "es": "Imita a un profesor (con respeto)",
+      "zh": "模仿一位老师（要有礼貌）"
+    },
+    {
+      "es": "Haz 5 flexiones",
+      "zh": "做5个俯卧撑"
+    },
+    {
+      "es": "Haz 5 saltos",
+      "zh": "跳5下"
+    },
+    {
+      "es": "Di tu comida favorita",
+      "zh": "说出你最喜欢的食物"
+    },
+    {
+      "es": "Di una serie que te guste",
+      "zh": "说一部你喜欢的剧"
+    },
+    {
+      "es": "Baila durante 10 segundos",
+      "zh": "跳10秒舞"
+    },
+    {
+      "es": "Camina como un pingüino",
+      "zh": "像企鹅一样走路"
+    },
+    {
+      "es": "Di un trabalenguas",
+      "zh": "说一句绕口令"
+    },
+    {
+      "es": "Cuenta un chiste",
+      "zh": "讲一个笑话"
+    },
+    {
+      "es": "Recita de memoria un versículo",
+      "zh": "背诵一节经文"
+    },
+    {
+      "es": "Habla como un bebé durante 10 segundos",
+      "zh": "像婴儿一样说话10秒"
+    },
+    {
+      "es": "Pon la cara más seria durante 10 segundos sin reírte",
+      "zh": "板着脸10秒，不许笑"
+    }
+  ],
+  "games": [
+    {
+      "id": "ppt-cadena",
+      "icon": "✊",
+      "title": {
+        "es": "Piedra, papel, tijera en cadena",
+        "zh": "石头剪刀布接龙"
+      },
+      "category": "energia",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Subir la energía del grupo rápido.",
+        "zh": "快速提升全组的活力。"
+      },
+      "steps": [
+        {
+          "es": "Todos juegan piedra, papel o tijera por parejas.",
+          "zh": "所有人两两一组玩石头剪刀布。"
+        },
+        {
+          "es": "El ganador sigue jugando con otro ganador.",
+          "zh": "赢的人继续和另一位赢家对决。"
+        },
+        {
+          "es": "El perdedor se convierte en «fan» del ganador y lo anima.",
+          "zh": "输的人成为赢家的«粉丝»，为他加油。"
+        },
+        {
+          "es": "Al final quedan dos finalistas con todo el grupo animando detrás.",
+          "zh": "最后剩下两位决赛选手，全组在后面为他们加油。"
+        }
+      ],
+      "tips": [],
+      "why": {
+        "es": "Mucho ruido, risas y espíritu de equipo.",
+        "zh": "气氛热闹，充满笑声和团队精神。"
+      },
+      "variants": [],
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Cuenta atrás",
+            "zh": "倒计时"
+          },
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": "reto-absurdo",
+      "icon": "🤪",
+      "title": {
+        "es": "Reto absurdo",
+        "zh": "荒诞挑战"
+      },
+      "category": "expresion",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Romper del todo la rigidez.",
+        "zh": "彻底打破拘束感。"
+      },
+      "steps": [
+        {
+          "es": "Prepara 6–10 retos muy rápidos; la herramienta «Retos» ya trae una lista.",
+          "zh": "准备6–10个超快速的挑战；«挑战»工具里已有现成的列表。"
+        },
+        {
+          "es": "Cada vez que alguien pierde en un mini juego, hace un reto.",
+          "zh": "每当有人在小游戏中输了，就要完成一个挑战。"
+        }
+      ],
+      "tips": [],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Retos",
+            "zh": "挑战"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Retos",
+                "zh": "挑战"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Habla como un robot durante 10 segundos",
+                    "zh": "像机器人一样说话10秒"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Canta una canción infantil",
+                    "zh": "唱一首儿歌"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Imita a un profesor (con respeto)",
+                    "zh": "模仿一位老师（要有礼貌）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Haz 5 flexiones",
+                    "zh": "做5个俯卧撑"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Haz 5 saltos",
+                    "zh": "跳5下"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Di tu comida favorita",
+                    "zh": "说出你最喜欢的食物"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Di una serie que te guste",
+                    "zh": "说一部你喜欢的剧"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Baila durante 10 segundos",
+                    "zh": "跳10秒舞"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Camina como un pingüino",
+                    "zh": "像企鹅一样走路"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Di un trabalenguas",
+                    "zh": "说一句绕口令"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Cuenta un chiste",
+                    "zh": "讲一个笑话"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Recita de memoria un versículo",
+                    "zh": "背诵一节经文"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Habla como un bebé durante 10 segundos",
+                    "zh": "像婴儿一样说话10秒"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Pon la cara más seria durante 10 segundos sin reírte",
+                    "zh": "板着脸10秒，不许笑"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sillas-invisibles",
+      "icon": "🪑",
+      "title": {
+        "es": "Sillas invisibles",
+        "zh": "隐形椅子"
+      },
+      "category": "energia",
+      "minMinutes": 3,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Romper el hielo y reírse.",
+        "zh": "打破僵局，开怀大笑。"
+      },
+      "steps": [
+        {
+          "es": "Todos caminan por la sala.",
+          "zh": "所有人在教室里走动。"
+        },
+        {
+          "es": "Cuando digas «¡SILLA!», todos deben sentarse en el aire (en cuclillas).",
+          "zh": "你喊«¡SILLA!»（椅子）时，所有人都要像坐下一样蹲在空中。"
+        },
+        {
+          "es": "El último en hacerlo queda «eliminado» o hace un mini reto divertido.",
+          "zh": "最后一个做到的人«出局»，或者完成一个有趣的小挑战。"
+        },
+        {
+          "es": "Repetir rápido varias rondas.",
+          "zh": "快速重复几轮。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "Puedes añadir: «¡MESA!» = tocar el suelo, «¡CIELO!» = brazos arriba. La herramienta trae tres más.",
+          "zh": "可以加入更多口令：«¡MESA!»（摸地板）、«¡CIELO!»（双臂举起）。工具里还有另外三个。"
+        }
+      ],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "caller",
+          "title": {
+            "es": "Órdenes",
+            "zh": "口令"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Órdenes",
+                "zh": "口令"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¡SILLA!",
+                    "zh": "椅子！"
+                  },
+                  "back": {
+                    "es": "Sentarse en el aire (en cuclillas)",
+                    "zh": "在空中坐下（蹲下）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡MESA!",
+                    "zh": "桌子！"
+                  },
+                  "back": {
+                    "es": "Tocar el suelo",
+                    "zh": "摸地板"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡CIELO!",
+                    "zh": "天空！"
+                  },
+                  "back": {
+                    "es": "Brazos arriba",
+                    "zh": "双臂举过头顶"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡ESTATUA!",
+                    "zh": "雕像！"
+                  },
+                  "back": {
+                    "es": "Congelarse en una pose sin moverse",
+                    "zh": "摆出一个姿势，一动不动"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡ROCA!",
+                    "zh": "石头！"
+                  },
+                  "back": {
+                    "es": "Hacerse una bola en el suelo",
+                    "zh": "在地上蜷成一团"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡ESPEJO!",
+                    "zh": "镜子！"
+                  },
+                  "back": {
+                    "es": "Hacer lo mismo que la persona de al lado",
+                    "zh": "模仿旁边的人"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boom",
+      "icon": "💥",
+      "title": {
+        "es": "¡Boom!",
+        "zh": "数七"
+      },
+      "category": "mente",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Activar la atención y los reflejos.",
+        "zh": "激活注意力和反应力。"
+      },
+      "steps": [
+        {
+          "es": "En círculo, contando números en orden.",
+          "zh": "大家围成一圈，按顺序报数。"
+        },
+        {
+          "es": "Cada 7 o múltiplo de 7, en vez del número se dice «¡Boom!».",
+          "zh": "遇到7或7的倍数，不说数字，而说«¡Boom!»。"
+        },
+        {
+          "es": "El que se equivoca hace un reto rápido: 5 saltos, decir su comida favorita o decir una serie que le guste.",
+          "zh": "说错的人要完成一个快速挑战：跳5下、说出最喜欢的食物，或说一部喜欢的剧。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "Ejemplo: 1, 2, 3, 4, 5, 6, ¡BOOM!, 8, 9…",
+          "zh": "例如：1、2、3、4、5、6、¡BOOM!、8、9……"
+        }
+      ],
+      "why": {
+        "es": "Rápido, competitivo y muy dinámico.",
+        "zh": "节奏快、有竞争性，非常活跃。"
+      },
+      "variants": [],
+      "tools": [
+        {
+          "kind": "boom",
+          "title": {
+            "es": "¡Boom!",
+            "zh": "数七"
+          },
+          "multiple": 7
+        }
+      ]
+    },
+    {
+      "id": "maquina-codigo",
+      "icon": "📟",
+      "title": {
+        "es": "La Máquina de Código Humana",
+        "zh": "人类密码机"
+      },
+      "category": "equipo",
+      "minMinutes": 7,
+      "maxMinutes": 7,
+      "objective": {
+        "es": "Transmitir sin palabras una señal compleja y ver qué llega al final.",
+        "zh": "不用语言传递复杂的信号，看看最后传到了什么。"
+      },
+      "steps": [
+        {
+          "es": "Grupos de 8–10 personas de la mano, formando un círculo.",
+          "zh": "每组8–10人手拉手围成一圈。"
+        },
+        {
+          "es": "El profesor enseña al primero de cada grupo un «código» complejo (p. ej.: apretar dos veces, dar una palmada en el hombro, apretar tres veces).",
+          "zh": "老师给每组第一位同学看一个复杂的«密码»（例如：捏两下、拍一下肩膀、捏三下）。"
+        },
+        {
+          "es": "Ese alumno lo transmite con la mano (apretar, presionar, dar palmadas) al siguiente, hasta el último.",
+          "zh": "这位同学用手（捏、压、拍）把密码依次传给下一个人，直到最后一人。"
+        },
+        {
+          "es": "El último corre a la pizarra y dibuja la figura o escribe el número que ha recibido.",
+          "zh": "最后一人收到后，跑到黑板前画出对应的图形或写下数字。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "Interferencias: el profesor puede meter ruido o falsas instrucciones durante la transmisión.",
+          "zh": "干扰项：老师可以在传递过程中制造噪音或假指令。"
+        }
+      ],
+      "why": {
+        "es": "Pone a prueba la transmisión exacta de información no verbal; al final suele llegar totalmente irreconocible, y eso da mucha risa.",
+        "zh": "考验非语言信息的准确传递，传到最后往往面目全非，非常有趣。"
+      },
+      "variants": [],
+      "tools": [
+        {
+          "kind": "codeSequence",
+          "title": {
+            "es": "Secuencias",
+            "zh": "密码序列"
+          },
+          "length": 4
+        },
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 420
+        }
+      ]
+    },
+    {
+      "id": "ser-vivo",
+      "icon": "👾",
+      "title": {
+        "es": "El Ser Vivo Compartido",
+        "zh": "共生物体"
+      },
+      "category": "equipo",
+      "minMinutes": 8,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Coordinarse como un solo cuerpo para cumplir una tarea.",
+        "zh": "像一个身体一样协调配合，完成任务。"
+      },
+      "steps": [
+        {
+          "es": "Grupos de 3 personas. Los tres deben formar «un solo ser vivo».",
+          "zh": "每组3人，三人必须组成«一个生物»。"
+        },
+        {
+          "es": "Reparto de cuerpos: el del centro es solo el tronco (no mueve las piernas); el de la izquierda es el brazo y la pierna izquierdos; el de la derecha, el brazo y la pierna derechos.",
+          "zh": "身体分工：中间的人只做躯干（腿不能动）；左边的人当左臂和左腿；右边的人当右臂和右腿。"
+        },
+        {
+          "es": "Los tres se abrazan fuerte por la cintura o los hombros.",
+          "zh": "三人紧紧抱住彼此的腰或肩膀。"
+        },
+        {
+          "es": "Saca una tarea de la herramienta «Tareas» y cúmplela como criatura.",
+          "zh": "从«任务»工具中抽一个任务，作为一个生物来完成。"
+        }
+      ],
+      "tips": [],
+      "why": {
+        "es": "Es más difícil que simplemente hacer poses: exige coordinación y comunicación constantes, y el fracaso es casi seguro, con muchas risas.",
+        "zh": "比单纯摆造型更难，需要持续的协调与沟通，失败率很高，笑果十足。"
+      },
+      "variants": [],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Tareas",
+            "zh": "任务"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Tareas",
+                "zh": "任务"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Ir al otro extremo de la clase y recoger un bolígrafo",
+                    "zh": "走到教室另一端捡起一支笔"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Dibujar un círculo en la pizarra",
+                    "zh": "在黑板上画一个圆"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Saludar con la mano a otra «criatura» (otro grupo)",
+                    "zh": "和另一组的«生物»握手"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Sentarse los tres a la vez en una silla sin separarse",
+                    "zh": "三人不分开，同时坐到一把椅子上"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Cantar una canción corta juntos como un solo ser",
+                    "zh": "作为一个生物，一起唱一首短歌"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Escribir el nombre de vuestra criatura en la pizarra",
+                    "zh": "在黑板上写下你们生物的名字"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Dar tres saltos sin soltarse",
+                    "zh": "不松开彼此，一起跳三下"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Recoger tres objetos de la mesa y dejarlos en la puerta",
+                    "zh": "从桌上拿三样东西，放到门口"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Ir hasta la puerta y volver sin tropezar",
+                    "zh": "走到门口再回来，不许绊倒"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Inventar y hacer un saludo especial para vuestra criatura",
+                    "zh": "为你们的生物设计并表演一个专属问候"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Dibujar un corazón en el aire, los tres a la vez",
+                    "zh": "三人同时在空中画一颗心"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Ponerse en fila del más alto al más bajo sin soltarse",
+                    "zh": "不松手，按从高到矮排好队"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 120
+        }
+      ]
+    },
+    {
+      "id": "cadena-emocional",
+      "icon": "😱",
+      "title": {
+        "es": "La Cadena Emocional",
+        "zh": "情绪传染链"
+      },
+      "category": "expresion",
+      "minMinutes": 6,
+      "maxMinutes": 6,
+      "objective": {
+        "es": "Activar la energía con el lenguaje no verbal.",
+        "zh": "用非语言交流激活能量。"
+      },
+      "steps": [
+        {
+          "es": "Como un «piedra, papel, tijera» en cadena, todos se enfrentan por parejas.",
+          "zh": "像接龙的石头剪刀布一样，所有人两两对决。"
+        },
+        {
+          "es": "El que pierde no queda eliminado: se convierte en la «sombra» del ganador y debe imitar todos sus gestos y expresiones.",
+          "zh": "输的人不出局，而是成为赢家的«影子»，必须模仿赢家的一切动作和表情。"
+        },
+        {
+          "es": "Cada ganador lleva a su «sombra» a enfrentarse con otros ganadores.",
+          "zh": "每位赢家带着自己的«影子团»去找其他赢家对决。"
+        },
+        {
+          "es": "Al final quedan dos grandes equipos.",
+          "zh": "最后剩下两支大团队对决。"
+        },
+        {
+          "es": "Nueva regla: en vez de jugar a piedra, papel o tijera, los capitanes hacen una expresión (rabia extrema, euforia, sorpresa…) y todo el equipo debe imitarla a la vez. Gana el equipo más sincronizado y exagerado, según juzguen los que no han sido eliminados o el profesor.",
+          "zh": "新增规则：不再猜拳，两队队长各做一个表情（极度愤怒、狂喜、惊讶……），全队必须同步模仿。由未被淘汰的同学或老师判定哪一队更整齐、更夸张，哪一队获胜。"
+        }
+      ],
+      "tips": [],
+      "why": {
+        "es": "Impacto visual enorme: ver a decenas de personas haciendo muecas a la vez es muy impactante.",
+        "zh": "视觉冲击力极强，最后几十人同步做鬼脸非常震撼。"
+      },
+      "variants": [],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Emociones",
+            "zh": "情绪"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Emociones",
+                "zh": "情绪"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Enfado extremo",
+                    "zh": "极度愤怒"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Euforia",
+                    "zh": "狂喜"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Sorpresa",
+                    "zh": "惊讶"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Miedo",
+                    "zh": "害怕"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Tristeza profunda",
+                    "zh": "深深的悲伤"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Asco",
+                    "zh": "厌恶"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Confusión",
+                    "zh": "困惑"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Orgullo",
+                    "zh": "骄傲"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Aburrimiento",
+                    "zh": "无聊"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Vergüenza",
+                    "zh": "尴尬"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Emoción",
+                    "zh": "激动"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Celos",
+                    "zh": "嫉妒"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Timidez",
+                    "zh": "害羞"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Decepción",
+                    "zh": "失望"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Ternura",
+                    "zh": "温柔"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Nervios",
+                    "zh": "紧张"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Terror",
+                    "zh": "恐怖"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Presumido",
+                    "zh": "得意"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tiempo-inverso",
+      "icon": "⏪",
+      "title": {
+        "es": "El Tiempo Inverso",
+        "zh": "时间倒流"
+      },
+      "category": "energia",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Desarrollar el control inhibitorio: hacer lo contrario de lo que se oye.",
+        "zh": "锻炼抑制控制能力：做与指令相反的动作。"
+      },
+      "steps": [
+        {
+          "es": "Todos caminan libremente por el aula.",
+          "zh": "所有人在教室里自由走动。"
+        },
+        {
+          "es": "El profesor da una orden, pero los alumnos deben hacer la acción contraria o su proceso inverso.",
+          "zh": "老师发出口令，但学生必须做相反的动作，或做这个动作的倒放。"
+        },
+        {
+          "es": "Ejemplo: si el profesor dice «¡Adelante!», hay que retroceder; si dice «¡Siéntate!», hay que saltar.",
+          "zh": "例如：老师说«向前走！»，就要向后退；说«坐下！»，就要跳起来。"
+        },
+        {
+          "es": "Cuando el profesor diga «¡Tiempo inverso!», todos caminan hacia atrás como un vídeo rebobinado.",
+          "zh": "当老师说«时间倒流！»时，所有人都要像录像带倒带一样，倒着走并做出刚才动作的逆过程。"
+        }
+      ],
+      "tips": [],
+      "why": {
+        "es": "Pone a prueba como pocos el control inhibitorio del cerebro; el caos y las risas están garantizados.",
+        "zh": "极度考验大脑的抑制控制能力，场面混乱且爆笑。"
+      },
+      "variants": [],
+      "tools": [
+        {
+          "kind": "caller",
+          "title": {
+            "es": "Órdenes",
+            "zh": "口令"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Órdenes",
+                "zh": "口令"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¡Adelante!",
+                    "zh": "向前走！"
+                  },
+                  "back": {
+                    "es": "Caminar hacia atrás",
+                    "zh": "向后退走"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Atrás!",
+                    "zh": "向后退！"
+                  },
+                  "back": {
+                    "es": "Caminar hacia delante",
+                    "zh": "向前走"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Siéntate!",
+                    "zh": "坐下！"
+                  },
+                  "back": {
+                    "es": "Levantarse o saltar",
+                    "zh": "站起来或跳起来"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡De pie!",
+                    "zh": "起立！"
+                  },
+                  "back": {
+                    "es": "Agacharse o sentarse",
+                    "zh": "蹲下或坐下"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Abre los ojos!",
+                    "zh": "睁眼！"
+                  },
+                  "back": {
+                    "es": "Cerrar los ojos bien fuerte",
+                    "zh": "紧闭双眼"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Cierra la boca!",
+                    "zh": "闭嘴！"
+                  },
+                  "back": {
+                    "es": "Abrir mucho la boca (cara rara)",
+                    "zh": "张大嘴巴（做鬼脸）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Silencio!",
+                    "zh": "安静！"
+                  },
+                  "back": {
+                    "es": "Gritar o cantar exageradamente",
+                    "zh": "大声喊叫或夸张地唱歌"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Ríe!",
+                    "zh": "笑！"
+                  },
+                  "back": {
+                    "es": "Fingir que llora y secarse las lágrimas",
+                    "zh": "假装哭，擦眼泪"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Llora!",
+                    "zh": "哭！"
+                  },
+                  "back": {
+                    "es": "Reírse a carcajadas y aplaudir",
+                    "zh": "哈哈大笑，拍手"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Acércate!",
+                    "zh": "靠近点！"
+                  },
+                  "back": {
+                    "es": "Alejarse del profesor",
+                    "zh": "远离老师，往后退"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Aléjate!",
+                    "zh": "走远点！"
+                  },
+                  "back": {
+                    "es": "Correr hacia el profesor",
+                    "zh": "冲向老师"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Levanta la mano derecha!",
+                    "zh": "举起右手！"
+                  },
+                  "back": {
+                    "es": "Levantar la izquierda",
+                    "zh": "举左手"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Levanta la mano izquierda!",
+                    "zh": "举起左手！"
+                  },
+                  "back": {
+                    "es": "Levantar la derecha",
+                    "zh": "举右手"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Toca el suelo!",
+                    "zh": "摸地板！"
+                  },
+                  "back": {
+                    "es": "Saltar y tocar el techo (o levantar los brazos)",
+                    "zh": "跳起来摸天花板（或高举双手）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Toca el techo!",
+                    "zh": "摸天花板！"
+                  },
+                  "back": {
+                    "es": "Agacharse y tocar el suelo o los pies",
+                    "zh": "弯腰摸脚或地板"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Corre rápido!",
+                    "zh": "快跑！"
+                  },
+                  "back": {
+                    "es": "Moverse muy despacio, como un perezoso",
+                    "zh": "像树懒一样极慢地动（慢动作）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Muévete lento!",
+                    "zh": "慢点动！"
+                  },
+                  "back": {
+                    "es": "Agitarse muy rápido",
+                    "zh": "疯狂快速抖动"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Gira a la derecha!",
+                    "zh": "向右转！"
+                  },
+                  "back": {
+                    "es": "Girar a la izquierda",
+                    "zh": "向左转"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Gira a la izquierda!",
+                    "zh": "向左转！"
+                  },
+                  "back": {
+                    "es": "Girar a la derecha",
+                    "zh": "向右转"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Abre los brazos!",
+                    "zh": "张开手臂！"
+                  },
+                  "back": {
+                    "es": "Abrazarse a uno mismo (encogerse)",
+                    "zh": "紧紧抱住自己（缩成一团）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Cierra los puños!",
+                    "zh": "握紧拳头！"
+                  },
+                  "back": {
+                    "es": "Abrir la palma (como una estrella de mar)",
+                    "zh": "张开手掌（像海星一样）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Estoy muy feliz!",
+                    "zh": "我很开心！"
+                  },
+                  "back": {
+                    "es": "Mostrar tristeza o enfado extremos",
+                    "zh": "表现出极度悲伤或愤怒"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Tengo mucho calor!",
+                    "zh": "我好热！"
+                  },
+                  "back": {
+                    "es": "Fingir que tiembla de frío y abrazarse",
+                    "zh": "假装冻得发抖，抱紧肩膀"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Tengo mucho frío!",
+                    "zh": "我好冷！"
+                  },
+                  "back": {
+                    "es": "Fingir calor: abanicarse, secarse el sudor",
+                    "zh": "假装很热，扇风、擦汗、脱外套"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Comed mucho!",
+                    "zh": "多吃点！"
+                  },
+                  "back": {
+                    "es": "Fingir que vomita o apartar la comida",
+                    "zh": "假装呕吐，把食物推远"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Dadme el libro!",
+                    "zh": "把书给我！"
+                  },
+                  "back": {
+                    "es": "Abrazar el libro y no darlo",
+                    "zh": "紧紧抱住书不给，或藏起来"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Soy el profesor!",
+                    "zh": "我是老师！"
+                  },
+                  "back": {
+                    "es": "Hacer de alumno travieso (molestar)",
+                    "zh": "扮演调皮的学生（捣乱）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Soy un bebé!",
+                    "zh": "我是个宝宝！"
+                  },
+                  "back": {
+                    "es": "Hacer de anciano o profesor estricto",
+                    "zh": "扮演严厉的老人或老师"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Ganamos el partido!",
+                    "zh": "我们赢了！"
+                  },
+                  "back": {
+                    "es": "Fingir que se ha perdido muy mal, cabizbajo",
+                    "zh": "假装输得很惨，垂头丧气"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Perdimos todo!",
+                    "zh": "我们输光了！"
+                  },
+                  "back": {
+                    "es": "Celebrar como si hubierais ganado",
+                    "zh": "像赢了一样庆祝"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¡Tiempo inverso!",
+                    "zh": "时间倒流！"
+                  },
+                  "back": {
+                    "es": "Caminar hacia atrás como un vídeo rebobinado",
+                    "zh": "倒着走，像录像带倒带一样"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tormenta",
+      "icon": "🌪️",
+      "title": {
+        "es": "La Tormenta Sin Palabras",
+        "zh": "禁语风暴"
+      },
+      "category": "mente",
+      "minMinutes": 5,
+      "maxMinutes": 8,
+      "objective": {
+        "es": "Responder rápido sin repetir, cumpliendo reglas que se van acumulando.",
+        "zh": "在不断叠加的规则下快速接话，不重复。"
+      },
+      "steps": [
+        {
+          "es": "Se hace un círculo y se pasa una pelota.",
+          "zh": "围成一圈传球。"
+        },
+        {
+          "es": "Regla 1: quien recibe la pelota dice al momento una categoría de objetos (p. ej., «frutas»), sin repetir las que ya se han dicho.",
+          "zh": "规则1：接到球的人要立刻说出一类物品（如«水果»），不能重复别人已经说过的。"
+        },
+        {
+          "es": "Regla 2 (avanzada): el profesor puede levantar en cualquier momento una tarjeta de color (roja, amarilla o azul).",
+          "zh": "规则2（进阶）：老师随时可能举起一张颜色卡片（红、黄或蓝）。"
+        },
+        {
+          "es": "Roja: decir la categoría cantando. Amarilla: decirla en otro idioma o dialecto. Azul: silencio, solo con mímica.",
+          "zh": "红牌：唱着说出类别。黄牌：用外语或方言说。蓝牌：保持沉默，只用动作表示。"
+        },
+        {
+          "es": "Quien incumple la regla o se queda parado recibe un reto de «Reto absurdo».",
+          "zh": "违反规则或卡住的人，接受«荒诞挑战»的惩罚。"
+        }
+      ],
+      "tips": [],
+      "why": {
+        "es": "Varias reglas superpuestas convierten un juego sencillo en un gran reto.",
+        "zh": "多重规则叠加，让简单的传话游戏变得极具挑战性。"
+      },
+      "variants": [],
+      "tools": [
+        {
+          "kind": "colorFlash",
+          "title": {
+            "es": "Tarjetas de color",
+            "zh": "颜色卡"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Reglas",
+                "zh": "规则"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Rojo",
+                    "zh": "红色"
+                  },
+                  "back": {
+                    "es": "Decir la categoría cantando",
+                    "zh": "唱着说出类别"
+                  },
+                  "color": "red"
+                },
+                {
+                  "front": {
+                    "es": "Amarillo",
+                    "zh": "黄色"
+                  },
+                  "back": {
+                    "es": "Decirla en otro idioma o dialecto",
+                    "zh": "用外语或方言说"
+                  },
+                  "color": "yellow"
+                },
+                {
+                  "front": {
+                    "es": "Azul",
+                    "zh": "蓝色"
+                  },
+                  "back": {
+                    "es": "Silencio: solo mímica",
+                    "zh": "保持沉默，只用动作"
+                  },
+                  "color": "blue"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Categorías",
+            "zh": "类别"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Categorías",
+                "zh": "类别"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Frutas",
+                    "zh": "水果"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Animales",
+                    "zh": "动物"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Colores",
+                    "zh": "颜色"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Países",
+                    "zh": "国家"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Deportes",
+                    "zh": "运动"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Instrumentos musicales",
+                    "zh": "乐器"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Profesiones",
+                    "zh": "职业"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Ropa",
+                    "zh": "衣服"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Muebles",
+                    "zh": "家具"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Películas",
+                    "zh": "电影"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Comidas",
+                    "zh": "食物"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Flores",
+                    "zh": "花"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Vehículos",
+                    "zh": "交通工具"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Ciudades",
+                    "zh": "城市"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Libros de la Biblia",
+                    "zh": "圣经书卷"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agencia-detectives",
+      "icon": "🕵️",
+      "title": {
+        "es": "La Agencia de Detectives",
+        "zh": "谎言侦探局"
+      },
+      "category": "mente",
+      "minMinutes": 10,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Descubrir el detalle absurdo de una historia real con preguntas de sí o no.",
+        "zh": "通过只能回答«是/否»的提问，找出一个真实故事中荒谬的细节。"
+      },
+      "steps": [
+        {
+          "es": "Elige un «guionista». En secreto, escoge una escena (de la herramienta o inventada) y añade un detalle absurdo.",
+          "zh": "选出一名«编剧»。他私下选一个场景（可从工具中抽取，或自己想），并加入一个荒谬的细节。"
+        },
+        {
+          "es": "El guionista cuenta la historia a la clase sin mentir, pero sin revelar cómo ocurre el detalle absurdo.",
+          "zh": "编剧向全班讲述这个故事，不能撒谎，但不能说出那个荒谬细节是怎么发生的。"
+        },
+        {
+          "es": "Los demás son «detectives» y solo pueden hacer preguntas de sí o no.",
+          "zh": "其他同学是«侦探»，只能提出可以用«是/否»回答的问题。"
+        },
+        {
+          "es": "Si los detectives descubren el detalle absurdo, ganan los detectives. Si se acaba el tiempo sin descubrirlo, gana el guionista.",
+          "zh": "如果侦探找出了这个荒谬细节，侦探获胜；如果时间到了还没发现，编剧获胜。"
+        }
+      ],
+      "tips": [],
+      "why": {
+        "es": "Si la sopa de tortuga busca la verdad, este juego busca «la única mentira» (el detalle absurdo): añade un juego psicológico.",
+        "zh": "传统的海龟汤是找真相，这个游戏找的是“唯一的谎言”（荒谬点），增加了心理博弈。"
+      },
+      "variants": [],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Escenas y detalles",
+            "zh": "场景与细节"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Escenas",
+                "zh": "场景"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Compré leche en el supermercado",
+                    "zh": "我在超市买牛奶"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Esperé el autobús bajo la lluvia",
+                    "zh": "我在雨中等公交车"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Cociné arroz para toda la familia",
+                    "zh": "我为全家做了米饭"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Me corté el pelo en la peluquería",
+                    "zh": "我在理发店剪了头发"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Fui al médico por un resfriado",
+                    "zh": "我因为感冒去看医生"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jugué al fútbol en el parque",
+                    "zh": "我在公园踢足球"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Hice la compra en el mercado",
+                    "zh": "我在菜市场买菜"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Fui a la biblioteca a estudiar",
+                    "zh": "我去图书馆学习"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Tomé un café con un amigo",
+                    "zh": "我和朋友喝了杯咖啡"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Llegué tarde a la reunión de la iglesia",
+                    "zh": "我迟到了教会的聚会"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Me compré zapatos nuevos",
+                    "zh": "我买了一双新鞋"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Pinté la pared de mi habitación",
+                    "zh": "我粉刷了房间的墙"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Detalles absurdos",
+                "zh": "荒谬细节"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "…pagué con la nariz",
+                    "zh": "……是用鼻子付的钱"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…el autobús era un pato gigante",
+                    "zh": "……公交车是一只巨大的鸭子"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…hablé con un árbol y me contestó",
+                    "zh": "……我跟一棵树说话，它还回答了我"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…el arroz se cocinó con una vela",
+                    "zh": "……米饭是用蜡烛煮熟的"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…el médico era un gato",
+                    "zh": "……医生是一只猫"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…la pelota era de queso",
+                    "zh": "……足球是奶酪做的"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…la biblioteca estaba bajo el agua",
+                    "zh": "……图书馆在水底下"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…el café me lo sirvió un robot de papel",
+                    "zh": "……咖啡是一个纸做的机器人端给我的"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…el zapato hablaba francés",
+                    "zh": "……那只鞋会说法语"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…pinté la pared con la lengua",
+                    "zh": "……我用舌头粉刷的墙"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…llegué montado en un caballo de madera",
+                    "zh": "……我骑着木马来的"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "…la lluvia subía hacia el cielo",
+                    "zh": "……雨是往天上飘的"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": "bolsa-identidad",
+      "icon": "🪪",
+      "title": {
+        "es": "La Bolsa de Cambio de Identidad",
+        "zh": "身份交换所"
+      },
+      "category": "conocerse",
+      "minMinutes": 6,
+      "maxMinutes": 6,
+      "objective": {
+        "es": "Descubrir quién eres a partir de cómo te tratan los demás.",
+        "zh": "通过别人对待你的方式，猜出自己的身份。"
+      },
+      "steps": [
+        {
+          "es": "Cada persona lleva a la espalda una tarjeta con un personaje o profesión; no puede verla, pero los demás sí.",
+          "zh": "每人背上贴一张纸条，写着一个名人或职业（自己看不见，别人能看见）。"
+        },
+        {
+          "es": "Los alumnos caminan libremente y hablan con otros.",
+          "zh": "学生自由走动，与他人交谈。"
+        },
+        {
+          "es": "Regla central: trata a cada uno según el personaje de su espalda, y deduce por la actitud de los demás quién eres.",
+          "zh": "核心规则：你要根据对方背上的身份来对待他，同时通过对方的态度推测自己是谁。"
+        },
+        {
+          "es": "Tiempo límite de 5 minutos: quien adivine primero su identidad y se siente en la silla, gana.",
+          "zh": "限时5分钟，谁最先猜出自己背后的身份并坐到椅子上，谁获胜。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "Ejemplo: si llevas «Rey», te harán reverencias; si llevas «Payaso», te harán muecas.",
+          "zh": "例如：背上写«国王»，别人会对你鞠躬；写«小丑»，别人会对你做鬼脸。"
+        }
+      ],
+      "why": {
+        "es": "Un clásico de fiesta adaptado al aula: permite experimentar distintos papeles sociales en la interacción.",
+        "zh": "经典派对游戏的课堂改良版，能让学生体验不同社会角色的互动。"
+      },
+      "variants": [],
+      "tools": [
+        {
+          "kind": "identity",
+          "title": {
+            "es": "Tarjetas de identidad",
+            "zh": "身份卡"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Roles",
+                "zh": "角色"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Rey / Reina",
+                    "zh": "国王/女王"
+                  },
+                  "back": {
+                    "es": "Hazle una reverencia, llámalo «Majestad», pide su permiso para todo y dale el mejor asiento.",
+                    "zh": "对他鞠躬，称呼他为“陛下”，凡事都请示他，让他坐最好的位置。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Bebé",
+                    "zh": "婴儿"
+                  },
+                  "back": {
+                    "es": "Háblale como a un niño pequeño, haz muecas para hacerlo reír, intenta cogerlo en brazos y dale de «comer».",
+                    "zh": "用哄小孩的语气说话，做鬼脸逗他，想抱他，给他“喂奶”的动作。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Superestrella",
+                    "zh": "超级巨星"
+                  },
+                  "back": {
+                    "es": "Grita como una fan, pídele un autógrafo y una foto, sigue sus pasos y admíralo.",
+                    "zh": "像粉丝一样尖叫，求签名，求合影，围着他转，非常崇拜。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Payaso",
+                    "zh": "小丑"
+                  },
+                  "back": {
+                    "es": "Hazle muecas, imita sus gestos, ríete a carcajadas y finge que te hace mucha gracia.",
+                    "zh": "对他做鬼脸，模仿他的动作，大笑，假装被他逗乐了。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Profesor / Profesora",
+                    "zh": "老师"
+                  },
+                  "back": {
+                    "es": "Levanta la mano para preguntar, sé muy educado, finge que tomas apuntes y muéstrate un poco intimidado.",
+                    "zh": "举手提问，表现得很有礼貌，假装记笔记，有点怕他。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Médico / Médica",
+                    "zh": "医生"
+                  },
+                  "back": {
+                    "es": "Finge estar enfermo y toser, pídele que te examine, pregúntale por tu salud y confía plenamente en él.",
+                    "zh": "假装生病咳嗽，让他检查身体，询问健康状况，很信任他。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mendigo / Mendiga",
+                    "zh": "乞丐"
+                  },
+                  "back": {
+                    "es": "Tápate la nariz y aléjate, finge que le das dinero, evita su mirada o muéstrate compasivo.",
+                    "zh": "捂着鼻子走开，假装给钱，眼神躲闪，或者表现得很同情。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Robot",
+                    "zh": "机器人"
+                  },
+                  "back": {
+                    "es": "Háblale con voz mecánica, pregúntale cuánta batería le queda y finge cargarlo.",
+                    "zh": "用机械的声音和他说话，问他电池还有多少，假装给他充电。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Persona invisible",
+                    "zh": "隐形人"
+                  },
+                  "back": {
+                    "es": "Finge que no lo ves, atraviésalo al caminar, habla con el aire e ignóralo.",
+                    "zh": "假装看不见他，直接穿过他走路，对着空气说话，忽略他的存在。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Hombre / Mujer fuerte",
+                    "zh": "大力士"
+                  },
+                  "back": {
+                    "es": "Pídele ayuda para mover algo que «no puedes», toca sus músculos con admiración y no te atrevas a empujarlo.",
+                    "zh": "假装搬不动东西求他帮忙，摸他的肌肉表示惊叹，不敢推他。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Millonario / Millonaria",
+                    "zh": "亿万富翁"
+                  },
+                  "back": {
+                    "es": "Adúlalo, pídele un préstamo, admira lo caro que es su ropa e invítalo a tu fiesta.",
+                    "zh": "极力讨好，想借钱，夸他的衣服贵，邀请他去参加派对。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Extraterrestre",
+                    "zh": "外星人"
+                  },
+                  "back": {
+                    "es": "Muestra mucha curiosidad, hazle preguntas raras («¿Vuestro planeta tiene gravedad?») y no te acerques demasiado.",
+                    "zh": "非常好奇，问奇怪的问题（如“你们星球有重力吗？”），不敢靠太近。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Estrella de fútbol",
+                    "zh": "足球明星"
+                  },
+                  "back": {
+                    "es": "Quiere jugar contigo, imita su tiro a puerta, habla del partido y pídele la camiseta.",
+                    "zh": "想和他踢球，模仿射门动作，讨论比赛，想要球衣。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mago / Maga",
+                    "zh": "魔术师"
+                  },
+                  "back": {
+                    "es": "Pídele que haga un truco, mira fijamente sus manos y muestra sorpresa y desconfianza.",
+                    "zh": "让他变魔术，盯着他的手看，表现出惊讶和怀疑。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Policía",
+                    "zh": "警察"
+                  },
+                  "back": {
+                    "es": "Ponte nervioso, finge que no has hecho nada malo, ponte muy recto e informa de una «situación sospechosa».",
+                    "zh": "表现得很紧张，假装没做坏事，站得笔直，报告“可疑情况”。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Zombi",
+                    "zh": "僵尸"
+                  },
+                  "back": {
+                    "es": "Retrocede con miedo, grita, finge huir o imita sus movimientos para asustarlo.",
+                    "zh": "害怕地后退，发出尖叫声，假装逃跑，或者模仿僵尸动作吓唬他。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Guía turístico / Guía turística",
+                    "zh": "导游"
+                  },
+                  "back": {
+                    "es": "Finge ser turista, pregúntale cómo llegar a un sitio y pídele que te recomiende lugares para visitar.",
+                    "zh": "假装是游客，问路，问哪里有好玩的，让他介绍周围。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Chef",
+                    "zh": "厨师"
+                  },
+                  "back": {
+                    "es": "Finge tener hambre, pregúntale qué hay de comer, huele su comida y felicita su cocina.",
+                    "zh": "假装饿了，问有什么好吃的，闻他的味道，夸奖厨艺。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Periodista",
+                    "zh": "记者"
+                  },
+                  "back": {
+                    "es": "Entrevístalo con un «micrófono» (tu mano), hazle preguntas incómodas y apunta todo lo que dice.",
+                    "zh": "拿着“麦克风”（手比作话筒）采访他，问尖锐的问题，记录他的话。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Fantasma",
+                    "zh": "幽灵"
+                  },
+                  "back": {
+                    "es": "Finge tener frío y tiritar, atraviésalo o finge un susto enorme al verlo.",
+                    "zh": "假装很冷，发抖，穿过去，或者假装被吓到尖叫。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Viajero / Viajera del tiempo",
+                    "zh": "时间旅行者"
+                  },
+                  "back": {
+                    "es": "Pregúntale por el futuro, advierte que no cambie la historia y dile que «el mundo de ahora es peligroso».",
+                    "zh": "问他未来的事情，警告他不要改变历史，对他说“现在的世界很危险”。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Espía",
+                    "zh": "间谍"
+                  },
+                  "back": {
+                    "es": "Habla en voz baja, mira a los lados, usa una contraseña y pásale un «documento secreto» (un papel).",
+                    "zh": "小声说话，四处张望，对暗号，给他塞“秘密文件”（纸条）。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Superviviente del fin del mundo",
+                    "zh": "世界末日幸存者"
+                  },
+                  "back": {
+                    "es": "Compártele una «comida» limitada (fingida), muéstrate nervioso y hablad de dónde es seguro.",
+                    "zh": "分享有限的“食物”（假装），神情紧张，讨论哪里安全。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Famoso estafador / Famosa estafadora",
+                    "zh": "著名的骗子"
+                  },
+                  "back": {
+                    "es": "Sujeta bien tu cartera, duda de todo lo que te dice y revisa que tus cosas sigan ahí.",
+                    "zh": "捂紧钱包，怀疑他说的每句话，检查自己的东西还在不在。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Entrenador de animales",
+                    "zh": "动物训练师"
+                  },
+                  "back": {
+                    "es": "Silba para llamarlo, finge ser un perro o un gato, espera sus órdenes y dale un «hueso».",
+                    "zh": "对他吹口哨，假装是狗或猫，等待指令，给他“骨头”。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Examinador estricto / Examinadora estricta",
+                    "zh": "严厉的考官"
+                  },
+                  "back": {
+                    "es": "Frota nerviosamente las manos, recita la lección, pide otra oportunidad y no le mires a los ojos.",
+                    "zh": "紧张地搓手，背诵课文，请求再给一次机会，不敢直视眼睛。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Novio / Novia",
+                    "zh": "婚礼新郎/新娘"
+                  },
+                  "back": {
+                    "es": "Felicítalo, finge lanzar pétalos, pregúntale por los detalles de la boda y muéstrate muy emocionado.",
+                    "zh": "祝贺他，撒“花瓣”（假装），问婚礼细节，非常兴奋。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Bella durmiente",
+                    "zh": "刚醒的睡美人"
+                  },
+                  "back": {
+                    "es": "Despiértalo con suavidad, pregúntale qué soñó y ayúdale a caminar con cuidado.",
+                    "zh": "轻轻唤醒他，问他梦到了什么，非常温柔，扶着他走。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Traductor / Traductora alienígena",
+                    "zh": "外星语言的翻译官"
+                  },
+                  "back": {
+                    "es": "Háblale en un idioma inventado, pídele que traduzca lo que dicen los demás y depende de él para comunicarte.",
+                    "zh": "对着他说外语（胡言乱语），让他翻译别人的话，依赖他沟通。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Espejo",
+                    "zh": "镜子"
+                  },
+                  "back": {
+                    "es": "Imita cada gesto y cada expresión; si él no se mueve, tú tampoco.",
+                    "zh": "完全模仿他做的每一个动作和表情，他不走你也不走。"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 300
+        }
+      ]
+    }
+  ]
+}

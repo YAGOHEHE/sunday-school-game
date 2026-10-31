@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Reloj — El pulso eléctrico</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#A78BFA}a:hover{color:#C4B5FD}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; box-sizing: border-box; background: #0B0B0F; color: #F2F1F7; font-family: 'Fredoka', 'Noto Sans SC', system-ui, sans-serif; display: flex; flex-direction: column">
+
+<header style="display: flex; align-items: center; gap: 18px; padding: 20px 32px; border-bottom: 1px solid #22222C">
+<button aria-label="Salir del modo juego" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #2A2A35; background: transparent; color: #F2F1F7; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+<span style="font-size: 15px; color: #A09FB0">Juego 4 de 5</span>
+<div style="flex: 1; display: flex; gap: 4px; height: 6px">
+<div style="flex: 5; background: #F2F1F7; border-radius: 999px"></div>
+<div style="flex: 10; background: #F2F1F7; border-radius: 999px"></div>
+<div style="flex: 8; background: #F2F1F7; border-radius: 999px"></div>
+<div style="flex: 5; background: {{accent}}; border-radius: 999px"></div>
+<div style="flex: 6; background: #2A2A35; border-radius: 999px"></div>
+</div>
+<span style="font-size: 15px; color: #A09FB0">Fin previsto 10:34</span>
+</header>
+
+<div style="flex: 1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; padding: 36px 48px; min-height: 0">
+<div style="display: flex; flex-direction: column; gap: 22px; justify-content: center">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.1em; color: {{accent}}">MENTE · 动脑</span>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 68px; font-weight: 700; line-height: 1">El pulso eléctrico</span>
+<span style="font-family: 'Noto Sans SC', sans-serif; font-size: 40px; font-weight: 700; color: #A09FB0">传递脉冲</span>
+</div>
+<p style="margin: 0; font-size: 21px; line-height: 1.4; color: #D6D5E0">Desarrollar la concentración y la sensibilidad, y calmar a un grupo ruidoso sin hablar.</p>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: none; font-size: 20px; font-weight: 700; color: {{accent}}; width: 24px">1</span><span style="font-size: 19px; line-height: 1.35">Toda la clase se coge de la mano formando un gran círculo y cierra los ojos.</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: none; font-size: 20px; font-weight: 700; color: {{accent}}; width: 24px">2</span><span style="font-size: 19px; line-height: 1.35">El profe empieza apretando suavemente la mano de la persona de su derecha.</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: none; font-size: 20px; font-weight: 700; color: {{accent}}; width: 24px">3</span><span style="font-size: 19px; line-height: 1.35">Quien siente el apretón lo transmite de inmediato, hasta que el «pulso» vuelva al profe.</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: none; font-size: 20px; font-weight: 700; color: {{accent}}; width: 24px">4</span><span style="font-size: 19px; line-height: 1.35">Se cronometra cuánto tarda en dar la vuelta completa.</span></li>
+</ol>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px">
+<span style="font-size: 16px; color: #A09FB0; letter-spacing: 0.08em">VUELTA 4 · 第4圈</span>
+<span style="font-size: 160px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1">00:09.6</span>
+<div style="display: flex; gap: 12px">
+<button style="border: 0; background: #F2F1F7; color: #0B0B0F; border-radius: 16px; padding: 0 28px; min-height: 56px; font: inherit; font-size: 19px; font-weight: 700">Parar · 停</button>
+<button style="border: 0; background: {{accent}}; color: #0B0B0F; border-radius: 16px; padding: 0 24px; min-height: 56px; font: inherit; font-size: 19px; font-weight: 700">Vuelta · 圈</button>
+<button style="border: 1px solid #2A2A35; background: transparent; color: #F2F1F7; border-radius: 16px; padding: 0 22px; min-height: 56px; font: inherit; font-size: 17px">Reiniciar</button>
+</div>
+<div style="width: 460px; display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; justify-content: space-between; align-items: center; background: #1C1C24; border-radius: 14px; padding: 12px 18px; font-size: 20px"><span style="color: #A09FB0">#3</span><span style="font-variant-numeric: tabular-nums; font-weight: 600">00:11.2</span><span style="font-size: 14px; color: {{accent}}; font-weight: 600">Récord</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; background: #1C1C24; border-radius: 14px; padding: 12px 18px; font-size: 20px"><span style="color: #A09FB0">#2</span><span style="font-variant-numeric: tabular-nums">00:14.8</span><span style="font-size: 14px; color: #A09FB0">−3,6 s</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; background: #1C1C24; border-radius: 14px; padding: 12px 18px; font-size: 20px"><span style="color: #A09FB0">#1</span><span style="font-variant-numeric: tabular-nums">00:18.4</span><span style="font-size: 14px; color: #A09FB0">primera</span></div>
+</div>
+</div>
+</div>
+
+<footer style="display: flex; align-items: center; gap: 12px; padding: 18px 32px; border-top: 1px solid #22222C">
+<button style="border: 1px solid #2A2A35; background: transparent; color: #F2F1F7; border-radius: 14px; padding: 0 18px; min-height: 48px; font: inherit; font-size: 15px">← La Tormenta</button>
+<div style="flex: 1; display: flex; justify-content: center; gap: 10px">
+<button style="border: 1px solid #F472B6; background: transparent; color: #F472B6; border-radius: 14px; padding: 0 20px; min-height: 48px; font: inherit; font-size: 15px; font-weight: 600">Reto · 挑战</button>
+<button style="border: 1px solid #FF8A3D; background: transparent; color: #FF8A3D; border-radius: 14px; padding: 0 20px; min-height: 48px; font: inherit; font-size: 15px; font-weight: 600">Sorteo · 抽签</button>
+</div>
+<button style="border: 0; background: #34D399; color: #0B0B0F; border-radius: 14px; padding: 0 20px; min-height: 48px; font: inherit; font-size: 15px; font-weight: 700">Bolsa de identidad →</button>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#A78BFA","options":["#A78BFA","#34D399","#FF8A3D","#60A5FA"]},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#A78BFA' };
+}
+}
+</script>
+</body>
+</html>

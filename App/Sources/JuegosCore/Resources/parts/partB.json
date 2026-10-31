@@ -1,0 +1,2015 @@
+{
+  "games": [
+    {
+      "id": "letras-humanas",
+      "icon": "🔤",
+      "title": {
+        "es": "Letras humanas",
+        "zh": "人体字母数字"
+      },
+      "category": "equipo",
+      "minMinutes": 5,
+      "maxMinutes": 8,
+      "objective": {
+        "es": "Trabajar el trabajo en equipo y la creatividad formando letras, números o palabras con el cuerpo.",
+        "zh": "用身体摆出字母、数字或单词，锻炼团队合作与创造力。"
+      },
+      "steps": [
+        {
+          "es": "Divide a la clase en grupos de 5 a 8 personas.",
+          "zh": "将全班分成若干小组，每组5到8人。"
+        },
+        {
+          "es": "El profe grita una letra (p. ej. «A»), un número (p. ej. «8») o una palabra simple (p. ej. «OK»).",
+          "zh": "老师喊出一个字母（如“A”）、一个数字（如“8”）或一个简单的单词（如“OK”）。"
+        },
+        {
+          "es": "Tienen 30 segundos para formar esa figura con sus cuerpos (pueden tumbarse, ponerse de pie o apoyarse unos en otros).",
+          "zh": "小组必须在30秒内用身体摆出这个形状（可以躺下、站立、互相支撑）。"
+        },
+        {
+          "es": "El profe fotografía o comenta qué grupo se parece más.",
+          "zh": "老师拍照或点评哪个组最像。"
+        }
+      ],
+      "tips": [],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 30
+        },
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Qué formar",
+            "zh": "要摆的形状"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Letras",
+                "zh": "字母"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "A",
+                    "zh": "A"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "B",
+                    "zh": "B"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "C",
+                    "zh": "C"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "D",
+                    "zh": "D"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "E",
+                    "zh": "E"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "F",
+                    "zh": "F"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "G",
+                    "zh": "G"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "H",
+                    "zh": "H"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "I",
+                    "zh": "I"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "J",
+                    "zh": "J"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "K",
+                    "zh": "K"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "L",
+                    "zh": "L"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "M",
+                    "zh": "M"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "N",
+                    "zh": "N"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "O",
+                    "zh": "O"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "P",
+                    "zh": "P"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Q",
+                    "zh": "Q"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "R",
+                    "zh": "R"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "S",
+                    "zh": "S"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "T",
+                    "zh": "T"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "U",
+                    "zh": "U"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "V",
+                    "zh": "V"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "W",
+                    "zh": "W"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "X",
+                    "zh": "X"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Y",
+                    "zh": "Y"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Z",
+                    "zh": "Z"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Números",
+                "zh": "数字"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "0",
+                    "zh": "0"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "1",
+                    "zh": "1"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "2",
+                    "zh": "2"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "3",
+                    "zh": "3"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "4",
+                    "zh": "4"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "5",
+                    "zh": "5"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "6",
+                    "zh": "6"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "7",
+                    "zh": "7"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "8",
+                    "zh": "8"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "9",
+                    "zh": "9"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Palabras",
+                "zh": "单词"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "OK",
+                    "zh": "OK"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "SOS",
+                    "zh": "SOS"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "AMOR",
+                    "zh": "爱"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "PAZ",
+                    "zh": "平安"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "FE",
+                    "zh": "信心"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "LUZ",
+                    "zh": "光"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "DIOS",
+                    "zh": "神"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "VIDA",
+                    "zh": "生命"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "AMIGO",
+                    "zh": "朋友"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "GRACIA",
+                    "zh": "恩典"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Caracteres chinos",
+                "zh": "汉字"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "人",
+                    "zh": "人"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "大",
+                    "zh": "大"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "十",
+                    "zh": "十"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "王",
+                    "zh": "王"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "口",
+                    "zh": "口"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "木",
+                    "zh": "木"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "爱",
+                    "zh": "爱"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "山",
+                    "zh": "山"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "田",
+                    "zh": "田"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "中",
+                    "zh": "中"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "scoreboard",
+          "title": {
+            "es": "Marcador",
+            "zh": "比分"
+          },
+          "teams": 3
+        }
+      ],
+      "why": {
+        "es": "Obliga a tener contacto físico y a planificar el espacio; ideal para animar el ambiente y fomentar el espíritu de equipo.",
+        "zh": "需要身体接触和空间规划，非常适合活跃气氛、培养团队精神。"
+      }
+    },
+    {
+      "id": "pulso-electrico",
+      "icon": "💓",
+      "title": {
+        "es": "El pulso eléctrico",
+        "zh": "传递脉冲"
+      },
+      "category": "mente",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Desarrollar la concentración y la sensibilidad, y calmar a un grupo ruidoso sin hablar.",
+        "zh": "在不说话的情况下锻炼专注力和敏感度，让喧闹的班级安静下来。"
+      },
+      "steps": [
+        {
+          "es": "Toda la clase se coge de la mano formando un gran círculo y cierra los ojos.",
+          "zh": "全班手拉手围成一个大圈，闭上眼睛。"
+        },
+        {
+          "es": "El profe empieza apretando suavemente la mano de la persona de su derecha.",
+          "zh": "老师轻轻捏一下右手边同学的手，作为起点。"
+        },
+        {
+          "es": "Quien siente el apretón lo transmite de inmediato a la siguiente persona, y así hasta que el «pulso» vuelva al profe.",
+          "zh": "感受到被捏的同学，立刻捏下一个人的手，依此类推，让“脉冲”传一圈回到老师手中。"
+        },
+        {
+          "es": "Se cronometra cuánto tarda en dar la vuelta completa.",
+          "zh": "计时看传一圈需要多久。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "Nivel avanzado: envía dos pulsos a la vez, uno en sentido horario y otro en sentido antihorario, y mira si se «chocan» o se confunden.",
+          "zh": "升级版：同时发送两个脉冲，一个顺时针、一个逆时针，看它们是否会“相撞”或混乱。"
+        }
+      ],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "stopwatch",
+          "title": {
+            "es": "Cronómetro",
+            "zh": "计时"
+          }
+        }
+      ],
+      "why": {
+        "es": "No necesita palabras y exige mucha concentración y sensibilidad; calma a una clase revuelta al instante.",
+        "zh": "不需要说话，极度考验专注力和敏感度，能让喧闹的班级瞬间安静并集中注意力。"
+      }
+    },
+    {
+      "id": "historias-de-lado",
+      "icon": "🐢",
+      "title": {
+        "es": "Historias de lado",
+        "zh": "情境推理型（海龟汤）"
+      },
+      "category": "mente",
+      "minMinutes": 10,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Descubrir la verdad de una historia absurda haciendo solo preguntas de sí o no.",
+        "zh": "只能提出可以用“是”“否”或“与此无关”回答的问题，还原荒诞故事的真相。"
+      },
+      "steps": [
+        {
+          "es": "El profe cuenta una historia corta que parece no tener sentido, con un final extraño.",
+          "zh": "老师讲述一个看似不合理的短故事，结局很奇怪。"
+        },
+        {
+          "es": "Los alumnos hacen preguntas y el profe solo puede responder «sí», «no» o «no tiene relación».",
+          "zh": "学生提问，老师只能回答“是”“否”或“与此无关”。"
+        },
+        {
+          "es": "Con las pistas, el grupo reconstruye la lógica hasta llegar a la verdad.",
+          "zh": "大家根据线索拼凑出完整逻辑，直到还原真相。"
+        }
+      ],
+      "tips": [],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "deck",
+          "title": {
+            "es": "Historias",
+            "zh": "海龟汤故事"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Historias",
+                "zh": "海龟汤故事"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Un hombre entra en un bar y pide un vaso de agua. El camarero saca una pistola y le apunta. El hombre dice «¡gracias!» y se va. ¿Por qué?",
+                    "zh": "一个男人走进酒吧，要了一杯水。酒保拿出一把枪指着他。男人说了声“谢谢”就走了。为什么？"
+                  },
+                  "back": {
+                    "es": "Tenía hipo y quería agua para quitárselo. El camarero vio el hipo y le asustó con la pistola (un «remedio» de susto). El susto le quitó el hipo, por eso da las gracias.",
+                    "zh": "他打嗝不止，想喝水来止嗝。酒保看出他想止嗝，便用枪吓他（惊吓疗法）。他被吓好了，所以道谢。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Una persona vive en el piso 30. Cada mañana baja en ascensor a la planta baja para ir a trabajar. Por la noche, si llueve o va acompañada, sube directamente al piso 30; si no, se baja en el piso 15 y sube las escaleras el resto. ¿Por qué?",
+                    "zh": "一个人住在30楼。每天早上他坐电梯下到1楼去上班。晚上回家时，如果下雨或有人同行，他就直接坐到30楼；否则，他只坐到15楼，然后走楼梯上去。为什么？"
+                  },
+                  "back": {
+                    "es": "Es un niño y no alcanza el botón del piso 30. Si llueve, usa el paraguas para pulsarlo; si va acompañado, le pide a alguien que lo pulse.",
+                    "zh": "他是个小孩，够不到30楼的按钮。下雨时用伞尖按；有人同行时请人帮忙按。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Un camionero circula en sentido contrario por una calle de un solo sentido durante mucho rato. El policía lo ve, pero no lo detiene ni le pone multa. ¿Por qué?",
+                    "zh": "一个卡车司机在单行道上逆行了很长一段路，警察看见了却没拦他，也没罚款。为什么？"
+                  },
+                  "back": {
+                    "es": "Porque iba andando: es camionero, pero en ese momento no conducía el camión.",
+                    "zh": "因为他是步行的：他是司机，但当时没有开车。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Un hombre empuja su coche hasta un hotel y dice que está arruinado. ¿Por qué?",
+                    "zh": "一个男人把自己的车推到一家酒店门口，说自己破产了。为什么？"
+                  },
+                  "back": {
+                    "es": "Está jugando al Monopoly: su ficha es el coche, cae en una propiedad con hotel y no puede pagar, así que se arruina.",
+                    "zh": "他在玩大富翁：他的棋子是汽车，走到了有酒店的地产上，付不起钱，于是破产了。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Romeo y Julieta aparecen muertos en el suelo de una habitación. A su alrededor hay cristales rotos y un charco de agua. La ventana está abierta y no hay ninguna herida. ¿Qué pasó?",
+                    "zh": "罗密欧和朱丽叶被发现死在房间的地板上，周围有碎玻璃和一摊水。窗户开着，他们身上没有任何伤口。发生了什么？"
+                  },
+                  "back": {
+                    "es": "Romeo y Julieta son dos peces. El viento (o un gato) tiró la pecera al suelo: se rompió y se quedaron sin agua.",
+                    "zh": "罗密欧和朱丽叶是两条金鱼。风（或一只猫）把鱼缸弄到地上摔碎了，它们离开了水。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trampas-mentales",
+      "icon": "🪤",
+      "title": {
+        "es": "Trampas mentales",
+        "zh": "经典陷阱型（快问快答）"
+      },
+      "category": "mente",
+      "minMinutes": 10,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Identificar los atajos de pensamiento y las trampas del lenguaje: la respuesta suele ser más sencilla de lo que parece.",
+        "zh": "识破语言习惯和思维惯性设下的陷阱：答案往往比想象中简单。"
+      },
+      "steps": [
+        {
+          "es": "El profe hace preguntas seguidas y muy rápidas.",
+          "zh": "老师语速要快，连续提问。"
+        },
+        {
+          "es": "Los alumnos responden sin pensar demasiado y muchos caen en la trampa.",
+          "zh": "学生来不及细想，很多人会掉进陷阱。"
+        },
+        {
+          "es": "Se revela la respuesta correcta y se explica el truco.",
+          "zh": "揭晓正确答案，并解释其中的诀窍。"
+        }
+      ],
+      "tips": [],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "deck",
+          "title": {
+            "es": "Preguntas trampa",
+            "zh": "陷阱问题"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Preguntas trampa",
+                "zh": "陷阱问题"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Participas en una carrera y adelantas al segundo. ¿En qué posición terminas?",
+                    "zh": "你参加赛跑，超过了第二名，你现在是第几名？"
+                  },
+                  "back": {
+                    "es": "Segundo. La trampa es decir «primero»: has ocupado el puesto del que iba segundo.",
+                    "zh": "第二名。陷阱是答“第一名”：你占了第二名的位置。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Participas en una carrera y adelantas al último. ¿En qué posición terminas?",
+                    "zh": "你参加赛跑，超过了最后一名，你是第几名？"
+                  },
+                  "back": {
+                    "es": "No es posible: para adelantar al último tendrías que estar detrás de él, y entonces ya no sería el último. La trampa es decir «penúltimo».",
+                    "zh": "不可能：要超过最后一名，你就得在他后面，那他就不是最后一名了。陷阱是答“倒数第二”。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Un mes tiene 28 días. ¿Qué mes tiene 28 días?",
+                    "zh": "一个月有28天，哪个月有28天？"
+                  },
+                  "back": {
+                    "es": "Todos. Cada mes tiene al menos 28 días. La trampa es decir «febrero».",
+                    "zh": "每个月都有。所有月份至少都有28天。陷阱是答“二月”。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Lanzas una piedra al mar Rojo. ¿En qué se convierte?",
+                    "zh": "把一块石头扔进红海，石头会变成什么？"
+                  },
+                  "back": {
+                    "es": "En algo mojado (o que se hunde). La trampa es decir «roja».",
+                    "zh": "会湿（或沉下去）。陷阱是答“红色”。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Un médico te da 3 pastillas y te dice que tomes una cada media hora. ¿Cuánto tardas en tomarlas todas?",
+                    "zh": "医生给你3颗药，让你每半小时吃一颗，吃完需要多久？"
+                  },
+                  "back": {
+                    "es": "Una hora: la primera a los 0 min, la segunda a los 30 y la tercera a los 60. La trampa es decir «hora y media».",
+                    "zh": "一小时：第一颗在0分钟，第二颗在30分钟，第三颗在60分钟。陷阱是答“一个半小时”。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Cuántos animales de cada especie llevó Moisés en el arca?",
+                    "zh": "摩西方舟里每种动物带了几只？"
+                  },
+                  "back": {
+                    "es": "Ninguno: el arca fue de Noé, no de Moisés. La trampa es decir «dos».",
+                    "zh": "一只都没有：方舟是挪亚的，不是摩西的。陷阱是答“两只”。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Tienes 17 ovejas y todas menos 9 mueren. ¿Cuántas quedan?",
+                    "zh": "你有17只羊，除了9只，其他都死了。还剩几只？"
+                  },
+                  "back": {
+                    "es": "Quedan 9. La trampa es hacer la resta (17 − 9) y decir «8».",
+                    "zh": "还剩9只。陷阱是算出“8”。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Qué pesa más, un kilo de hierro o un kilo de plumas?",
+                    "zh": "一公斤铁和一公斤羽毛，哪个更重？"
+                  },
+                  "back": {
+                    "es": "Lo mismo: pesan igual, un kilo. La trampa es decir «el hierro».",
+                    "zh": "一样重，都是一公斤。陷阱是答“铁”。"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nudo-humano",
+      "icon": "🪢",
+      "title": {
+        "es": "El nudo humano",
+        "zh": "解手链"
+      },
+      "category": "equipo",
+      "minMinutes": 8,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Trabajar la comunicación y el liderazgo desenredando juntos un nudo de manos.",
+        "zh": "通过合作解开双手交织的“结”，锻炼沟通与领导力。"
+      },
+      "steps": [
+        {
+          "es": "Cada grupo de 8 a 10 personas forma un círculo pequeño.",
+          "zh": "每组8到10人围成一个小圈。"
+        },
+        {
+          "es": "Todos extienden la mano derecha y agarran la de alguien que no esté a su lado.",
+          "zh": "所有人伸出右手，握住对面（不是相邻）某人的手。"
+        },
+        {
+          "es": "Después extienden la mano izquierda y agarran la de otra persona distinta.",
+          "zh": "再伸出左手，握住另一个不同人的手。"
+        },
+        {
+          "es": "Sin soltarse, deben desenredar el nudo pasando, agachándose o girando hasta formar un círculo (a veces quedan dos círculos entrelazados).",
+          "zh": "在不松手的情况下，通过跨、钻、转等动作把结解开，恢复成一个大圆圈（有时会是两个套在一起的圈）。"
+        }
+      ],
+      "tips": [],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 600
+        }
+      ],
+      "why": {
+        "es": "Clásico juego de equipo que pone a prueba la comunicación y el liderazgo; la sensación al desenredar el nudo es enorme.",
+        "zh": "经典团建游戏，极其考验团队沟通和领导力，解开的那一刻成就感爆棚。"
+      }
+    },
+    {
+      "id": "evolucion",
+      "icon": "🐣",
+      "title": {
+        "es": "Evolución",
+        "zh": "进化"
+      },
+      "category": "energia",
+      "minMinutes": 5,
+      "maxMinutes": 8,
+      "objective": {
+        "es": "Moverse, buscar rivales por todo el espacio y romper los pequeños grupos con un juego de suerte.",
+        "zh": "借助猜拳的运气，让大家动起来，并打破小圈子。"
+      },
+      "steps": [
+        {
+          "es": "Todos empiezan como «huevo», andando en cuclillas.",
+          "zh": "所有人开始时都是“蛋”，蹲着走。"
+        },
+        {
+          "es": "Cada persona busca a otro «huevo» y juega piedra, papel o tijera.",
+          "zh": "每人找另一个“蛋”猜拳。"
+        },
+        {
+          "es": "El que gana evoluciona a «pollito» (medio agachado, con las manos como alas); el que pierde sigue siendo «huevo».",
+          "zh": "赢的人进化成“小鸡”（半蹲，手做翅膀状），输的人保持“蛋”。"
+        },
+        {
+          "es": "El «pollito» solo juega contra «pollitos»: si gana, evoluciona a «fénix» (de pie, con las manos en vuelo); si pierde, vuelve a «huevo».",
+          "zh": "“小鸡”只能找“小鸡”猜拳，赢了进化成“凤凰”（站立，手做飞翔状），输了退化成“蛋”。"
+        },
+        {
+          "es": "El «fénix» juega contra «fénix»: si gana, se convierte en «humano» y puede volver a su asiento; si pierde, vuelve a «pollito».",
+          "zh": "“凤凰”找“凤凰”猜拳，赢了成为“人”（完全自由，可以回座位），输了退化成“小鸡”。"
+        },
+        {
+          "es": "Los que sigan como «huevo» o «pollito» al final reciben una pequeña penitencia.",
+          "zh": "最后剩下的几个“蛋”或“小鸡”接受小惩罚。"
+        }
+      ],
+      "tips": [],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "reference",
+          "title": {
+            "es": "Etapas",
+            "zh": "进化阶段"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Etapas",
+                "zh": "阶段"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Huevo",
+                    "zh": "蛋"
+                  },
+                  "back": {
+                    "es": "Anda en cuclillas. Empieza así todo el mundo.",
+                    "zh": "蹲着走。所有人开始时都是蛋。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Pollito",
+                    "zh": "小鸡"
+                  },
+                  "back": {
+                    "es": "Medio agachado, con las manos como alas. Solo juega contra pollitos.",
+                    "zh": "半蹲，双手做成翅膀状。只能和小鸡猜拳。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Fénix",
+                    "zh": "凤凰"
+                  },
+                  "back": {
+                    "es": "De pie, con las manos en vuelo. Solo juega contra fénix.",
+                    "zh": "站立，双手做飞翔状。只能和凤凰猜拳。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Humano",
+                    "zh": "人"
+                  },
+                  "back": {
+                    "es": "Libertad total: puede volver a su asiento.",
+                    "zh": "完全自由，可以回到座位。"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 300
+        }
+      ],
+      "why": {
+        "es": "Mucho ambiente: hay que buscar rivales sin parar, se rompen los pequeños grupos y las reglas son muy sencillas.",
+        "zh": "场面非常热闹，需要不断寻找对手，快速打破小圈子，而且规则极其简单。"
+      }
+    },
+    {
+      "id": "mimica",
+      "icon": "🙊",
+      "title": {
+        "es": "Batalla de mímica por equipos",
+        "zh": "团队哑剧大战"
+      },
+      "category": "expresion",
+      "minMinutes": 8,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Energía y cooperación: que el equipo adivine lo que mima un compañero.",
+        "zh": "活力与合作：让队友猜出同伴表演的词。"
+      },
+      "steps": [
+        {
+          "es": "Se forman dos equipos.",
+          "zh": "分成两队。"
+        },
+        {
+          "es": "Un jugador recibe una palabra de una categoría: profesiones, deportes, animales, películas conocidas o historias bíblicas.",
+          "zh": "一名队员拿到一个词，类别可以是职业、运动、动物、知名电影或圣经故事。"
+        },
+        {
+          "es": "Tiene 30 segundos para que su equipo adivine.",
+          "zh": "他有30秒时间让本队猜出来。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Gana el equipo que acierte más.",
+          "zh": "👉 猜对最多的队伍获胜。"
+        }
+      ],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 30
+        },
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Palabras",
+            "zh": "词语"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Profesiones",
+                "zh": "职业"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "médico",
+                    "zh": "医生"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "profesor",
+                    "zh": "老师"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "panadero",
+                    "zh": "面包师"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "bombero",
+                    "zh": "消防员"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "policía",
+                    "zh": "警察"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "piloto",
+                    "zh": "飞行员"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "músico",
+                    "zh": "音乐家"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "cocinero",
+                    "zh": "厨师"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "mecánico",
+                    "zh": "机械师"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "pastor",
+                    "zh": "牧师"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "enfermera",
+                    "zh": "护士"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "arquitecto",
+                    "zh": "建筑师"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Deportes",
+                "zh": "体育"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "fútbol",
+                    "zh": "足球"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "baloncesto",
+                    "zh": "篮球"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "natación",
+                    "zh": "游泳"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "tenis",
+                    "zh": "网球"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "ciclismo",
+                    "zh": "骑自行车"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "boxeo",
+                    "zh": "拳击"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "esquí",
+                    "zh": "滑雪"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "atletismo",
+                    "zh": "田径"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "voleibol",
+                    "zh": "排球"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "golf",
+                    "zh": "高尔夫"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "surf",
+                    "zh": "冲浪"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "kárate",
+                    "zh": "空手道"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Animales",
+                "zh": "动物"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "león",
+                    "zh": "狮子"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "elefante",
+                    "zh": "大象"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "jirafa",
+                    "zh": "长颈鹿"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "pingüino",
+                    "zh": "企鹅"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "serpiente",
+                    "zh": "蛇"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "conejo",
+                    "zh": "兔子"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "mono",
+                    "zh": "猴子"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "tiburón",
+                    "zh": "鲨鱼"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "caballo",
+                    "zh": "马"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "cocodrilo",
+                    "zh": "鳄鱼"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "canguro",
+                    "zh": "袋鼠"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "oso",
+                    "zh": "熊"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Películas conocidas",
+                "zh": "知名电影"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Titanic",
+                    "zh": "泰坦尼克号"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Frozen",
+                    "zh": "冰雪奇缘"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Harry Potter",
+                    "zh": "哈利·波特"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Star Wars",
+                    "zh": "星球大战"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Toy Story",
+                    "zh": "玩具总动员"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Spider-Man",
+                    "zh": "蜘蛛侠"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "El Rey León",
+                    "zh": "狮子王"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jurassic Park",
+                    "zh": "侏罗纪公园"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Shrek",
+                    "zh": "怪物史莱克"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Cars",
+                    "zh": "赛车总动员"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Avatar",
+                    "zh": "阿凡达"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mary Poppins",
+                    "zh": "欢乐满人间"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Historias bíblicas",
+                "zh": "圣经故事"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Noé",
+                    "zh": "挪亚"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Moisés",
+                    "zh": "摩西"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "David y Goliat",
+                    "zh": "大卫和歌利亚"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jonás",
+                    "zh": "约拿"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Daniel en el foso de los leones",
+                    "zh": "但以理在狮子坑中"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jesús calma la tormenta",
+                    "zh": "耶稣平息风浪"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Rut",
+                    "zh": "路得"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "José y sus hermanos",
+                    "zh": "约瑟和他的兄弟们"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Elías y los profetas de Baal",
+                    "zh": "以利亚与巴力的先知"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jericó",
+                    "zh": "耶利哥城"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "El buen samaritano",
+                    "zh": "好撒玛利亚人"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "El hijo pródigo",
+                    "zh": "浪子回头"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Pedro camina sobre el agua",
+                    "zh": "彼得水上行走"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "scoreboard",
+          "title": {
+            "es": "Marcador",
+            "zh": "比分"
+          },
+          "teams": 2
+        }
+      ]
+    },
+    {
+      "id": "cambia-de-sitio",
+      "icon": "🔄",
+      "title": {
+        "es": "Cambia de sitio si…",
+        "zh": "满足条件就换座"
+      },
+      "category": "energia",
+      "minMinutes": 5,
+      "maxMinutes": 8,
+      "objective": {
+        "es": "Movimiento y risas, sin presión.",
+        "zh": "动起来，欢声笑语，毫无压力。"
+      },
+      "steps": [
+        {
+          "es": "Todos sentados en círculo, con una persona en el centro sin silla.",
+          "zh": "全体围坐成圈，中间站一个人，没有椅子。"
+        },
+        {
+          "es": "El del centro dice «Cambia de sitio si…» y completa con una característica (p. ej. «…tienes hermanos»).",
+          "zh": "中间的人说“满足条件就换座”，然后说出一个条件（如“……有兄弟姐妹”）。"
+        },
+        {
+          "es": "Los que cumplen la condición cambian de silla, y el del centro intenta sentarse en una de ellas.",
+          "zh": "符合条件的人要换座位，中间的人趁机抢座。"
+        },
+        {
+          "es": "El que se queda sin silla pasa al centro.",
+          "zh": "没抢到座位的人站到中间。"
+        }
+      ],
+      "tips": [],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Frases",
+            "zh": "条件句"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Cambia de sitio si…",
+                "zh": "满足条件就换座"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "tienes hermanos",
+                    "zh": "有兄弟姐妹"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "usas TikTok",
+                    "zh": "用过 TikTok"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "te gusta dormir",
+                    "zh": "你喜欢睡觉"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "odias los lunes",
+                    "zh": "你讨厌星期一"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "has comido pan hoy",
+                    "zh": "你今天吃过面包"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "llevas algo azul",
+                    "zh": "你身上有蓝色的东西"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "has viajado en avión",
+                    "zh": "你坐过飞机"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "tienes mascota",
+                    "zh": "你养过宠物"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "sabes nadar",
+                    "zh": "你会游泳"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "te encanta el chocolate",
+                    "zh": "你爱吃巧克力"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "has llorado viendo una película",
+                    "zh": "你看电影哭过"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "te levantaste temprano hoy",
+                    "zh": "你今天起得很早"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "cantas en la ducha",
+                    "zh": "你洗澡时唱过歌"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "has ido a la playa este año",
+                    "zh": "你今年去过海边"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "juegas al fútbol",
+                    "zh": "你踢过足球"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "sabes tocar un instrumento",
+                    "zh": "你会弹一种乐器"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "vives en un piso",
+                    "zh": "你住在公寓里"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "te gusta el café",
+                    "zh": "你喜欢喝咖啡"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "has perdido un partido",
+                    "zh": "你输过比赛"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "te gusta la pizza",
+                    "zh": "你爱吃披萨"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "llevas reloj puesto",
+                    "zh": "你戴着手表"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "llevas zapatillas",
+                    "zh": "你穿着运动鞋"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "has leído un libro este mes",
+                    "zh": "这个月读过一本书"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "why": {
+        "es": "Mucho movimiento, muy divertido, cero presión.",
+        "zh": "动起来很多，非常有趣，毫无压力。"
+      }
+    },
+    {
+      "id": "camara-lenta",
+      "icon": "🎬",
+      "title": {
+        "es": "Cámara lenta",
+        "zh": "慢动作"
+      },
+      "category": "expresion",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Creatividad y desinhibición: perder la vergüenza actuando.",
+        "zh": "发挥创意，放下羞涩。"
+      },
+      "steps": [
+        {
+          "es": "Sale un voluntario al centro.",
+          "zh": "一位志愿者走到中间。"
+        },
+        {
+          "es": "Hace una acción en «cámara lenta» exagerada (caerse, enfadarse, ganar un partido…).",
+          "zh": "用夸张的“慢动作”表演一个动作（摔倒、生气、赢得比赛……）。"
+        },
+        {
+          "es": "El grupo debe adivinar qué está representando.",
+          "zh": "其他人猜他在表演什么。"
+        },
+        {
+          "es": "Cambia de persona.",
+          "zh": "换下一位。"
+        }
+      ],
+      "tips": [],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Acciones",
+            "zh": "动作"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Acciones",
+                "zh": "动作"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "caerse al suelo",
+                    "zh": "摔倒在地"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "enfadarse",
+                    "zh": "生气"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "ganar un partido",
+                    "zh": "赢得比赛"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "bailar",
+                    "zh": "跳舞"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "hacer una tortilla",
+                    "zh": "煎蛋饼"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "ver una película de terror",
+                    "zh": "看恐怖片"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "saltar un charco",
+                    "zh": "跨过水坑"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "pedir perdón",
+                    "zh": "道歉"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "comer un limón",
+                    "zh": "吃柠檬"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "tirar un penalti",
+                    "zh": "踢点球"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "buscar algo en el bolsillo",
+                    "zh": "在口袋里找东西"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "llegar tarde a la iglesia",
+                    "zh": "迟到去教会"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "esquiar",
+                    "zh": "滑雪"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "pescar un pez gigante",
+                    "zh": "钓到一条大鱼"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "hacer un selfi",
+                    "zh": "自拍"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "perder las llaves",
+                    "zh": "弄丢钥匙"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "recibir un regalo sorpresa",
+                    "zh": "收到惊喜礼物"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "ser perseguido por un perro",
+                    "zh": "被狗追"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "tropezar con una piedra",
+                    "zh": "被石头绊倒"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "dar un discurso",
+                    "zh": "发表演讲"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "saltar desde un trampolín",
+                    "zh": "从跳水板跳下"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "abrazar a un amigo",
+                    "zh": "拥抱朋友"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "apagar las velas",
+                    "zh": "吹蜡烛"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "cantar en un karaoke",
+                    "zh": "唱卡拉OK"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 60
+        }
+      ],
+      "why": {
+        "es": "Funciona genial para quitar la vergüenza.",
+        "zh": "非常有助于放下羞涩。"
+      }
+    },
+    {
+      "id": "asesino",
+      "icon": "😉",
+      "title": {
+        "es": "El asesino",
+        "zh": "杀手"
+      },
+      "category": "mente",
+      "minMinutes": 7,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Atención y misterio: descubrir quién es el asesino antes de que elimine a todos.",
+        "zh": "注意力与悬疑：在杀手“消灭”所有人之前找出他是谁。"
+      },
+      "steps": [
+        {
+          "es": "Todos en círculo, con los ojos cerrados.",
+          "zh": "全体闭眼围坐成圈。"
+        },
+        {
+          "es": "El líder toca a una persona: es el «asesino».",
+          "zh": "带领者轻拍一人，此人就是“杀手”。"
+        },
+        {
+          "es": "Todos caminan por la sala.",
+          "zh": "所有人在房间里走动。"
+        },
+        {
+          "es": "El asesino «mata» guiñando el ojo a alguien.",
+          "zh": "杀手向某人眨眼，就算“杀”了他。"
+        },
+        {
+          "es": "El que recibe el guiño cuenta hasta 3 y cae dramáticamente al suelo.",
+          "zh": "被眨眼的人数到3，然后戏剧性地倒下。"
+        },
+        {
+          "es": "Los demás intentan descubrir quién es el asesino.",
+          "zh": "其他人试着找出谁是杀手。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Si alguien acusa y falla, queda fuera.",
+          "zh": "👉 如果有人指控错误，就出局。"
+        }
+      ],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 600
+        }
+      ],
+      "why": {
+        "es": "Muy divertido con adolescentes.",
+        "zh": "很适合青少年，非常有趣。"
+      }
+    },
+    {
+      "id": "palabra-prohibida",
+      "icon": "🤐",
+      "title": {
+        "es": "Palabra prohibida",
+        "zh": "禁语"
+      },
+      "category": "mente",
+      "minMinutes": 5,
+      "maxMinutes": 8,
+      "objective": {
+        "es": "Activar el cerebro y generar risas.",
+        "zh": "让大脑动起来，引发笑声。"
+      },
+      "steps": [
+        {
+          "es": "Eliges una palabra prohibida, por ejemplo «sí» o «no».",
+          "zh": "选一个禁用词，比如“是”或“不”。"
+        },
+        {
+          "es": "Durante 5 minutos nadie puede decirla.",
+          "zh": "五分钟内谁都不能说这个词。"
+        },
+        {
+          "es": "Haces preguntas rápidas para que caigan en la trampa.",
+          "zh": "用快速的问题引诱大家不小心说出来。"
+        },
+        {
+          "es": "Si alguien dice la palabra prohibida, hace un reto corto.",
+          "zh": "谁说了禁用词，就要完成一个小挑战。"
+        }
+      ],
+      "tips": [],
+      "variants": [],
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 300
+        },
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Preguntas trampa",
+            "zh": "陷阱问题"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Preguntas trampa",
+                "zh": "陷阱问题"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "¿Te gusta la pizza?",
+                    "zh": "你喜欢披萨吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Has venido hoy al cole?",
+                    "zh": "你今天来学校了吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Te gusta el chocolate?",
+                    "zh": "你喜欢巧克力吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Eres de los que madrugan?",
+                    "zh": "你是早起的人吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Te gusta la playa?",
+                    "zh": "你喜欢海边吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Tienes hermanos?",
+                    "zh": "你有兄弟姐妹吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Vives cerca de la iglesia?",
+                    "zh": "你住得离教会近吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Te gusta el fútbol?",
+                    "zh": "你喜欢足球吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Has visto la última película de Marvel?",
+                    "zh": "你看过最新的漫威电影吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Te gusta cantar?",
+                    "zh": "你喜欢唱歌吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Te encanta el verano?",
+                    "zh": "你爱夏天吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Eres de los que llegan tarde?",
+                    "zh": "你是那种经常迟到的人吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Te gusta el helado?",
+                    "zh": "你喜欢吃冰淇淋吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Tienes mascota?",
+                    "zh": "你养宠物吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Te gustan los lunes?",
+                    "zh": "你喜欢星期一吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Sabes nadar?",
+                    "zh": "你会游泳吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Te gusta madrugar los domingos?",
+                    "zh": "你周日喜欢早起吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Ya has comido?",
+                    "zh": "你吃过了吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Te gusta el café?",
+                    "zh": "你喜欢喝咖啡吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Te gustan los videojuegos?",
+                    "zh": "你喜欢电子游戏吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Tienes coche?",
+                    "zh": "你有车吗？"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "¿Hace frío hoy?",
+                    "zh": "今天冷吗？"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

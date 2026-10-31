@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Editor de plantillas de juego</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#6D3FD0}a:hover{color:#4C2A9A}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; box-sizing: border-box; background: #F5F3EE; color: #1F1D2B; font-family: 'Fredoka', 'Noto Sans SC', system-ui, sans-serif; display: flex; flex-direction: column">
+
+<header style="display: flex; align-items: center; gap: 14px; padding: 16px 28px; background: #FFFFFF; border-bottom: 1px solid #E4E0D6">
+<h1 style="margin: 0; font-size: 24px; font-weight: 700">Plantillas de juego <span style="font-family: 'Noto Sans SC', sans-serif; font-size: 17px; font-weight: 500; color: #5E5B6B">游戏模板</span></h1>
+<span style="flex: 1"></span>
+<button style="border: 0; background: #1F1D2B; color: #FFFFFF; border-radius: 12px; padding: 0 16px; min-height: 44px; font: inherit; font-size: 15px">Nueva plantilla</button>
+<button style="border: 1px solid #DAD5C9; background: #FFFFFF; color: #1F1D2B; border-radius: 12px; padding: 0 16px; min-height: 44px; font: inherit; font-size: 15px">Cerrar</button>
+</header>
+
+<div style="flex: 1; display: flex; min-height: 0">
+
+<nav aria-label="Plantillas" style="width: 280px; padding: 20px; box-sizing: border-box; border-right: 1px solid #E4E0D6; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: #5E5B6B">INTEGRADAS · 不可修改</span>
+<div style="display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: 14px"><span style="width: 40px; height: 28px; border-radius: 6px; background: #BE185D"></span><div style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Palabra</span><span style="font-size: 13px; color: #5E5B6B">14 juegos</span></div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5E5B6B" stroke-width="2" aria-label="Bloqueada" role="img"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></svg></div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: 14px"><span style="width: 40px; height: 28px; border-radius: 6px; background: #0B0B0F"></span><div style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Reloj</span><span style="font-size: 13px; color: #5E5B6B">4 juegos</span></div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5E5B6B" stroke-width="2" aria-label="Bloqueada" role="img"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></svg></div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: 14px"><span style="width: 40px; height: 28px; border-radius: 6px; background: #FFFFFF; border: 1px solid #DAD5C9"></span><div style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Tarjeta</span><span style="font-size: 13px; color: #5E5B6B">3 juegos</span></div><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5E5B6B" stroke-width="2" aria-label="Bloqueada" role="img"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></svg></div>
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: #5E5B6B; margin-top: 14px">MÍAS · 我的模板</span>
+<div style="display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: 14px; background: #FFFFFF; border: 2px solid #6D3FD0"><span style="width: 40px; height: 28px; border-radius: 6px; background: #1C1C24"></span><div style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Concurso por equipos</span><span style="font-size: 13px; color: #5E5B6B">2 juegos</span></div></div>
+<button style="margin-top: 6px; border: 2px dashed #D6D0C3; background: transparent; color: #5E5B6B; border-radius: 14px; min-height: 48px; font: inherit; font-size: 14px">Duplicar una integrada…</button>
+</nav>
+
+<main style="flex: 1; padding: 24px 28px; display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="font-size: 14px; color: #5E5B6B">Vista previa con</span>
+<label style="position: relative"><span style="position: absolute; width: 1px; height: 1px; overflow: hidden">Juego de prueba</span>
+<select style="font: inherit; font-size: 15px; border: 1px solid #DAD5C9; border-radius: 10px; padding: 0 12px; min-height: 40px; background: #FFFFFF; color: #1F1D2B"><option>🪤 Trampas mentales</option><option>🐢 Historias de lado</option></select></label>
+<span style="flex: 1"></span>
+<span style="font-size: 14px; color: #5E5B6B">Proyector · 投影</span>
+</div>
+
+<div style="flex: 1; background: {{ground}}; border-radius: 22px; padding: 20px 24px; display: flex; flex-direction: column; gap: 14px; color: #F2F1F7; min-height: 0">
+<div style="display: flex; align-items: center; gap: 10px; font-size: 15px"><span style="font-size: 22px">🪤</span><span style="font-weight: 700; font-size: 18px">Trampas mentales</span><span style="font-family: 'Noto Sans SC', sans-serif; color: #A09FB0">经典陷阱型</span><span style="flex: 1"></span><span style="font-variant-numeric: tabular-nums; font-weight: 700">08:12</span></div>
+<div style="flex: 1; display: flex; gap: 16px; min-height: 0">
+<div style="flex: 1; display: flex; flex-direction: column; gap: 14px; justify-content: center; padding: 0 12px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: #A78BFA">PREGUNTA 3 DE 8</span>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
+<p style="margin: 0; font-size: 26px; font-weight: 600; line-height: 1.3">¿Cuántos animales de cada especie llevó Moisés en el arca?</p>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 24px; line-height: 1.5; color: #D6D5E0; border-left: 1px solid #2A2A35; padding-left: 24px">摩西在方舟上每种动物各带了几只？</p>
+</div>
+<div style="display: flex; gap: 10px"><span style="border: 2px solid #A78BFA; color: #A78BFA; border-radius: 12px; padding: 10px 18px; font-size: 16px; font-weight: 600">Revelar · 揭晓</span></div>
+</div>
+<div style="width: 200px; display: flex; flex-direction: column; gap: 10px; justify-content: center">
+<div style="background: #2A2A35; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; align-items: center"><span style="font-size: 14px">Equipo 1</span><span style="font-size: 48px; font-weight: 700; line-height: 1.1">4</span></div>
+<div style="background: #2A2A35; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; align-items: center"><span style="font-size: 14px">Equipo 2</span><span style="font-size: 48px; font-weight: 700; line-height: 1.1">2</span></div>
+</div>
+</div>
+</div>
+<span style="font-size: 13px; color: #5E5B6B">Cabecera, Reto, Sorteo y «Siguiente» se añaden siempre; no se pueden quitar.</span>
+</main>
+
+<aside style="width: 380px; padding: 20px 22px; box-sizing: border-box; background: #FFFFFF; border-left: 1px solid #E4E0D6; display: flex; flex-direction: column; gap: 16px; overflow: hidden">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="tn-es" style="font-size: 13px; font-weight: 600; color: #5E5B6B">Nombre</label>
+<div style="display: flex; gap: 8px">
+<input id="tn-es" value="Concurso por equipos" style="flex: 1; min-width: 0; font: inherit; font-size: 15px; border: 1px solid #DAD5C9; border-radius: 10px; padding: 0 10px; min-height: 40px; color: #1F1D2B">
+<input aria-label="Nombre en chino" value="团队竞赛" style="width: 110px; font-family: 'Noto Sans SC', sans-serif; font-size: 15px; border: 1px solid #DAD5C9; border-radius: 10px; padding: 0 10px; min-height: 40px; color: #1F1D2B">
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 13px; font-weight: 600; color: #5E5B6B">Disposición base</span>
+<div role="group" aria-label="Disposición base" style="display: flex; background: #F0EDE5; border-radius: 12px; padding: 4px; gap: 2px">
+<button style="flex: 1; border: 0; background: transparent; border-radius: 9px; min-height: 36px; font: inherit; font-size: 14px; color: #5E5B6B">Palabra</button>
+<button style="flex: 1; border: 0; background: transparent; border-radius: 9px; min-height: 36px; font: inherit; font-size: 14px; color: #5E5B6B">Reloj</button>
+<button style="flex: 1; border: 0; background: #FFFFFF; border-radius: 9px; min-height: 36px; font: inherit; font-size: 14px; font-weight: 600; color: #1F1D2B; box-shadow: 0 1px 2px rgba(0,0,0,0.12)">Tarjeta</button>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 13px; font-weight: 600; color: #5E5B6B">Fondo</span>
+<div style="display: flex; gap: 8px">
+<button style="flex: 1; border: 1px solid #DAD5C9; background: #FDE2EC; border-radius: 10px; min-height: 40px; font: inherit; font-size: 13px; color: #1F1D2B">Categoría</button>
+<button style="flex: 1; border: 2px solid #6D3FD0; background: #1C1C24; border-radius: 10px; min-height: 40px; font: inherit; font-size: 13px; color: #FFFFFF">Oscuro</button>
+<button style="flex: 1; border: 1px solid #DAD5C9; background: #FFFFFF; border-radius: 10px; min-height: 40px; font: inherit; font-size: 13px; color: #1F1D2B">Claro</button>
+<button style="flex: 1; border: 1px solid #DAD5C9; background: #FFFFFF; border-radius: 10px; min-height: 40px; font: inherit; font-size: 13px; color: #1F1D2B">Color…</button>
+</div>
+</div>
+
+<label style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 13px; font-weight: 600; color: #5E5B6B">Zona central</span>
+<select style="font: inherit; font-size: 15px; border: 1px solid #DAD5C9; border-radius: 10px; padding: 0 10px; min-height: 40px; background: #FFFFFF; color: #1F1D2B"><option>Herramienta principal del juego</option><option>Mazo</option><option>Generador</option><option>Temporizador</option></select>
+</label>
+
+<div style="display: flex; gap: 8px; align-items: flex-end">
+<label style="flex: 1; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 13px; font-weight: 600; color: #5E5B6B">Panel lateral</span>
+<select style="font: inherit; font-size: 15px; border: 1px solid #DAD5C9; border-radius: 10px; padding: 0 10px; min-height: 40px; background: #FFFFFF; color: #1F1D2B"><option>Marcador · 2 equipos</option><option>Pasos del juego</option><option>Reglas de color</option><option>Ninguno</option></select>
+</label>
+<div role="group" aria-label="Posición del panel" style="display: flex; background: #F0EDE5; border-radius: 10px; padding: 3px">
+<button style="border: 0; background: transparent; border-radius: 8px; min-height: 34px; padding: 0 10px; font: inherit; font-size: 13px; color: #5E5B6B">Izq.</button>
+<button style="border: 0; background: #FFFFFF; border-radius: 8px; min-height: 34px; padding: 0 10px; font: inherit; font-size: 13px; font-weight: 600; color: #1F1D2B">Der.</button>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 13px; font-weight: 600; color: #5E5B6B">ES + 中文</span>
+<div role="group" aria-label="Texto bilingüe" style="display: flex; background: #F0EDE5; border-radius: 12px; padding: 4px; gap: 2px">
+<button style="flex: 1; border: 0; background: transparent; border-radius: 9px; min-height: 34px; font: inherit; font-size: 14px; color: #5E5B6B">Apilado</button>
+<button style="flex: 1; border: 0; background: #FFFFFF; border-radius: 9px; min-height: 34px; font: inherit; font-size: 14px; font-weight: 600; color: #1F1D2B">En columnas</button>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 4px">
+<label style="display: flex; align-items: center; justify-content: space-between; min-height: 36px; font-size: 15px">Botón «Revelar»<input type="checkbox" checked style="width: 20px; height: 20px; accent-color: #6D3FD0"></label>
+<label style="display: flex; align-items: center; justify-content: space-between; min-height: 36px; font-size: 15px">Botones Sí / No / No tiene relación<input type="checkbox" style="width: 20px; height: 20px; accent-color: #6D3FD0"></label>
+<label style="display: flex; align-items: center; justify-content: space-between; min-height: 36px; font-size: 15px">Pasos siempre visibles<input type="checkbox" style="width: 20px; height: 20px; accent-color: #6D3FD0"></label>
+</div>
+
+<div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; color: #5E5B6B">Usada en: Trampas mentales, Historias de lado</span>
+<div style="display: flex; gap: 8px">
+<button style="flex: 1; border: 0; background: #6D3FD0; color: #FFFFFF; border-radius: 12px; min-height: 44px; font: inherit; font-size: 15px; font-weight: 600">Guardar</button>
+<button style="border: 1px solid #DAD5C9; background: #FFFFFF; color: #B91C1C; border-radius: 12px; padding: 0 16px; min-height: 44px; font: inherit; font-size: 15px">Eliminar</button>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"ground":{"editor":"color","default":"#1C1C24","options":["#1C1C24","#BE185D","#FFFFFF"]},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+return { ground: this.props.ground ?? '#1C1C24' };
+}
+}
+</script>
+</body>
+</html>

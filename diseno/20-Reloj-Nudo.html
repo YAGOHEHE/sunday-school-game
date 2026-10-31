@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Escenario — Modo juego temporizador</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#34D399}a:hover{color:#6EE7B7}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; box-sizing: border-box; background: #0B0B0F; color: #F2F1F7; font-family: 'Fredoka', 'Noto Sans SC', system-ui, sans-serif; display: flex; flex-direction: column">
+
+<header style="display: flex; align-items: center; gap: 18px; padding: 20px 32px; border-bottom: 1px solid #22222C">
+<button aria-label="Salir del modo juego" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #2A2A35; background: transparent; color: #F2F1F7; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+<span style="font-size: 15px; color: #A09FB0">Juego 2 de 5</span>
+<div style="flex: 1; display: flex; gap: 4px; height: 6px">
+<div style="flex: 5; background: #F2F1F7; border-radius: 999px"></div>
+<div style="flex: 10; background: #34D399; border-radius: 999px"></div>
+<div style="flex: 10; background: #2A2A35; border-radius: 999px"></div>
+<div style="flex: 8; background: #2A2A35; border-radius: 999px"></div>
+<div style="flex: 6; background: #2A2A35; border-radius: 999px"></div>
+</div>
+<span style="font-size: 15px; color: #A09FB0">Fin previsto 11:42</span>
+</header>
+
+<div style="flex: 1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; padding: 36px 48px; min-height: 0">
+<div style="display: flex; flex-direction: column; gap: 22px; justify-content: center">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.1em; color: #34D399">EQUIPO · 团队</span>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 72px; font-weight: 800; letter-spacing: -0.03em; line-height: 1">El nudo humano</span>
+<span style="font-family: 'Noto Sans SC', sans-serif; font-size: 40px; font-weight: 700; color: #A09FB0">解手链</span>
+</div>
+<p style="margin: 0; font-size: 22px; line-height: 1.4; color: #D6D5E0">Trabajar la comunicación y el liderazgo desenredando juntos un nudo de manos.</p>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: none; font-size: 20px; font-weight: 800; color: #34D399; width: 24px">1</span><span style="font-size: 20px; line-height: 1.35">Cada grupo de 8 a 10 personas forma un círculo pequeño.</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: none; font-size: 20px; font-weight: 800; color: #34D399; width: 24px">2</span><span style="font-size: 20px; line-height: 1.35">Todos extienden la mano derecha y agarran la de alguien que no esté a su lado.</span></li>
+<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: none; font-size: 20px; font-weight: 800; color: #34D399; width: 24px">3</span><span style="font-size: 20px; line-height: 1.35">Después extienden la mano izquierda y agarran la de otra persona distinta.</span></li>
+</ol>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px">
+<div style="position: relative; width: 440px; height: 440px">
+<svg width="440" height="440" viewBox="0 0 440 440" role="img" aria-label="Quedan 6 minutos 42 segundos de 10">
+<circle cx="220" cy="220" r="190" fill="none" stroke="#22222C" stroke-width="28"></circle>
+<circle cx="220" cy="220" r="190" fill="none" stroke="{{ring}}" stroke-width="28" stroke-linecap="round" stroke-dasharray="1194" stroke-dashoffset="394" transform="rotate(-90 220 220)"></circle>
+</svg>
+<div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px">
+<span style="font-size: 120px; font-weight: 800; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; line-height: 1">6:42</span>
+<span style="font-size: 18px; color: #A09FB0">de 10:00</span>
+</div>
+</div>
+<div style="display: flex; gap: 12px">
+<button style="border: 0; background: #F2F1F7; color: #0B0B0F; border-radius: 16px; padding: 0 28px; min-height: 56px; font: inherit; font-size: 19px; font-weight: 800">Pausa · 暂停</button>
+<button style="border: 1px solid #2A2A35; background: transparent; color: #F2F1F7; border-radius: 16px; padding: 0 22px; min-height: 56px; font: inherit; font-size: 17px">+1 min</button>
+<button style="border: 1px solid #2A2A35; background: transparent; color: #F2F1F7; border-radius: 16px; padding: 0 22px; min-height: 56px; font: inherit; font-size: 17px">Reiniciar</button>
+</div>
+</div>
+</div>
+
+<footer style="display: flex; align-items: center; gap: 12px; padding: 18px 32px; border-top: 1px solid #22222C">
+<button style="border: 1px solid #2A2A35; background: transparent; color: #F2F1F7; border-radius: 14px; padding: 0 18px; min-height: 48px; font: inherit; font-size: 15px">← Sillas invisibles</button>
+<div style="flex: 1; display: flex; justify-content: center; gap: 10px">
+<button style="border: 1px solid #F472B6; background: transparent; color: #F472B6; border-radius: 14px; padding: 0 20px; min-height: 48px; font: inherit; font-size: 15px; font-weight: 600">Reto · 挑战 <span style="color: #A09FB0; font-weight: 400">R</span></button>
+<button style="border: 1px solid #FF8A3D; background: transparent; color: #FF8A3D; border-radius: 14px; padding: 0 20px; min-height: 48px; font: inherit; font-size: 15px; font-weight: 600">Sorteo · 抽签 <span style="color: #A09FB0; font-weight: 400">S</span></button>
+<button style="border: 1px solid #2A2A35; background: transparent; color: #F2F1F7; border-radius: 14px; padding: 0 20px; min-height: 48px; font: inherit; font-size: 15px">Ficha completa</button>
+</div>
+<button style="border: 0; background: #34D399; color: #0B0B0F; border-radius: 14px; padding: 0 20px; min-height: 48px; font: inherit; font-size: 15px; font-weight: 800">Historias de lado →</button>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"ring":{"editor":"color","default":"#34D399","options":["#34D399","#FF8A3D","#F43F5E"]},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+return { ring: this.props.ring ?? '#34D399' };
+}
+}
+</script>
+</body>
+</html>
