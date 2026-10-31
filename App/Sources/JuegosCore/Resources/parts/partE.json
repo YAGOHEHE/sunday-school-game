@@ -1,0 +1,1224 @@
+{
+  "games": [
+    {
+      "id": "verdadero-falso-biblico",
+      "icon": "✅",
+      "title": {
+        "es": "Verdadero o falso bíblico",
+        "zh": "圣经真假"
+      },
+      "category": "biblia",
+      "minMinutes": 5,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Repasar lo que dice realmente la Biblia y desmontar ideas populares que no aparecen en ella.",
+        "zh": "复习圣经的真实内容，辨别那些流行却并不见于经文的说法。"
+      },
+      "steps": [
+        {
+          "es": "El profe marca dos lados del aula: uno «Verdadero» y otro «Falso».",
+          "zh": "老师在教室两边分别标出“真”和“假”。"
+        },
+        {
+          "es": "Lee una afirmación sobre la Biblia.",
+          "zh": "老师念出一个关于圣经的说法。"
+        },
+        {
+          "es": "Todos se mueven, sin correr, hacia el lado que crean correcto.",
+          "zh": "大家不用跑，走到自己认为正确的一边。"
+        },
+        {
+          "es": "Quien se equivoca se sienta o queda fuera de la ronda.",
+          "zh": "答错的人坐下，或退出本轮。"
+        },
+        {
+          "es": "Se revela la respuesta y el profe lee la cita.",
+          "zh": "老师公布答案，并念出经文出处。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Pide que expliquen por qué han elegido ese lado; a veces la cita sorprende a todos.",
+          "zh": "👉 请大家说说为什么选这一边，有时经文会让所有人感到意外。"
+        },
+        {
+          "es": "Adaptación de aula: si el espacio es pequeño, pueden levantar la mano o cambiar de silla en lugar de moverse.",
+          "zh": "教室空间小的话，可以举手或换座位代替走动。"
+        }
+      ],
+      "tools": [
+        {
+          "kind": "deck",
+          "title": {
+            "es": "Verdadero o falso",
+            "zh": "真还是假"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Afirmaciones",
+                "zh": "断言"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "En el jardín del Edén, el fruto prohibido era una manzana.",
+                    "zh": "伊甸园里的禁果是一个苹果。"
+                  },
+                  "back": {
+                    "es": "Falso: Génesis 3:6 solo dice «fruto», sin especificar cuál. La manzana es una tradición posterior.",
+                    "zh": "错误：创世记3:6只说“果子”，并没有指明是哪种果实。苹果的说法是后来的传统。（创世记3:6，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jonás fue tragado por una ballena.",
+                    "zh": "约拿被一条鲸鱼吞下。"
+                  },
+                  "back": {
+                    "es": "Falso: Jonás 1:17 dice «un gran pez», sin decir que fuera una ballena.",
+                    "zh": "错误：约拿书1:17说的是“一条大鱼”，并没有说是鲸鱼。（约拿书1:17，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "La Biblia dice que los magos de Oriente eran tres.",
+                    "zh": "圣经说东方来的博士有三位。"
+                  },
+                  "back": {
+                    "es": "Falso: Mateo 2:1-2 habla de «unos sabios» sin decir cuántos eran. El «tres» se dedujo después por los tres regalos.",
+                    "zh": "错误：马太福音2:1-2只说“有几个博士”，没有说人数；“三位”是后人根据三样礼物推想的。（马太福音2:1-2，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Moisés construyó el arca para salvar a los animales del diluvio.",
+                    "zh": "摩西建造方舟，以拯救洪水中的动物。"
+                  },
+                  "back": {
+                    "es": "Falso: fue Noé quien recibió la orden de construir el arca (Génesis 6:14).",
+                    "zh": "错误：是挪亚接受神的吩咐建造方舟。（创世记6:14，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Adán y Eva vivían al principio en una cueva.",
+                    "zh": "亚当和夏娃起初住在山洞里。"
+                  },
+                  "back": {
+                    "es": "Falso: Génesis 2:8 dice que Dios plantó un huerto en Edén y puso allí al hombre.",
+                    "zh": "错误：创世记2:8说神在伊甸立了一个园子，把人安置在那里。（创世记2:8，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Todos los doce apóstoles eran pescadores.",
+                    "zh": "十二使徒全都是渔夫。"
+                  },
+                  "back": {
+                    "es": "Falso: Mateo era cobrador de impuestos (Mateo 9:9). Algunos sí eran pescadores, como Pedro y Andrés, pero no todos.",
+                    "zh": "错误：马太是税吏（马太福音9:9）。有些门徒确实是渔夫，比如彼得和安德烈，但不是全部。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Noé llevó al arca siete parejas de animales limpios.",
+                    "zh": "挪亚带进方舟的洁净动物有七对。"
+                  },
+                  "back": {
+                    "es": "Verdadero: Génesis 7:2 dice que de los animales limpios se tomaban siete parejas.",
+                    "zh": "正确：创世记7:2说，洁净的动物要带七公七母。（创世记7:2，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "David venció a Goliat con una honda y una piedra.",
+                    "zh": "大卫用机弦和石子战胜了歌利亚。"
+                  },
+                  "back": {
+                    "es": "Verdadero: 1 Samuel 17:49-50.",
+                    "zh": "正确：撒母耳记上17:49-50。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Pedro negó a Jesús antes de que cantara el gallo.",
+                    "zh": "彼得在鸡叫之前不认了耶稣。"
+                  },
+                  "back": {
+                    "es": "Verdadero: Jesús lo anunció: «antes que el gallo cante, me negarás tres veces» (Mateo 26:34).",
+                    "zh": "正确：耶稣预先说：“鸡叫以先，你要三次不认我。”（马太福音26:34，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jesús fue bautizado por Juan en el río Jordán.",
+                    "zh": "耶稣在约旦河被约翰施洗。"
+                  },
+                  "back": {
+                    "es": "Verdadero: Mateo 3:13.",
+                    "zh": "正确：马太福音3:13。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Dios creó el mundo en seis días.",
+                    "zh": "神在六天内创造了世界。"
+                  },
+                  "back": {
+                    "es": "Verdadero: Génesis 1:31 menciona el sexto día y la obra completa de la creación.",
+                    "zh": "正确：创世记1:31提到第六日，以及创造的全部工作完成。（创世记1:31，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Sansón perdió su fuerza cuando le cortaron el cabello.",
+                    "zh": "参孙的力量在头发被剪后消失了。"
+                  },
+                  "back": {
+                    "es": "Verdadero: Jueces 16:17 dice que, si era rapado, su fuerza se apartaría de él.",
+                    "zh": "正确：士师记16:17说，若剃了他的头发，他的力气就会离开他。（士师记16:17，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Daniel fue echado a un foso de leones.",
+                    "zh": "但以理被扔进了狮子坑。"
+                  },
+                  "back": {
+                    "es": "Verdadero: Daniel 6:16.",
+                    "zh": "正确：但以理书6:16。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "La mujer de Lot se volvió una estatua de sal.",
+                    "zh": "罗得的妻子变成了一根盐柱。"
+                  },
+                  "back": {
+                    "es": "Verdadero: Génesis 19:26.",
+                    "zh": "正确：创世记19:26。（创世记19:26，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Caín mató a su hermano Abel.",
+                    "zh": "该隐杀了他的兄弟亚伯。"
+                  },
+                  "back": {
+                    "es": "Verdadero: Génesis 4:8.",
+                    "zh": "正确：创世记4:8。（创世记4:8，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jacob luchó con un varón misterioso hasta el amanecer.",
+                    "zh": "雅各与一个人摔跤，直到黎明。"
+                  },
+                  "back": {
+                    "es": "Verdadero: Génesis 32:24.",
+                    "zh": "正确：创世记32:24。（创世记32:24，和合本）"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "why": {
+        "es": "Entrena la lectura atenta de la Biblia y corrige ideas populares; moverse mantiene la atención sin presión.",
+        "zh": "训练仔细阅读圣经，纠正流行的误解；走动也能保持注意力，没有压力。"
+      }
+    },
+    {
+      "id": "telefono-versiculo",
+      "icon": "📞",
+      "title": {
+        "es": "Teléfono del versículo",
+        "zh": "经文传话"
+      },
+      "category": "biblia",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Practicar la escucha atenta y ver cómo se deforma un mensaje al pasarlo de boca en boca.",
+        "zh": "练习专心倾听，体会信息在口耳相传中如何走样，正如我们若听道不专心，神的话也会被误解。"
+      },
+      "steps": [
+        {
+          "es": "Sentados en círculo, el profe enseña el versículo solo al primer jugador.",
+          "zh": "全体围坐成圈，老师只把经文念给第一位同学听。"
+        },
+        {
+          "es": "Cada uno susurra lo que ha oído al oído del siguiente; solo se puede decir una vez.",
+          "zh": "每人把听到的内容轻声告诉身边的人，只能说一次。"
+        },
+        {
+          "es": "El último jugador lo dice en voz alta.",
+          "zh": "最后一位同学大声念出来。"
+        },
+        {
+          "es": "Se proyecta el versículo original y se compara con lo que ha llegado.",
+          "zh": "投影出原文，与最后传到的版本对照。"
+        },
+        {
+          "es": "Se comenta: ¿qué cambió? ¿Qué pasa cuando no escuchamos bien la Palabra?",
+          "zh": "讨论：哪里变了？如果我们听道不专心，会发生什么？"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Lee al final Santiago 1:22 (RVR1995): «Sed hacedores de la palabra y no tan solamente oidores».",
+          "zh": "👉 最后朗读雅各书1:22：“只是你们要行道，不要单单听道。”（雅各书1:22，和合本）"
+        },
+        {
+          "es": "Para los más pequeños, usa versículos más cortos; para los mayores, puedes usar los más largos.",
+          "zh": "年纪小的可以用较短的经文，年长的可以用较长的。"
+        }
+      ],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Versículos",
+            "zh": "经文"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Versículos",
+                "zh": "经文"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Lámpara es a mis pies tu palabra y lumbrera a mi camino. (Salmos 119:105, RVR1995)",
+                    "zh": "你的话是我脚前的灯，是我路上的光。（诗篇119:105，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Confía en Jehová con todo tu corazón y no te apoyes en tu propia prudencia. (Proverbios 3:5, RVR1995)",
+                    "zh": "你要专心仰赖耶和华，不可倚靠自己的聪明。（箴言3:5，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Todo lo puedo en Cristo que me fortalece. (Filipenses 4:13, RVR1995)",
+                    "zh": "我靠着那加给我力量的，凡事都能作。（腓立比书4:13，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Sed hacedores de la palabra y no tan solamente oidores, engañándoos a vosotros mismos. (Santiago 1:22, RVR1995)",
+                    "zh": "只是你们要行道，不要单单听道，自己欺哄自己。（雅各书1:22，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Así alumbre vuestra luz delante de los hombres, para que vean vuestras buenas obras y glorifiquen a vuestro Padre que está en los cielos. (Mateo 5:16, RVR1995)",
+                    "zh": "你们的光也当这样照在人前，叫他们看见你们的好行为，便将荣耀归给你们在天上的父。（马太福音5:16，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Nosotros lo amamos a él porque él nos amó primero. (1 Juan 4:19, RVR1995)",
+                    "zh": "我们爱，因为神先爱我们。（约翰一书4:19，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jehová es mi pastor, nada me faltará. (Salmos 23:1, RVR1995)",
+                    "zh": "耶和华是我的牧者，我必不至缺乏。（诗篇23:1，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí. (Juan 14:6, RVR1995)",
+                    "zh": "我就是道路、真理、生命；若不藉着我，没有人能到父那里去。（约翰福音14:6，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Porque por gracia sois salvos por medio de la fe; y esto no de vosotros, pues es don de Dios. (Efesios 2:8, RVR1995)",
+                    "zh": "你们得救是本乎恩，也因着信；这并不是出于自己，乃是神所赐的。（以弗所书2:8，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Dios es nuestro amparo y fortaleza, nuestro pronto auxilio en las tribulaciones. (Salmos 46:1, RVR1995)",
+                    "zh": "神是我们的避难所，是我们的力量，是我们在患难中随时的帮助。（诗篇46:1，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar. (Mateo 11:28, RVR1995)",
+                    "zh": "凡劳苦担重担的人，可以到我这里来，我就使你们得安息。（马太福音11:28，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Porque no nos ha dado Dios espíritu de cobardía, sino de poder, de amor y de dominio propio. (2 Timoteo 1:7, RVR1995)",
+                    "zh": "因为神赐给我们不是胆怯的心，乃是刚强、仁爱、谨守的心。（提摩太后书1:7，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Y todo lo que hagáis, hacedlo de corazón, como para el Señor y no para los hombres. (Colosenses 3:23, RVR1995)",
+                    "zh": "无论作什么，都要从心里作，像是给主作的，不是给人作的。（歌罗西书3:23，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Encomienda a Jehová tu camino, confía en él y él hará. (Salmos 37:5, RVR1995)",
+                    "zh": "当将你的事交托耶和华，并倚靠他，他就必成全。（诗篇37:5，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mi Dios, pues, suplirá todo lo que os falta conforme a sus riquezas en gloria en Cristo Jesús. (Filipenses 4:19, RVR1995)",
+                    "zh": "我的神必照他荣耀的丰富，在基督耶稣里使你们一切所需用的都充足。（腓立比书4:19，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mira que te mando que te esfuerces y seas valiente; no temas ni desmayes, porque Jehová, tu Dios, estará contigo dondequiera que vayas. (Josué 1:9, RVR1995)",
+                    "zh": "我岂没有吩咐你吗？你当刚强壮胆！不要惧怕，也不要惊惶，因为你无论往哪里去，耶和华你的神必与你同在。（约书亚记1:9，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mas los que esperan en Jehová tendrán nuevas fuerzas, levantarán alas como las águilas, correrán y no se cansarán, caminarán y no se fatigarán. (Isaías 40:31, RVR1995)",
+                    "zh": "但那等候耶和华的，必从新得力。他们必如鹰展翅上腾，他们奔跑却不困倦，行走却不疲乏。（以赛亚书40:31，和合本）"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "why": {
+        "es": "Entrena la escucha y muestra de forma divertida que un mensaje se distorsiona si no se presta atención.",
+        "zh": "培养倾听能力，用游戏的方式体会：信息若不专心听，就会走样。"
+      }
+    },
+    {
+      "id": "abecedario-biblico",
+      "icon": "🅰️",
+      "title": {
+        "es": "Abecedario bíblico",
+        "zh": "圣经字母接龙"
+      },
+      "category": "biblia",
+      "minMinutes": 5,
+      "maxMinutes": 8,
+      "objective": {
+        "es": "Repasar nombres de personajes y lugares de la Biblia con rapidez, de forma sencilla y sin presión.",
+        "zh": "借助字母快速回忆圣经中的人物和地名，轻松复习，活跃思维。"
+      },
+      "steps": [
+        {
+          "es": "Todos se sientan en círculo.",
+          "zh": "全体坐成一圈。"
+        },
+        {
+          "es": "El profe dice una letra del abecedario (p. ej. «A»).",
+          "zh": "老师说出一个字母（如“A”）。"
+        },
+        {
+          "es": "En sentido horario, cada persona dice un nombre bíblico (de persona o de lugar) que empiece por esa letra, sin repetir los ya dichos.",
+          "zh": "按顺时针方向，每人说一个以该字母开头的圣经人名或地名，不能重复已经说过的。"
+        },
+        {
+          "es": "Quien tarde más de 5 segundos o repita un nombre queda fuera.",
+          "zh": "超过5秒或重复名字的人出局。"
+        },
+        {
+          "es": "Cuando quedan pocos jugadores, se pasa a la siguiente letra.",
+          "zh": "剩下的人不多时，换下一个字母。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Con nombres en español, la letra funciona bien. En chino la letra no sirve: en modo chino puedes usar el número de caracteres del nombre o su primer carácter.",
+          "zh": "👉 用西班牙语人名时，字母接龙效果很好；中文没有对应的字母，所以在中文模式下可以改用名字的字数或首字。"
+        },
+        {
+          "es": "Con grupos grandes, usa solo nombres de personas; con los mayores, puedes incluir lugares.",
+          "zh": "人数多时只用人名；年纪较大的可以加上地名。"
+        }
+      ],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Letras",
+            "zh": "字母"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Letras",
+                "zh": "字母"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "A",
+                    "zh": "A · 以A开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "B",
+                    "zh": "B · 以B开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "C",
+                    "zh": "C · 以C开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "D",
+                    "zh": "D · 以D开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "E",
+                    "zh": "E · 以E开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "F",
+                    "zh": "F · 以F开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "G",
+                    "zh": "G · 以G开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "H",
+                    "zh": "H · 以H开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "I",
+                    "zh": "I · 以I开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "J",
+                    "zh": "J · 以J开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "L",
+                    "zh": "L · 以L开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "M",
+                    "zh": "M · 以M开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "N",
+                    "zh": "N · 以N开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "O",
+                    "zh": "O · 以O开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "P",
+                    "zh": "P · 以P开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "R",
+                    "zh": "R · 以R开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "S",
+                    "zh": "S · 以S开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "T",
+                    "zh": "T · 以T开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "U",
+                    "zh": "U · 以U开头（西语名）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Z",
+                    "zh": "Z · 以Z开头（西语名）"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "why": {
+        "es": "Calentamiento rápido que activa la memoria y repasa la Biblia sin presión.",
+        "zh": "快速热身，唤醒记忆，轻松复习圣经，没有压力。"
+      }
+    },
+    {
+      "id": "rap-versiculo",
+      "icon": "🎤",
+      "title": {
+        "es": "Rap del versículo",
+        "zh": "经文说唱"
+      },
+      "category": "biblia",
+      "minMinutes": 10,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Memorizar versículos de forma creativa, con música, gestos y trabajo en equipo.",
+        "zh": "用音乐、手势和团队合作，创意地背诵经文。"
+      },
+      "steps": [
+        {
+          "es": "Forma equipos de 3 a 5 personas.",
+          "zh": "分成3到5人一组。"
+        },
+        {
+          "es": "Cada equipo elige un versículo de la lista y tiene 5 minutos para inventar un rap, una canción o un lema con gestos que representen el texto.",
+          "zh": "每组选一节经文，用5分钟编一段说唱、一首歌或一句口号，并配上表达经文的手势。"
+        },
+        {
+          "es": "Cada equipo lo presenta ante el grupo.",
+          "zh": "每组向全体展示。"
+        },
+        {
+          "es": "Al final, todos recitan juntos los versículos presentados.",
+          "zh": "最后，全体一起背诵这些经文。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Pide que el texto se entienda aunque se cante rápido; los gestos ayudan a recordarlo.",
+          "zh": "👉 要求唱快时也能听清经文原文；手势有助于记忆。"
+        },
+        {
+          "es": "Si hay poco tiempo, pueden hacer solo un lema hablado en lugar de un rap.",
+          "zh": "时间不够时，可以只做口号式的朗诵，代替说唱。"
+        }
+      ],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Versículos",
+            "zh": "经文"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Versículos para memorizar",
+                "zh": "要背诵的经文"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "De tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree no se pierda, sino que tenga vida eterna. (Juan 3:16, RVR1995)",
+                    "zh": "神爱世人，甚至将他的独生子赐给他们，叫一切信他的，不至灭亡，反得永生。（约翰福音3:16，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Sabemos, además, que a los que aman a Dios, todas las cosas los ayudan a bien, esto es, a los que conforme a su propósito son llamados. (Romanos 8:28, RVR1995)",
+                    "zh": "我们晓得万事都互相效力，叫爱神的人得益处，就是按他旨意被召的人。（罗马书8:28，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jehová es mi pastor, nada me faltará. (Salmos 23:1, RVR1995)",
+                    "zh": "耶和华是我的牧者，我必不至缺乏。（诗篇23:1，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Todo lo puedo en Cristo que me fortalece. (Filipenses 4:13, RVR1995)",
+                    "zh": "我靠着那加给我力量的，凡事都能作。（腓立比书4:13，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Confía en Jehová con todo tu corazón y no te apoyes en tu propia prudencia. (Proverbios 3:5, RVR1995)",
+                    "zh": "你要专心仰赖耶和华，不可倚靠自己的聪明。（箴言3:5，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mas los que esperan en Jehová tendrán nuevas fuerzas, levantarán alas como las águilas, correrán y no se cansarán, caminarán y no se fatigarán. (Isaías 40:31, RVR1995)",
+                    "zh": "但那等候耶和华的，必从新得力。他们必如鹰展翅上腾，他们奔跑却不困倦，行走却不疲乏。（以赛亚书40:31，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mira que te mando que te esfuerces y seas valiente; no temas ni desmayes, porque Jehová, tu Dios, estará contigo dondequiera que vayas. (Josué 1:9, RVR1995)",
+                    "zh": "我岂没有吩咐你吗？你当刚强壮胆！不要惧怕，也不要惊惶，因为你无论往哪里去，耶和华你的神必与你同在。（约书亚记1:9，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar. (Mateo 11:28, RVR1995)",
+                    "zh": "凡劳苦担重担的人，可以到我这里来，我就使你们得安息。（马太福音11:28，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Dios es nuestro amparo y fortaleza, nuestro pronto auxilio en las tribulaciones. (Salmos 46:1, RVR1995)",
+                    "zh": "神是我们的避难所，是我们的力量，是我们在患难中随时的帮助。（诗篇46:1，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Encomienda a Jehová tu camino, confía en él y él hará. (Salmos 37:5, RVR1995)",
+                    "zh": "当将你的事交托耶和华，并倚靠他，他就必成全。（诗篇37:5，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Y todo lo que hagáis, hacedlo de corazón, como para el Señor y no para los hombres. (Colosenses 3:23, RVR1995)",
+                    "zh": "无论作什么，都要从心里作，像是给主作的，不是给人作的。（歌罗西书3:23，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Porque no nos ha dado Dios espíritu de cobardía, sino de poder, de amor y de dominio propio. (2 Timoteo 1:7, RVR1995)",
+                    "zh": "因为神赐给我们不是胆怯的心，乃是刚强、仁爱、谨守的心。（提摩太后书1:7，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Porque por gracia sois salvos por medio de la fe; y esto no de vosotros, pues es don de Dios. (Efesios 2:8, RVR1995)",
+                    "zh": "你们得救是本乎恩，也因着信；这并不是出于自己，乃是神所赐的。（以弗所书2:8，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Así alumbre vuestra luz delante de los hombres, para que vean vuestras buenas obras y glorifiquen a vuestro Padre que está en los cielos. (Mateo 5:16, RVR1995)",
+                    "zh": "你们的光也当这样照在人前，叫他们看见你们的好行为，便将荣耀归给你们在天上的父。（马太福音5:16，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Nosotros lo amamos a él porque él nos amó primero. (1 Juan 4:19, RVR1995)",
+                    "zh": "我们爱，因为神先爱我们。（约翰一书4:19，和合本）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Yo soy el camino, la verdad y la vida; nadie viene al Padre sino por mí. (Juan 14:6, RVR1995)",
+                    "zh": "我就是道路、真理、生命；若不藉着我，没有人能到父那里去。（约翰福音14:6，和合本）"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 300
+        }
+      ],
+      "why": {
+        "es": "Memorizar con música y movimiento; el humor y la creatividad del grupo fijan el versículo.",
+        "zh": "通过音乐和动作背经文；幽默和创意让经文更容易记住。"
+      }
+    },
+    {
+      "id": "fila-en-silencio",
+      "icon": "🤫",
+      "title": {
+        "es": "Fila en silencio",
+        "zh": "无声排队"
+      },
+      "category": "equipo",
+      "minMinutes": 5,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Conocerse y trabajar la comunicación no verbal: ordenarse sin hablar ni escribir, solo con gestos.",
+        "zh": "在不说话也不写字的情况下，只用手势排好队伍，从而认识彼此、练习非语言沟通。"
+      },
+      "steps": [
+        {
+          "es": "El profe pide al grupo que se ordene en fila según un criterio (p. ej. fecha de cumpleaños sin año, de enero a diciembre).",
+          "zh": "老师请大家按某个标准排队（比如生日的月日，从1月排到12月）。"
+        },
+        {
+          "es": "No se puede hablar, escribir ni usar el móvil: solo gestos y señas.",
+          "zh": "不能说话、不能写字、不能用手机，只能用手势。"
+        },
+        {
+          "es": "Cuando crean que están en orden, cada uno dice en voz alta su dato para comprobarlo.",
+          "zh": "大家觉得排好了，就每人大声说出自己的数据来核对。"
+        },
+        {
+          "es": "El profe comenta la experiencia: ¿cómo se comunicaron sin palabras?",
+          "zh": "老师带领分享：没有语言的时候，大家是怎样沟通的？"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Cambia el criterio en cada ronda: primera letra del nombre, número de calzado, años en la iglesia…",
+          "zh": "👉 每轮换一个标准：名字首字母、鞋码、在教会的年数……"
+        },
+        {
+          "es": "No hace falta tocarse: los gestos son suficientes.",
+          "zh": "不需要身体接触，手势就够了。"
+        }
+      ],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Criterios",
+            "zh": "标准"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Criterios",
+                "zh": "标准"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Fecha de cumpleaños (día y mes, sin año)",
+                    "zh": "生日（只看月日）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Número de hermanos",
+                    "zh": "兄弟姐妹人数"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Número de calzado",
+                    "zh": "鞋码"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Hora a la que te levantas (de más temprano a más tarde)",
+                    "zh": "起床时间（从早到晚）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Primera letra del nombre (de A a Z)",
+                    "zh": "名字首字母（A到Z）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Años que llevas en la iglesia",
+                    "zh": "在教会的年数"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Número de letras de tu nombre",
+                    "zh": "名字的字母数（中文名按字数）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Altura (de menor a mayor)",
+                    "zh": "身高（从矮到高）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Número de mascotas",
+                    "zh": "宠物数量"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Número de países que has visitado",
+                    "zh": "去过的国家数"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Número de libros que lees al año",
+                    "zh": "一年读的书的数量"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Horas que duermes de media",
+                    "zh": "平均每晚睡几个小时"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Años que llevas viviendo en España",
+                    "zh": "在西班牙住了几年"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Minutos que tardas en llegar a la iglesia",
+                    "zh": "到教会要走多少分钟"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Número de instrumentos que tocas",
+                    "zh": "会演奏的乐器数量"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Canciones que te sabes de memoria (número aproximado)",
+                    "zh": "能背下来的歌曲数（大约）"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 300
+        }
+      ],
+      "why": {
+        "es": "Rompe el hielo sin presión: obliga a fijarse en los demás y a buscar formas creativas de comunicarse.",
+        "zh": "在没有压力的情况下打破隔阂：需要留心观察他人，并想办法沟通。"
+      }
+    },
+    {
+      "id": "historia-palabra",
+      "icon": "🧵",
+      "title": {
+        "es": "Historia palabra a palabra",
+        "zh": "一词一词编故事"
+      },
+      "category": "equipo",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Escucha y creatividad: crear una historia coherente entre todos, aportando cada uno una sola palabra.",
+        "zh": "倾听与创造力：每人只加一个词，大家共同编出一个连贯的故事。"
+      },
+      "steps": [
+        {
+          "es": "Todos sentados en círculo.",
+          "zh": "全体坐成圈。"
+        },
+        {
+          "es": "El primero empieza con una frase de inicio (p. ej. «Un domingo por la mañana…»).",
+          "zh": "第一个人用一句开场白开始（如“星期天早上……”）。"
+        },
+        {
+          "es": "En sentido horario, cada uno añade UNA palabra, sin pensar todavía en el final.",
+          "zh": "按顺时针方向，每人只加一个词，先不要考虑结局。"
+        },
+        {
+          "es": "Se intenta que la historia tenga sentido; se termina cuando tenga final o a los 2–3 minutos.",
+          "zh": "尽量让故事连贯、有道理；故事有了结局，或两三分钟后结束。"
+        },
+        {
+          "es": "Al final se comenta qué personajes y giros han surgido.",
+          "zh": "最后聊一聊故事里出现了哪些人物和转折。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Contenido apropiado para todos: si alguien propone algo inadecuado, reconduce la historia con humor.",
+          "zh": "👉 内容要适合所有人：如果有人提出不合适的内容，就用幽默把故事引回正轨。"
+        },
+        {
+          "es": "Con grupos grandes, divídanse en dos círculos para que haya más turnos.",
+          "zh": "人数多时可以分成两圈，让每人有更多机会。"
+        }
+      ],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Inicios",
+            "zh": "开头句"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Inicios",
+                "zh": "开头"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Un domingo por la mañana…",
+                    "zh": "一个星期天的早上……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Había una vez un camello que…",
+                    "zh": "从前有一只骆驼，它……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Nadie esperaba que aquella tarde…",
+                    "zh": "谁也没想到那天下午……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "La puerta de la iglesia se abrió y…",
+                    "zh": "教会的门突然开了，然后……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "En el fondo del mar vivía un pez que…",
+                    "zh": "海底住着一条鱼，它……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mi abuela siempre decía que…",
+                    "zh": "我奶奶总是说……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "El profe llegó tarde porque…",
+                    "zh": "老师迟到了，因为……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Un día, en el autobús, encontré…",
+                    "zh": "有一天，在公交车上，我发现了……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "El mapa decía que el tesoro estaba…",
+                    "zh": "地图上说，宝藏在……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Todo empezó cuando el perro…",
+                    "zh": "一切是从那只狗……开始的"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Aquella noche, la luna habló y dijo…",
+                    "zh": "那天晚上，月亮开口说……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "En un pueblo pequeño de España…",
+                    "zh": "在西班牙的一个小村庄……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Los tres amigos decidieron ir al bosque…",
+                    "zh": "三个朋友决定去森林……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "El robot del colegio se despertó…",
+                    "zh": "学校的机器人醒了……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Hace mil años, en un castillo…",
+                    "zh": "一千年前，在一座城堡里……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Sin saberlo, aquel señor era…",
+                    "zh": "那位先生其实是……"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "why": {
+        "es": "Trabaja la escucha, la creatividad y el trabajo conjunto; las historias absurdas siempre hacen reír.",
+        "zh": "锻炼倾听、创造力和合作；荒诞的故事总能引人发笑。"
+      }
+    },
+    {
+      "id": "submarino",
+      "icon": "🛟",
+      "title": {
+        "es": "Submarino",
+        "zh": "潜水艇"
+      },
+      "category": "equipo",
+      "minMinutes": 5,
+      "maxMinutes": 8,
+      "objective": {
+        "es": "Confianza y comunicación: guiar con la voz a un compañero para que cruce sin chocar con nadie.",
+        "zh": "建立信任与沟通：用声音引导同伴穿过场地，避免碰到任何人。"
+      },
+      "steps": [
+        {
+          "es": "El resto del grupo se reparte de pie por el espacio, separado al menos 1 metro: son las «minas».",
+          "zh": "其他同学站在场地各处，彼此相隔至少1米，扮演“水雷”。"
+        },
+        {
+          "es": "Un voluntario cruza la sala de un extremo a otro con los OJOS CERRADOS (sin venda).",
+          "zh": "一名志愿者闭上眼睛（不用眼罩），从场地的一端走到另一端。"
+        },
+        {
+          "es": "Si se acerca a una mina, esta dice «pi, pi, pi» para avisarle.",
+          "zh": "如果他靠近某个水雷，水雷就说“滴、滴、滴”来提醒他。"
+        },
+        {
+          "es": "Turnos rápidos para que participe casi todo el grupo.",
+          "zh": "轮流进行，节奏要快，让大多数人都能参与。"
+        },
+        {
+          "es": "Al final se comenta qué ayudó a confiar y a comunicarse.",
+          "zh": "最后讨论：什么帮助了大家彼此信任和沟通？"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Seguridad: espacio despejado, sin objetos en el suelo; el profe acompaña al voluntario en todo momento.",
+          "zh": "👉 安全第一：场地要清空，地上没有杂物；老师全程陪伴志愿者。"
+        },
+        {
+          "es": "Si alguien no quiere ser voluntario, puede ser mina sin problema.",
+          "zh": "如果有人不想当志愿者，也可以只当水雷。"
+        }
+      ],
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 300
+        }
+      ],
+      "why": {
+        "es": "Genera confianza y atención con movimiento y risas controladas; el grupo aprende a escuchar y a guiar.",
+        "zh": "在有控制的欢笑与活动中建立信任、培养专注；大家学会倾听和引导。"
+      }
+    },
+    {
+      "id": "isla-desierta",
+      "icon": "🏝️",
+      "title": {
+        "es": "La isla desierta",
+        "zh": "荒岛"
+      },
+      "category": "equipo",
+      "minMinutes": 10,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Tomar decisiones en grupo, negociar y observar qué roles adopta cada persona.",
+        "zh": "学习集体决策与协商，并观察每个人在团队中扮演的角色。"
+      },
+      "steps": [
+        {
+          "es": "El profe cuenta la situación: el grupo ha naufragado y llega a una isla desierta.",
+          "zh": "老师讲述情境：大家遭遇海难，来到一座荒岛。"
+        },
+        {
+          "es": "Solo pueden llevarse 5 objetos de una lista (p. ej. cuerda, cerillas, brújula, navaja, botiquín, linterna, manta, agua potable, libreta y bolígrafo, Biblia).",
+          "zh": "大家只能从清单中带走5样东西（如绳子、火柴、指南针、小刀、急救包、手电筒、毯子、饮用水、笔记本和笔、圣经）。"
+        },
+        {
+          "es": "El grupo debe ponerse de acuerdo por consenso en esos 5 objetos.",
+          "zh": "小组必须通过协商达成共识，确定这5样东西。"
+        },
+        {
+          "es": "Cada grupo explica su elección y por qué.",
+          "zh": "每组说明选了什么，以及为什么。"
+        },
+        {
+          "es": "Se comentan los roles que han aparecido: líder, mediador, analista…",
+          "zh": "讨论在团队中出现了哪些角色：领导者、调解者、分析者……"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Conexión bíblica: «Mi Dios, pues, suplirá todo lo que os falta conforme a sus riquezas en gloria en Cristo Jesús» (Filipenses 4:19, RVR1995).",
+          "zh": "👉 圣经连结：“我的神必照他荣耀的丰富，在基督耶稣里使你们一切所需用的都充足。”（腓立比书4:19，和合本）"
+        },
+        {
+          "es": "Pregunta: si estuvieras solo, ¿qué objeto habrías elegido? ¿Te hizo cambiar de opinión el grupo?",
+          "zh": "可以问：如果你独自一人，会选哪样？小组讨论有没有改变你的想法？"
+        }
+      ],
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 600
+        }
+      ],
+      "why": {
+        "es": "Muestra cómo se toman decisiones juntos y cómo cada persona aporta desde su rol.",
+        "zh": "展示团队如何共同做决定，以及每个人如何从自己的角色做出贡献。"
+      }
+    }
+  ]
+}

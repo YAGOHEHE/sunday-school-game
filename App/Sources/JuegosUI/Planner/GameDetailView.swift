@@ -26,44 +26,41 @@ struct GameDetailView: View {
         let tpl = model.template(for: g)
         return ScrollView {
             VStack(alignment: .leading, spacing: 22) {
-                HStack(alignment: .center, spacing: 20) {
-                    Text(g.icon).font(.system(size: 56))
-                        .frame(width: 96, height: 96)
-                        .background(RoundedRectangle(cornerRadius: 28).fill(g.category.adaptiveTint))
-                    VStack(alignment: .leading, spacing: 8) {
-                        BiText(g.title, size: 32, weight: .bold).foregroundStyle(Theme.ink)
-                        FlowLayout(spacing: 8) {
-                            chip("\(g.category.emoji) \(model.text(g.category.name).replacingOccurrences(of: "\n", with: " · "))", fg: ink, bg: g.category.adaptiveTint)
-                            chip("\(g.minMinutes == g.maxMinutes ? "\(g.minMinutes)" : "\(g.minMinutes)–\(g.maxMinutes)") min", fg: Theme.ink, bg: Theme.chipNeutral)
-                            if !g.tools.isEmpty {
-                                chip(g.tools.map { model.text($0.kind.label).replacingOccurrences(of: "\n", with: " ") }.joined(separator: " · "),
-                                     fg: Theme.ink, bg: Theme.chipNeutral)
-                            }
-                            Button { model.openTemplates(focus: tpl.id) } label: {
-                                Text("\(model.t("Plantilla", "模板")): \(model.text(tpl.name).replacingOccurrences(of: "\n", with: " · "))\(g.template == nil ? " ·" + model.t(" auto", " 自动") : "")")
-                                    .font(Theme.font(13, .semibold)).foregroundStyle(Theme.accentPlanificar).lineLimit(1)
-                                    .padding(.horizontal, 10).padding(.vertical, 4)
-                                    .background(Capsule().stroke(Theme.accentPlanificar.opacity(0.5)))
-                                    .frame(minHeight: Theme.minTap).contentShape(Rectangle())
-                            }
-                            .buttonStyle(.plain)
-                            .accessibilityLabel("\(model.t("Plantilla", "模板")): \(tpl.name.es). \(model.t("Abrir plantillas", "打开模板"))")
+                HStack(alignment: .center, spacing: 18) {
+                    Text(g.icon).font(.system(size: 46))
+                        .frame(width: 80, height: 80)
+                        .background(RoundedRectangle(cornerRadius: 24).fill(g.category.adaptiveTint))
+                    VStack(alignment: .leading, spacing: 4) {
+                        BiText(g.title, size: 28, weight: .bold).foregroundStyle(Theme.ink)
+                        dataLine(g, tpl: tpl)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    HStack(spacing: 6) {
+                        Button { play.play(g) } label: {
+                            Text(model.t("Jugar", "开始玩")).font(Theme.font(15, .semibold)).foregroundStyle(.white)
+                                .padding(.horizontal, 18).frame(minHeight: Theme.minTap)
+                                .background(Capsule().fill(Theme.ok)).contentShape(Capsule())
                         }
+                        .buttonStyle(.plain)
+                        Menu {
+                            if !inSession(g) {
+                                Button { model.addToSession(g) } label: { Label(model.t("Añadir a la sesión", "加入课程"), systemImage: "plus") }
+                            }
+                            Button { model.toggleFavorite(g.id) } label: {
+                                Label(model.isFavorite(g.id) ? model.t("Quitar favorito", "取消收藏") : model.t("Favorito", "收藏"),
+                                      systemImage: model.isFavorite(g.id) ? "star.slash" : "star")
+                            }
+                            Button { model.edit(g) } label: { Label(model.t("Editar", "编辑"), systemImage: "pencil") }
+                            Button(role: .destructive) { model.hide(g.id) } label: { Label(model.t("Ocultar", "隐藏"), systemImage: "eye.slash") }
+                        } label: {
+                            Image(systemName: "ellipsis").font(.system(size: 16, weight: .bold)).foregroundStyle(Theme.ink)
+                                .frame(width: Theme.minTap, height: Theme.minTap)
+                                .background(Circle().stroke(Theme.border.opacity(1), lineWidth: 1).background(Circle().fill(Theme.surface)))
+                        }
+                        .menuStyle(.button).buttonStyle(.plain).menuIndicator(.hidden).fixedSize()
+                        .accessibilityLabel(model.t("Más acciones", "更多操作"))
                     }
-                }
-
-                FlowLayout(spacing: 10) {
-                    Button { play.play(g) } label: { Label(model.t("Jugar ahora", "开始玩"), systemImage: "play.fill") }
-                        .buttonStyle(PillButtonStyle(color: Theme.ok))
-                    Button { model.addToSession(g) } label: { Label(model.t("Añadir a la sesión", "加入课程"), systemImage: "plus") }
-                        .buttonStyle(PillButtonStyle(color: g.category.color))
-                    Button { model.toggleFavorite(g.id) } label: {
-                        Image(systemName: model.isFavorite(g.id) ? "star.fill" : "star").foregroundStyle(.yellow)
-                    }
-                    .buttonStyle(PillButtonStyle(color: .yellow, filled: false))
-                    .accessibilityLabel(model.t("Favorito", "收藏"))
-                    Button { model.edit(g) } label: { Label(model.t("Editar", "编辑"), systemImage: "pencil") }
-                        .buttonStyle(PillButtonStyle(color: Theme.ink, filled: false))
+                    .alignmentGuide(VerticalAlignment.center) { $0[VerticalAlignment.center] }
                 }
 
                 VStack(alignment: .leading, spacing: 4) {
@@ -92,7 +89,7 @@ struct GameDetailView: View {
                     section(model.t("CONSEJOS", "小贴士")) {
                         VStack(alignment: .leading, spacing: 8) {
                             ForEach(Array(g.tips.enumerated()), id: \.offset) { _, t in
-                                HStack(alignment: .top, spacing: 8) { Text("👉"); BiText(t, size: 15).foregroundStyle(Theme.ink) }
+                                HStack(alignment: .top, spacing: 8) { Text("👉"); BiText(t.withoutLeadingPointer, size: 15).foregroundStyle(Theme.ink) }
                             }
                         }
                     }
@@ -113,7 +110,7 @@ struct GameDetailView: View {
                                             HStack(alignment: .top) { Text("\(i + 1).").font(Theme.font(14, .bold)); BiText(s, size: 14) }
                                         }
                                         ForEach(Array(v.tips.enumerated()), id: \.offset) { _, t in
-                                            HStack(alignment: .top) { Text("👉"); BiText(t, size: 14) }
+                                            HStack(alignment: .top) { Text("👉"); BiText(t.withoutLeadingPointer, size: 14) }
                                         }
                                     }.padding(.top, 6)
                                 } label: { BiText(v.title, size: 15, weight: .semibold) }
@@ -127,7 +124,25 @@ struct GameDetailView: View {
             .frame(maxWidth: 820, alignment: .leading)
             .frame(maxWidth: .infinity)
         }
-        .navigationTitle(model.text(g.title).replacingOccurrences(of: "\n", with: " · "))
+        .navigationTitle("")
+    }
+
+    private func inSession(_ g: Game) -> Bool { model.session.items.contains { $0.gameID == g.id } }
+
+    private func dataLine(_ g: Game, tpl: PlayTemplate) -> some View {
+        let mins = "\(g.minMinutes == g.maxMinutes ? "\(g.minMinutes)" : "\(g.minMinutes)–\(g.maxMinutes)") min"
+        let cat = model.text(g.category.name).replacingOccurrences(of: "\n", with: " · ")
+        let tname = model.text(tpl.name).replacingOccurrences(of: "\n", with: " · ")
+        return HStack(spacing: 0) {
+            Text("\(cat) · \(mins) · ").foregroundStyle(Theme.secondary).lineLimit(1)
+            Button { model.openTemplates(focus: tpl.id) } label: {
+                Text("\(model.t("Plantilla", "模板")) \(tname)").foregroundStyle(Theme.accentPlanificar).underline().lineLimit(1)
+                    .frame(minHeight: 24).contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("\(model.t("Plantilla", "模板")): \(tpl.name.es). \(model.t("Abrir plantillas", "打开模板"))")
+        }
+        .font(Theme.font(14))
     }
 
     private func chip(_ text: String, fg: Color, bg: Color) -> some View {
@@ -142,5 +157,18 @@ struct GameDetailView: View {
             content()
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+
+private extension L {
+    /// Los tips del catálogo a veces ya empiezan con «👉»; la vista añade el suyo.
+    var withoutLeadingPointer: L {
+        func strip(_ x: String) -> String {
+            var t = x.trimmingCharacters(in: .whitespaces)
+            while t.hasPrefix("👉") { t = String(t.dropFirst()).trimmingCharacters(in: .whitespaces) }
+            return t
+        }
+        return L(strip(es), strip(zh))
     }
 }

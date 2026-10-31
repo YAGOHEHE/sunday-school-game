@@ -29,6 +29,7 @@ public enum GameCategory: String, Codable, CaseIterable, Sendable {
     case equipo       // 🤝 cooperación, contacto
     case expresion    // 🎭 mímica, actuación, desinhibición
     case conocerse    // 💬 conocerse, socializar
+    case biblia       // 📖 juegos bíblicos / reflexión
 
     public var emoji: String {
         switch self {
@@ -37,6 +38,7 @@ public enum GameCategory: String, Codable, CaseIterable, Sendable {
         case .equipo: return "🤝"
         case .expresion: return "🎭"
         case .conocerse: return "💬"
+        case .biblia: return "📖"
         }
     }
     public var name: L {
@@ -46,6 +48,7 @@ public enum GameCategory: String, Codable, CaseIterable, Sendable {
         case .equipo: return L("Equipo", "团队")
         case .expresion: return L("Expresión", "表演")
         case .conocerse: return L("Conocerse", "认识彼此")
+        case .biblia: return L("Biblia", "圣经")
         }
     }
 }

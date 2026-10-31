@@ -1,0 +1,865 @@
+{
+  "games": [
+    {
+      "id": "zip-zap-zop",
+      "icon": "👏",
+      "title": {
+        "es": "Zip Zap Zop",
+        "zh": "Zip Zap Zop 传声游戏"
+      },
+      "category": "energia",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Despertar la atención, la energía y la escucha del grupo con un juego rápido de pases y contacto visual.",
+        "zh": "通过快速的传递和眼神交流，唤醒全班的注意力、精力和倾听能力。"
+      },
+      "steps": [
+        {
+          "es": "Forma un círculo y decid juntos «Zip, Zap, Zop» un par de veces para coger el ritmo.",
+          "zh": "围成一圈，大家一起念几遍“Zip, Zap, Zop”，找到节奏。"
+        },
+        {
+          "es": "Quien empieza envía una «descarga de energía» invisible a alguien al otro lado del círculo, diciendo «Zip» y mirándole a los ojos.",
+          "zh": "开始的人向圈子另一边的人发出一道看不见的“能量”，说“Zip”，并看着对方的眼睛。"
+        },
+        {
+          "es": "Quien la recibe la pasa a otra persona diciendo «Zap», y esa la pasa diciendo «Zop». Así sucesivamente, intentando que la energía llegue a todos.",
+          "zh": "接到的人把能量传给另一个人，说“Zap”，再下一个人说“Zop”。这样依次传递，尽量让能量传到每一个人。"
+        },
+        {
+          "es": "Si alguien se equivoca, el grupo sigue sin discutir: se retoma el juego desde donde esté.",
+          "zh": "如果有人出错，大家不必争论，直接从当前位置接着玩。"
+        },
+        {
+          "es": "Si el grupo se atasca, parad un momento, hablad de la estrategia y volved a empezar.",
+          "zh": "如果大家卡住了，就停下来商量一下策略，然后重新开始。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Puedes añadir la variante «¡Boing!»: quien recibe un Zip, Zap o Zop levanta las dos manos a la altura del pecho y dice «¡Boing!»; la energía rebota a quien se la pasó.",
+          "zh": "👉 可以加入“Boing”变体：接到 Zip、Zap 或 Zop 的人把双手举到胸前，喊“Boing!”，能量就弹回给传给他的人。"
+        },
+        {
+          "es": "👉 Pide a todos que miren a los ojos a la persona a la que pasan la energía; así el juego sale más natural.",
+          "zh": "👉 请大家在传递时看着对方的眼睛，这样游戏会更自然。"
+        }
+      ],
+      "why": {
+        "es": "Obliga a mirarse, escuchar y reaccionar en el momento. El ritmo de tres palabras quita la vergüenza y pone a todos en juego.",
+        "zh": "它要求大家彼此对视、专心倾听并立刻反应。三个词的节奏能减少害羞，让每个人都投入其中。"
+      },
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 300
+        }
+      ]
+    },
+    {
+      "id": "caras-serias",
+      "icon": "😐",
+      "title": {
+        "es": "Caras serias",
+        "zh": "憋笑大战"
+      },
+      "category": "energia",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Divertirse con la expresividad y el autocontrol, trabajando la desinhibición en un ambiente seguro.",
+        "zh": "在安全的氛围中，通过表情和自我控制，练习放开自己，并玩得开心。"
+      },
+      "steps": [
+        {
+          "es": "Divide a la clase en dos equipos y poned las filas frente a frente.",
+          "zh": "把全班分成两队，两排面对面站好。"
+        },
+        {
+          "es": "Un equipo hace muecas o cuenta chistes al otro equipo, sin tocarles.",
+          "zh": "一队对另一队做鬼脸或讲笑话，但不能碰到对方。"
+        },
+        {
+          "es": "El otro equipo tiene que aguantar la cara seria. Quien se ría da un punto al equipo contrario.",
+          "zh": "另一队必须保持严肃的表情。谁笑了，就给对方队加一分。"
+        },
+        {
+          "es": "Se alternan los papeles y se juega varias rondas.",
+          "zh": "两队轮流表演和憋笑，玩几轮。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Puedes añadir una regla: no vale tocar ni hablar de temas personales o que incomoden a nadie.",
+          "zh": "👉 可以加一条规则：不能碰触对方，也不能谈论会让人尴尬的个人话题。"
+        },
+        {
+          "es": "👉 Ten a mano el marcador para que los equipos vean el resultado en directo.",
+          "zh": "👉 准备好计分板，让两队能实时看到比分。"
+        }
+      ],
+      "why": {
+        "es": "Ríen todos y nadie queda en evidencia: el juego premia la capacidad de aguantar, no la de ser gracioso.",
+        "zh": "大家都会笑出来，但没有人会被当众难堪。这个游戏奖励的是忍住笑的能力，而不是幽默程度。"
+      },
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 300
+        },
+        {
+          "kind": "scoreboard",
+          "title": {
+            "es": "Marcador",
+            "zh": "计分"
+          },
+          "teams": 2
+        }
+      ]
+    },
+    {
+      "id": "gigantes-magos-elfos",
+      "icon": "🧙",
+      "title": {
+        "es": "Gigantes, magos y elfos",
+        "zh": "巨人、法师与精灵"
+      },
+      "category": "energia",
+      "minMinutes": 5,
+      "maxMinutes": 8,
+      "objective": {
+        "es": "Moverse y reír en equipo mientras se decide una estrategia en secreto y se reacciona a la vez que los demás.",
+        "zh": "团队一起活动、欢笑，同时秘密商议策略，并与其他队同时做出反应。"
+      },
+      "steps": [
+        {
+          "es": "Divide la clase en dos equipos y pon cada equipo a un lado del aula.",
+          "zh": "把全班分成两队，各站在教室的一侧。"
+        },
+        {
+          "es": "Cada equipo decide en secreto, en voz baja, cuál de los tres personajes va a representar.",
+          "zh": "每队低声秘密商量，决定要扮演三个角色中的哪一个。"
+        },
+        {
+          "es": "A la cuenta de tres, todos hacen a la vez la postura de su personaje (mira la tarjeta de referencia).",
+          "zh": "数到三时，全队同时做出所扮角色的姿势（看参考卡）。"
+        },
+        {
+          "es": "Gana el personaje que vence según la tabla: el Gigante aplasta al Elfo, el Elfo engaña al Mago y el Mago vence al Gigante. El equipo ganador suma un punto; si empatan, nadie suma.",
+          "zh": "按照规则比出胜负：巨人压扁精灵，精灵骗过法师，法师打败巨人。获胜队加一分；平局则都不加分。"
+        },
+        {
+          "es": "Repetid varias rondas y llevad la cuenta en el marcador.",
+          "zh": "玩几轮，并在计分板上记录比分。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Adaptación para el aula: en vez de perseguirse, cada equipo se queda en su sitio y se cuenta el punto desde su lugar.",
+          "zh": "👉 课堂改编：不互相追逐，每队留在原地，在原位置计分。"
+        },
+        {
+          "es": "👉 Si queréis, decid en voz alta el sonido de cada personaje (el gruñido, el «¡zas!» y el «¡ji ji!») para que la ronda sea más divertida.",
+          "zh": "👉 如果愿意，可以大声念出每个角色的声音（低吼、“嗖！”和“嘻嘻！”），让每一轮更有趣。"
+        }
+      ],
+      "why": {
+        "es": "Mezcla estrategia con movimiento: cada equipo tiene que pensar qué van a hacer los demás, y eso crea mucha tensión y risas al revelar la postura.",
+        "zh": "它把策略和动作结合起来：每队都要猜对方会做什么，揭晓姿势时的紧张和笑声最让人投入。"
+      },
+      "tools": [
+        {
+          "kind": "reference",
+          "title": {
+            "es": "Personajes",
+            "zh": "角色"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Personajes",
+                "zh": "角色"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Gigante",
+                    "zh": "巨人"
+                  },
+                  "back": {
+                    "es": "Brazos arriba y gruñido. Aplasta al Elfo.",
+                    "zh": "双臂高举，发出低吼。压扁精灵。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mago",
+                    "zh": "法师"
+                  },
+                  "back": {
+                    "es": "Manos lanzando un hechizo y «¡zas!». Vence al Gigante.",
+                    "zh": "双手施法，喊“嗖！”。打败巨人。"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Elfo",
+                    "zh": "精灵"
+                  },
+                  "back": {
+                    "es": "Agachado, con orejas puntiagudas y «¡ji ji!». Engaña al Mago.",
+                    "zh": "蹲低身子，双手做出尖耳朵，喊“嘻嘻！”。骗过法师。"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "scoreboard",
+          "title": {
+            "es": "Marcador",
+            "zh": "计分"
+          },
+          "teams": 2
+        }
+      ]
+    },
+    {
+      "id": "contar-hasta-20",
+      "icon": "🔢",
+      "title": {
+        "es": "Contar hasta 20",
+        "zh": "数到二十"
+      },
+      "category": "mente",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Trabajar la escucha, la atención y la confianza: contar del 1 al 20 sin que dos personas hablen a la vez.",
+        "zh": "练习倾听、专注和信任：大家轮流从 1 数到 20，不能两个人同时说。"
+      },
+      "steps": [
+        {
+          "es": "Sentaos o poneos de pie en círculo, con los ojos abiertos.",
+          "zh": "大家坐成或站成一圈，睁开眼睛。"
+        },
+        {
+          "es": "Empieza cualquiera diciendo «1». El siguiente número lo dice otra persona distinta, y así hasta el 20.",
+          "zh": "任何人先说“1”。下一个数字必须由另一个人来说，直到数到 20。"
+        },
+        {
+          "es": "Solo puede hablar una persona a la vez. No hay orden fijo ni turnos.",
+          "zh": "每次只能有一个人说话。没有固定顺序，也没有轮流规定。"
+        },
+        {
+          "es": "Si dos o más personas hablan a la vez, el grupo vuelve a empezar desde el 1.",
+          "zh": "如果两人或更多人同时说话，全队就从 1 重新开始。"
+        },
+        {
+          "es": "Cronometrad cuánto tarda el grupo en llegar al 20 y cuántas veces hace falta volver a empezar.",
+          "zh": "计时看全队多久能数到 20，以及需要从头开始几次。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Variante con ojos cerrados: los jugadores se giran hacia fuera del círculo y cierran los ojos. Cuesta más escuchar y confiar, y es más divertido.",
+          "zh": "👉 闭眼变体：大家背对圆心，闭上眼睛。这样更需要倾听和信任，也更有意思。"
+        },
+        {
+          "es": "👉 Puedes contar hacia atrás desde el 20 o recitar el abecedario para cambiar el reto.",
+          "zh": "👉 可以改成从 20 倒数，或者背诵字母表，来增加挑战。"
+        }
+      ],
+      "why": {
+        "es": "Obliga a escuchar y a no interrumpir. El fallo es del grupo, no de una persona, así que nadie queda en evidencia.",
+        "zh": "它要求大家认真倾听、不抢话。失误属于全队而不是某一个人，所以没有人会被当众难堪。"
+      },
+      "tools": [
+        {
+          "kind": "stopwatch",
+          "title": {
+            "es": "Tiempo total",
+            "zh": "总时间"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pasa-la-palmada",
+      "icon": "🙌",
+      "title": {
+        "es": "Pasa la palmada",
+        "zh": "传掌声"
+      },
+      "category": "mente",
+      "minMinutes": 5,
+      "maxMinutes": 5,
+      "objective": {
+        "es": "Sincronizar al grupo y mejorar la atención y el ritmo con un juego de palmadas en círculo.",
+        "zh": "通过围圈传递拍手的游戏，让全队同步，并提高注意力和节奏感。"
+      },
+      "steps": [
+        {
+          "es": "Todos de pie en círculo.",
+          "zh": "大家站成一圈。"
+        },
+        {
+          "es": "Una persona hace contacto visual con otra y ambas dan una palmada a la vez.",
+          "zh": "一个人与另一个人对视，两人同时拍一下手。"
+        },
+        {
+          "es": "Quien recibe la palmada la pasa a otra persona distinta, mirándola a los ojos, y así sigue por el círculo.",
+          "zh": "接到掌声的人，看着另一个人，把掌声传给对方，就这样一直传下去。"
+        },
+        {
+          "es": "Cuando el grupo tenga ritmo, aceleradlo poco a poco.",
+          "zh": "等全队找到节奏后，慢慢加快速度。"
+        },
+        {
+          "es": "Una doble palmada invierte el sentido; quien la da debe acordarlo sin hablar. Una palmada con contacto visual puede enviarse al otro lado del círculo.",
+          "zh": "双击掌会让传递方向反过来，发出的人要用眼神和手势默默约定。看着对方拍手，还可以把掌声传到圈子的另一边。"
+        },
+        {
+          "es": "Cronometrad una vuelta completa y ved si el grupo puede mejorar el tiempo en la siguiente.",
+          "zh": "计时完成一整圈，看看下一圈能不能更快。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Empieza despacio y acelera solo cuando el grupo tenga el ritmo; así todos se sienten incluidos.",
+          "zh": "👉 先慢慢开始，等全队有了节奏再加速，这样每个人都能跟上。"
+        }
+      ],
+      "why": {
+        "es": "Cada palmada exige mirar y coordinarse con alguien. Cuando el grupo logra un ritmo común, la sensación de equipo es muy fuerte.",
+        "zh": "每一次拍手都需要与别人对视并配合。当全队找到共同的节奏时，团队感会非常强烈。"
+      },
+      "tools": [
+        {
+          "kind": "stopwatch",
+          "title": {
+            "es": "Vuelta",
+            "zh": "一圈"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nos-vamos-de-viaje",
+      "icon": "🧳",
+      "title": {
+        "es": "Nos vamos de viaje",
+        "zh": "我们去旅行"
+      },
+      "category": "mente",
+      "minMinutes": 5,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Ejercitar la memoria y la atención: repetir lo que han dicho los demás y añadir lo propio.",
+        "zh": "锻炼记忆力和注意力：重复前面的人说过的内容，并加上自己的。"
+      },
+      "steps": [
+        {
+          "es": "Sentaos en círculo. El generador muestra un tema, por ejemplo «Me voy de viaje y llevo…».",
+          "zh": "大家围坐成一圈。生成器会显示一个主题，比如“我去旅行，我带上……”。"
+        },
+        {
+          "es": "La primera persona dice algo que lleva: «Me voy de viaje y llevo una toalla».",
+          "zh": "第一个人说出他带的东西：“我去旅行，我带了一条毛巾。”"
+        },
+        {
+          "es": "La siguiente repite lo que dijo la anterior y añade lo suyo: «Me voy de viaje y llevo una toalla y un paraguas».",
+          "zh": "下一个人重复前面的人说的内容，并加上自己的：“我去旅行，我带了一条毛巾和一把雨伞。”"
+        },
+        {
+          "es": "Así cada persona repite toda la lista y añade una cosa nueva. Quien se equivoca queda fuera o hace un reto.",
+          "zh": "这样每个人都要重复整个清单，再加一样新东西。说错的人出局，或者接受一个挑战。"
+        },
+        {
+          "es": "Cuando el grupo acaba, genera otro tema y empieza otra ronda.",
+          "zh": "一轮结束后，生成新的主题，开始下一轮。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Puedes cambiar de tema: el generador ofrece muchas frases para que no se repita.",
+          "zh": "👉 可以换主题：生成器提供了很多句子，不会重复。"
+        },
+        {
+          "es": "👉 Para hacerlo más divertido, los objetos pueden ser cada vez más absurdos a medida que la lista crece.",
+          "zh": "👉 为了更有趣，随着清单越来越长，可以说越来越荒唐的东西。"
+        }
+      ],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Tema",
+            "zh": "主题"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Temas",
+                "zh": "主题"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Me voy de viaje y llevo…",
+                    "zh": "我去旅行，我带上……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Al arca de Noé subió…",
+                    "zh": "挪亚的方舟上有……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Voy al supermercado y compro…",
+                    "zh": "我去超市，买了……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "En la fiesta de la iglesia habrá…",
+                    "zh": "教会的聚会上会有……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Voy a la playa y meto en la mochila…",
+                    "zh": "我去海边，背包里装了……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Voy de campamento y llevo…",
+                    "zh": "我去露营，带上了……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Para mi cumpleaños quiero…",
+                    "zh": "我的生日，我想要……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "En mi mochila de clase hay…",
+                    "zh": "我的书包里有……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Voy a un restaurante y pido…",
+                    "zh": "我去餐厅，点了……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Si viajo a la luna, llevo…",
+                    "zh": "如果我去月球，我会带上……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "En el aeropuerto me encuentro…",
+                    "zh": "在机场，我遇到了……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Voy al zoo y veo…",
+                    "zh": "我去动物园，看到了……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Para hacer un pastel necesito…",
+                    "zh": "做一个蛋糕，我需要……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Me compro una bicicleta y le pongo…",
+                    "zh": "我买了一辆自行车，我给它装上了……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Salgo de casa y me olvido de…",
+                    "zh": "我出门时忘了带……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "En la mochila de mi amigo hay…",
+                    "zh": "我朋友的背包里有……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Si fuera un superhéroe, llevaría…",
+                    "zh": "如果我是超级英雄，我会带着……"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "En el jardín de la iglesia planto…",
+                    "zh": "我在教会的花园里种了……"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "why": {
+        "es": "Cada persona tiene que recordar y repetir toda la lista, así se entrena la memoria sin presión; y los objetos absurdos hacen reír a todos.",
+        "zh": "每个人都要记住并重复整个清单，在轻松的氛围中锻炼记忆力；荒唐的东西也会让大家笑起来。"
+      }
+    },
+    {
+      "id": "dos-verdades-mentira",
+      "icon": "🤥",
+      "title": {
+        "es": "Dos verdades y una mentira",
+        "zh": "两真一假"
+      },
+      "category": "conocerse",
+      "minMinutes": 8,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Conocer datos curiosos de los compañeros y ejercitar la escucha y la observación.",
+        "zh": "了解同伴的有趣事情，并练习倾听和观察。"
+      },
+      "steps": [
+        {
+          "es": "Por turnos, cada persona dice tres frases sobre sí misma: dos verdaderas y una falsa.",
+          "zh": "每人轮流说三句关于自己的话：两句真的，一句假的。"
+        },
+        {
+          "es": "El grupo vota por la frase que cree falsa, levantando la mano.",
+          "zh": "其他人举手投票，选出他们认为是假的那一句。"
+        },
+        {
+          "es": "La persona revela cuál era la mentira y cuenta un poco más de una de las verdades.",
+          "zh": "说话的人公布哪句是假的，并多讲一点其中一个真实的故事。"
+        },
+        {
+          "es": "Se pasa a la siguiente persona. Nada que incomode: evitad temas familiares, de salud o algo que la persona no quiera contar.",
+          "zh": "然后换下一个人。不要说让人不舒服的内容：避免家庭、健康或对方不愿透露的话题。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Si el grupo es tímido, empieza tú como ejemplo para dar confianza.",
+          "zh": "👉 如果全班比较害羞，老师可以先示范，让大家放松。"
+        },
+        {
+          "es": "👉 Puedes añadir la variante «dos verdades y un sueño»: la tercera frase es un sueño o una meta, no una mentira.",
+          "zh": "👉 可以加入“两个真相和一个梦想”的变体：第三句不是谎言，而是一个梦想或目标。"
+        }
+      ],
+      "variants": [
+        {
+          "title": {
+            "es": "Dos verdades y un sueño",
+            "zh": "两真一梦"
+          },
+          "steps": [
+            {
+              "es": "Igual que el juego base, pero la tercera frase es un sueño o una meta, no una mentira.",
+              "zh": "和基础版一样，但第三句是梦想或目标，而不是谎言。"
+            },
+            {
+              "es": "El grupo intenta adivinar cuál es el sueño: así se conocen los deseos de cada uno.",
+              "zh": "大家尝试猜出哪一句是梦想，这样就能了解每个人的心愿。"
+            }
+          ]
+        }
+      ],
+      "why": {
+        "es": "Las preguntas son fáciles de responder y crean conversación entre todos. Lo que cada uno cuenta sobre sí mismo rompe el hielo sin presión.",
+        "zh": "这些问题很容易回答，能引发全班的交流。每个人讲述自己，能在没有压力的情况下打破僵局。"
+      },
+      "tools": [
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 600
+        }
+      ]
+    },
+    {
+      "id": "quien-soy-biblico",
+      "icon": "📜",
+      "title": {
+        "es": "¿Quién soy? (bíblico)",
+        "zh": "我是谁（圣经人物）"
+      },
+      "category": "biblia",
+      "minMinutes": 8,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Repasar personajes bíblicos conocidos haciendo preguntas de sí o no y recordando sus historias.",
+        "zh": "通过是非问题来猜圣经人物，复习大家熟悉的人物和他们的故事。"
+      },
+      "steps": [
+        {
+          "es": "Elige el grupo, Antiguo o Nuevo Testamento, y genera un personaje.",
+          "zh": "选择“旧约”或“新约”，然后生成一个人物。"
+        },
+        {
+          "es": "Muestra la tarjeta solo a la clase, no al voluntario, que se sienta de cara a la pizarra.",
+          "zh": "只把卡片给全班看，不给志愿者看。志愿者面向黑板坐好。"
+        },
+        {
+          "es": "La clase hace preguntas de sí o no al voluntario, con un máximo de 20.",
+          "zh": "全班向志愿者提出是非问题，最多 20 个。"
+        },
+        {
+          "es": "Empezad con preguntas amplias (¿es del Antiguo o del Nuevo Testamento?) y id concretando (¿es un hombre? ¿es un profeta?).",
+          "zh": "先问宽泛的问题（是旧约还是新约？），再逐步具体（是男人吗？是先知吗？）。"
+        },
+        {
+          "es": "Si el voluntario acierta, celebradlo. Si llegan a 20 preguntas sin acertar, se revela el personaje.",
+          "zh": "如果志愿者猜中了，大家一起庆祝；如果问满 20 个问题还没猜出，就公布答案。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Puedes hacer una ronda por equipos: cada equipo tiene 20 preguntas y el que acierta antes gana.",
+          "zh": "👉 可以分组进行：每队有 20 个问题，先猜中的队获胜。"
+        },
+        {
+          "es": "👉 Los nombres aparecen en español y en chino; úsalos según el idioma de tu grupo.",
+          "zh": "👉 人物名字同时有西班牙语和中文，请根据班级使用的语言选择。"
+        }
+      ],
+      "tools": [
+        {
+          "kind": "generator",
+          "title": {
+            "es": "Personaje",
+            "zh": "人物"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Antiguo Testamento",
+                "zh": "旧约"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Noé",
+                    "zh": "挪亚"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Moisés",
+                    "zh": "摩西"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Abraham",
+                    "zh": "亚伯拉罕"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "David",
+                    "zh": "大卫"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Salomón",
+                    "zh": "所罗门"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "José",
+                    "zh": "约瑟"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Adán",
+                    "zh": "亚当"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Eva",
+                    "zh": "夏娃"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Elías",
+                    "zh": "以利亚"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Jonás",
+                    "zh": "约拿"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Daniel",
+                    "zh": "但以理"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Sansón",
+                    "zh": "参孙"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Rut",
+                    "zh": "路得"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Samuel",
+                    "zh": "撒母耳"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Goliat",
+                    "zh": "歌利亚"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Nuevo Testamento",
+                "zh": "新约"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Pedro",
+                    "zh": "彼得"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Pablo",
+                    "zh": "保罗"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "María (madre de Jesús)",
+                    "zh": "马利亚（耶稣的母亲）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Juan el Bautista",
+                    "zh": "施洗约翰"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Zaqueo",
+                    "zh": "撒该"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Lázaro",
+                    "zh": "拉撒路"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Marta",
+                    "zh": "马大"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Tomás",
+                    "zh": "多马"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Mateo",
+                    "zh": "马太"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Lucas",
+                    "zh": "路加"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Bernabé",
+                    "zh": "巴拿巴"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Esteban",
+                    "zh": "司提反"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "Juan (el apóstol)",
+                    "zh": "约翰（使徒）"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "timer",
+          "title": {
+            "es": "Tiempo",
+            "zh": "时间"
+          },
+          "seconds": 600
+        }
+      ],
+      "why": {
+        "es": "Repasar personajes conocidos con preguntas de sí o no exige recordar sus historias y pensar en cada detalle.",
+        "zh": "用是非问题猜人物，需要回想他们的故事并注意每个细节，能复习大家熟悉的圣经人物。"
+      }
+    }
+  ]
+}

@@ -14,14 +14,15 @@ struct LibraryView: View {
             content.frame(width: geo.size.width, height: geo.size.height, alignment: .topLeading)
         }
         .background(Theme.background)
-        .navigationTitle(model.t("Biblioteca", "游戏库"))
+        .navigationTitle("")
     }
 
     private var content: some View {
         VStack(spacing: 0) {
             VStack(spacing: 12) {
                 HStack(spacing: 8) {
-                    Image(systemName: "magnifyingglass").foregroundStyle(Theme.secondary)
+                    HStack(spacing: 8) {
+                        Image(systemName: "magnifyingglass").foregroundStyle(Theme.secondary)
                     TextField(model.t("Buscar", "搜索"), text: query).textFieldStyle(.plain).font(Theme.font(15))
                         .accessibilityLabel(model.t("Buscar juegos", "搜索游戏"))
                     if !model.query.isEmpty {
@@ -35,6 +36,18 @@ struct LibraryView: View {
                 .padding(.horizontal, 12).frame(minHeight: Theme.minTap)
                 .background(RoundedRectangle(cornerRadius: 12).fill(Theme.surface))
                 .overlay(RoundedRectangle(cornerRadius: 12).stroke(Theme.border))
+                    .frame(maxWidth: .infinity)
+                    filterMenu
+                    Button { model.newGame() } label: {
+                        Image(systemName: "plus").font(.system(size: 15, weight: .semibold)).foregroundStyle(Theme.ink)
+                            .frame(width: Theme.minTap, height: Theme.minTap)
+                            .background(RoundedRectangle(cornerRadius: 12).fill(Theme.surface))
+                            .overlay(RoundedRectangle(cornerRadius: 12).stroke(Theme.border))
+                            .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(model.t("Nuevo juego", "新游戏")).help(model.t("Nuevo juego", "新游戏"))
+                }
 
                 FlowLayout(spacing: 6) {
                     chip(model.t("Todos", "全部"), fg: Theme.ink, bg: Theme.chipNeutral, selFG: Color(light: 0xFFFFFF, dark: 0x1F1D2B), selBG: Theme.ink,
@@ -49,25 +62,9 @@ struct LibraryView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
 
-                HStack(alignment: .center, spacing: 6) {
-                    Text("\(model.filteredGames.count) \(model.t("JUEGOS", "游戏"))")
-                        .font(Theme.font(12, .semibold)).tracking(0.5).foregroundStyle(Theme.secondary).lineLimit(1)
-                    Spacer(minLength: 0)
-                    Button { model.favoritesOnly.toggle() } label: {
-                        Image(systemName: model.favoritesOnly ? "star.fill" : "star").foregroundStyle(.yellow)
-                            .frame(width: Theme.minTap, height: Theme.minTap).contentShape(Rectangle())
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel(model.t("Solo favoritos", "仅收藏"))
-                    .accessibilityValue(model.favoritesOnly ? "on" : "off")
-                }
-                FlowLayout(spacing: 6) {
-                    ForEach(DurationFilter.allCases) { d in
-                        chip(d == .all ? "⏱ ∗" : "\(d.label) min", fg: Theme.ink, bg: Theme.chipNeutral, selFG: Color(light: 0xFFFFFF, dark: 0x1F1D2B), selBG: Theme.ink,
-                             selected: model.durationFilter == d) { model.durationFilter = d }
-                    }
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
+                Text("\(model.filteredGames.count) \(model.t("JUEGOS", "游戏"))")
+                    .font(Theme.font(12, .semibold)).tracking(0.5).foregroundStyle(Theme.secondary).lineLimit(1)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
             .padding(.horizontal, 14).padding(.top, 12).padding(.bottom, 8)
 
@@ -92,6 +89,38 @@ struct LibraryView: View {
         }
         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
         .clipped()
+    }
+
+    private var filterActive: Bool { model.durationFilter != .all || model.favoritesOnly }
+
+    private var filterMenu: some View {
+        Menu {
+            Section(model.t("Duración", "时长")) {
+                ForEach(DurationFilter.allCases) { d in
+                    Button { model.durationFilter = d } label: {
+                        if model.durationFilter == d { Label(d == .all ? model.t("Todas", "全部") : "\(d.label) min", systemImage: "checkmark") }
+                        else { Text(d == .all ? model.t("Todas", "全部") : "\(d.label) min") }
+                    }
+                }
+            }
+            Divider()
+            Toggle(isOn: Binding(get: { model.favoritesOnly }, set: { model.favoritesOnly = $0 })) {
+                Label(model.t("Solo favoritos", "仅收藏"), systemImage: "star")
+            }
+            if filterActive {
+                Divider()
+                Button(model.t("Quitar filtros", "清除筛选")) { model.durationFilter = .all; model.favoritesOnly = false }
+            }
+        } label: {
+            Image(systemName: "line.3.horizontal.decrease.circle\(filterActive ? ".fill" : "")")
+                .font(.system(size: 17)).foregroundStyle(filterActive ? Color.white : Theme.ink)
+                .frame(width: Theme.minTap, height: Theme.minTap)
+                .background(RoundedRectangle(cornerRadius: 12).fill(filterActive ? Theme.accentPlanificar : Theme.surface))
+                .overlay(RoundedRectangle(cornerRadius: 12).stroke(Theme.border))
+        }
+        .menuStyle(.button).buttonStyle(.plain).menuIndicator(.hidden).fixedSize()
+        .accessibilityLabel(model.t("Filtros: duración y favoritos", "筛选：时长和收藏"))
+        .accessibilityValue(filterActive ? "on" : "off")
     }
 
     private func chip(_ title: String, fg: Color, bg: Color, selFG: Color, selBG: Color, selected: Bool, action: @escaping () -> Void) -> some View {
@@ -122,6 +151,7 @@ struct LibraryRow: View {
         if model.language == .both, !game.title.zh.isEmpty, game.title.zh != game.title.es { return "\(game.title.zh) · \(minutesText)" }
         return minutesText
     }
+    private var inSession: Bool { model.session.items.contains { $0.gameID == game.id } }
     private var selected: Bool { model.selectedGameID == game.id }
 
     var body: some View {
@@ -136,6 +166,10 @@ struct LibraryRow: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             if model.isFavorite(game.id) { Image(systemName: "star.fill").foregroundStyle(.yellow).font(.caption) }
+            if inSession {
+                Text(model.t("En sesión", "已加入")).font(Theme.font(12, .semibold)).foregroundStyle(Theme.ok).lineLimit(1).fixedSize()
+                    .padding(.trailing, 8)
+            } else {
             Button { model.addToSession(game) } label: {
                 Image(systemName: "plus").font(.system(size: 16, weight: .bold)).foregroundStyle(.white)
                     .frame(width: 36, height: 36).background(Circle().fill(game.category.color))
@@ -144,6 +178,7 @@ struct LibraryRow: View {
             .buttonStyle(.plain)
             .accessibilityLabel("\(model.t("Añadir a la sesión", "加入课程")): \(game.title.es)")
             .help(model.t("Añadir a la sesión", "加入课程"))
+            }
         }
         .padding(.leading, 10).padding(.trailing, 4).padding(.vertical, 6)
         .background(RoundedRectangle(cornerRadius: 16).fill(Theme.surface))

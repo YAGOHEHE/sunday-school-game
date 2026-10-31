@@ -86,6 +86,7 @@ extension GameCategory {
         case .equipo: return Color(hex: 0x15803D)
         case .expresion: return Color(hex: 0xBE185D)
         case .conocerse: return Color(hex: 0x1D4ED8)
+        case .biblia: return Color(hex: 0xB45309)
         }
     }
     /// Tinte claro de fondo.
@@ -96,6 +97,7 @@ extension GameCategory {
         case .equipo: return Color(hex: 0xDDF5E6)
         case .expresion: return Color(hex: 0xFDE2EC)
         case .conocerse: return Color(hex: 0xE0EAFE)
+        case .biblia: return Color(hex: 0xFEF3C7)
         }
     }
     /// Variante para fondo oscuro.
@@ -106,6 +108,7 @@ extension GameCategory {
         case .equipo: return Color(hex: 0x34D399)
         case .expresion: return Color(hex: 0xF472B6)
         case .conocerse: return Color(hex: 0x60A5FA)
+        case .biblia: return Color(hex: 0xFBBF24)
         }
     }
     /// Tinte adaptativo: claro en modo claro, color oscurecido en modo oscuro.
@@ -116,6 +119,7 @@ extension GameCategory {
         case .equipo: return Color(light: 0xDDF5E6, dark: 0x16301F)
         case .expresion: return Color(light: 0xFDE2EC, dark: 0x3A1828)
         case .conocerse: return Color(light: 0xE0EAFE, dark: 0x18233F)
+        case .biblia: return Color(light: 0xFEF3C7, dark: 0x3A2A10)
         }
     }
 }

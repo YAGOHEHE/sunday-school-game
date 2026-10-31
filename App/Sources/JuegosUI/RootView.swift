@@ -42,7 +42,7 @@ public struct RootView: View {
                         .pickerStyle(.segmented).frame(width: 220)
                     }
                     ToolbarItemGroup {
-                        Button { model.newGame() } label: { Label(model.t("Nuevo juego", "新游戏"), systemImage: "plus.square") }
+                        HistoryButton()
                         Button { model.openTemplates() } label: { Label(model.t("Plantillas", "模板"), systemImage: "rectangle.3.group") }
                         #if os(macOS)
                         Button { openWindow(id: "projector") } label: { Label(model.t("Proyector", "投影"), systemImage: "tv") }

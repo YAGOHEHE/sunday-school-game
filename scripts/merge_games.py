@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fusiona Resources/parts/part{A,B,C}.json en Resources/games.json y valida."""
+"""Fusiona Resources/parts/*.json (orden alfabético) en Resources/games.json y valida."""
 import json
 import os
 import sys
@@ -39,19 +39,25 @@ def load(name):
 
 
 def main():
-    a, b, c = load("partA.json"), load("partB.json"), load("partC.json")
+    names = sorted(n for n in os.listdir(PARTS) if n.endswith(".json"))
+    if not names:
+        errors.append(f"sin parts en {PARTS}")
+        return finish()
+    parts = [(n, load(n)) for n in names]
     if errors:
         return finish()
     games = []
-    for name, part in (("partA", a), ("partB", b), ("partC", c)):
+    challenges = None
+    for name, part in parts:
         gs = part.get("games")
         if not isinstance(gs, list):
             errors.append(f"{name}: falta 'games' (lista)")
             continue
         games += gs
-    challenges = c.get("challenges")
-    if not isinstance(challenges, list) or not challenges:
-        errors.append("partC: falta 'challenges'")
+        if challenges is None and isinstance(part.get("challenges"), list) and part["challenges"]:
+            challenges = part["challenges"]
+    if challenges is None:
+        errors.append("ningún part tiene 'challenges'")
         challenges = []
     seen = set()
     for g in games:

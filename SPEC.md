@@ -19,7 +19,7 @@ Fuente original (solo lectura, NO modificar): `/Users/jiaheqiu/Library/Mobile Do
 Raíz = `CatalogFile` (`version: 1`, `challenges: [L]`, `games: [Game]`). `L` = `{"es": "...", "zh": "..."}`. Ambos idiomas siempre rellenos.
 Campos opcionales ausentes = omitir la clave (no `null`). Evitar comillas ASCII `"` dentro de textos: usar « » o “ ”.
 
-### Catálogo (23 juegos) — id · icono · categoría · min–max · herramientas
+### Catálogo (23 juegos base; 39 tras la ampliación) — id · icono · categoría · min–max · herramientas
 | id | ficha original | icono | cat | min | tools |
 |---|---|---|---|---|---|
 | quien-viene-detras | "Conexión de neuronas".md («¿Quién viene detrás?», 2 variantes, banco de 110 preguntas en 11 categorías) | 🚪 | conocerse | 15–20 | timer 300 (conversación); deck: 11 grupos = categorías del banco (solo front) |
@@ -45,6 +45,28 @@ Campos opcionales ausentes = omitir la clave (no `null`). Evitar comillas ASCII 
 | tormenta | 禁语风暴 | 🌪️ | mente | 5–8 | colorFlash 1 grupo: red=cantarlo, yellow=decirlo en otro idioma/dialecto, blue=silencio, solo mímica; generator grupo Categorías (≥15) |
 | agencia-detectives | 谎言侦探局 | 🕵️ | mente | 10 | generator grupos «Escenas» y «Detalles absurdos» (≥10 c/u); timer 300. REGLA CORREGIDA: si los detectives descubren el detalle absurdo, ganan los detectives; si se acaba el tiempo sin descubrirlo, gana el guionista. Título ES: «La Agencia de Detectives» |
 | bolsa-identidad | 身份交换所 | 🪪 | conocerse | 6 | identity 1 grupo con los 30 roles (front = rol, back = guía); timer 300 |
+
+### Categoría Biblia y ampliación 2026-10-31
+Categoría nueva `biblia` (📖, es «Biblia», zh «圣经»), tras `conocerse`: color #B45309 (texto blanco AA) · tinte #FEF3C7 · onDark #FBBF24 · tinte adaptable oscuro #3A2A10. Ampliación: 16 juegos (5–10 min, 8–10 personas, sin material); fuentes en `parts/partD.json` (juegos 1–8) y `partE.json` (9–16). Recuentos de plantilla: palabra 21 · reloj 11 · tarjeta 7 (total 39).
+
+| id | cat | min | tools | plantilla |
+|---|---|---|---|---|
+| zip-zap-zop | energia | 5 | timer 300 | reloj |
+| caras-serias | energia | 5 | timer 300, scoreboard 2 | reloj |
+| gigantes-magos-elfos | energia | 5–10 | reference (3 personajes y posturas), scoreboard 2 | tarjeta |
+| contar-hasta-20 | mente | 5 | stopwatch | reloj |
+| pasa-la-palmada | mente | 5 | stopwatch | reloj |
+| nos-vamos-de-viaje | mente | 5–10 | generator (temas) | palabra |
+| dos-verdades-mentira | conocerse | 10 | timer 600 | reloj |
+| quien-soy-biblico | biblia | 10 | generator (personajes AT/NT), timer 600 | palabra |
+| verdadero-falso-biblico | biblia | 10 | deck (afirmación / V-F + cita) | tarjeta |
+| telefono-versiculo | biblia | 5–10 | generator (versículos cortos) | palabra |
+| abecedario-biblico | biblia | 5–10 | generator (letras) | palabra |
+| rap-versiculo | biblia | 5–10 | generator (versículos), timer 300 | palabra |
+| fila-en-silencio | equipo | 5 | generator (criterios), timer 300 | palabra |
+| historia-palabra | equipo | 5–10 | generator (inicios de historia) | palabra |
+| submarino | equipo | 5 | timer 300 | reloj |
+| isla-desierta | equipo | 10 | timer 600 | reloj |
 
 `challenges` (global): hablar como robot 10 s, cantar una canción infantil, imitar a un profesor (con respeto), 5 flexiones, 5 saltos, decir tu comida favorita, decir una serie que te guste, bailar 10 s, caminar como pingüino, decir un trabalenguas, contar un chiste, recitar un versículo de memoria, hablar como un bebé 10 s, poner la cara más seria 10 s sin reírse… (≥14).
 
