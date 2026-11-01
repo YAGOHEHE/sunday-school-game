@@ -77,7 +77,7 @@ struct CompactClock: View {
         HStack(spacing: 6) {
             Image(systemName: "timer").foregroundStyle(pal.fg.opacity(0.6)).accessibilityHidden(true)
             Text(formatTime(state.remaining.rounded(.up)))
-                .font(Theme.font(28, .bold)).monospacedDigit()
+                .font(Theme.font(28, .bold)).monospacedDigit().lineLimit(1).fixedSize()
                 .foregroundStyle(state.finished ? .red : pal.fg)
             Button { state.primary() } label: {
                 Image(systemName: state.running ? "pause.fill" : "play.fill").frame(width: Theme.minTap, height: Theme.minTap).contentShape(Rectangle())

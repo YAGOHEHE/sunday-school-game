@@ -148,6 +148,23 @@ final class JuegosCoreTests: XCTestCase {
         XCTAssertFalse(Session(availableMinutes: 30).overBudget)
     }
 
+    func testHistoryUpsert() {
+        var h: [Session] = []
+        var a = Session(date: Date(timeIntervalSince1970: 1_000), title: "a")
+        h.upsert(a)
+        h.upsert(a)
+        XCTAssertEqual(h.count, 1, "guardar dos veces la misma sesión no duplica")
+        a.title = "a2"
+        h.upsert(a)
+        XCTAssertEqual(h.map(\.title), ["a2"])
+        let older = Session(date: Date(timeIntervalSince1970: 500), title: "old")
+        let newer = Session(date: Date(timeIntervalSince1970: 2_000), title: "new")
+        h.upsert(older); h.upsert(newer)
+        XCTAssertEqual(h.map(\.title), ["new", "a2", "old"], "orden por fecha descendente")
+        for i in 0..<70 { h.upsert(Session(date: Date(timeIntervalSince1970: Double(10_000 + i)))) }
+        XCTAssertEqual(h.count, 60)
+    }
+
     func testUserDataStore() throws {
         let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         defer { try? FileManager.default.removeItem(at: dir) }

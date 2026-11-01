@@ -76,7 +76,7 @@ struct LibraryView: View {
                     }
                     if model.hasHidden {
                         Button(model.t("Mostrar juegos ocultos", "显示已隐藏")) { model.unhideAll() }
-                            .buttonStyle(.link).font(.caption)
+                            .buttonStyle(.plain).font(.caption).foregroundStyle(Theme.accentPlanificar)
                     }
                 }
                 .padding(.horizontal, 14).padding(.bottom, 14).padding(.top, 4)
@@ -147,9 +147,8 @@ struct LibraryRow: View {
         "\(game.minMinutes == game.maxMinutes ? "\(game.minMinutes)" : "\(game.minMinutes)–\(game.maxMinutes)") min"
     }
     private var titleText: String { model.language == .zh ? game.title.text(.zh) : game.title.text(.es) }
-    private var subtitle: String {
-        if model.language == .both, !game.title.zh.isEmpty, game.title.zh != game.title.es { return "\(game.title.zh) · \(minutesText)" }
-        return minutesText
+    private var zhSubtitle: String? {
+        (model.language == .both && !game.title.zh.isEmpty && game.title.zh != game.title.es) ? game.title.zh : nil
     }
     private var inSession: Bool { model.session.items.contains { $0.gameID == game.id } }
     private var selected: Bool { model.selectedGameID == game.id }
@@ -161,8 +160,15 @@ struct LibraryRow: View {
                 .background(RoundedRectangle(cornerRadius: 12).fill(game.category.adaptiveTint))
             VStack(alignment: .leading, spacing: 1) {
                 Text(titleText).font(model.language == .zh ? Theme.fontZH(15, .semibold) : Theme.font(15, .semibold))
-                    .foregroundStyle(Theme.ink).lineLimit(2)
-                Text(subtitle).font(Theme.fontZH(12)).foregroundStyle(Theme.secondary).lineLimit(1)
+                    .foregroundStyle(Theme.ink).lineLimit(1)
+                HStack(spacing: 0) {
+                    if let zh = zhSubtitle {
+                        Text(zh).lineLimit(1).truncationMode(.tail)
+                        Text(" · ").fixedSize()
+                    }
+                    Text(minutesText).lineLimit(1).fixedSize()
+                }
+                .font(Theme.fontZH(12)).foregroundStyle(Theme.secondary)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             if model.isFavorite(game.id) { Image(systemName: "star.fill").foregroundStyle(.yellow).font(.caption) }
