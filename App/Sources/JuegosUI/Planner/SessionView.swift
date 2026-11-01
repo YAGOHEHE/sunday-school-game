@@ -28,6 +28,8 @@ struct SessionView: View {
                 }
                 .padding(20)
             }
+            #if os(macOS)
+            // En iPad el botón «Empezar» es flotante (ver RootView); aquí solo en macOS.
             Button { play.startSession(model: model) } label: {
                 HStack(spacing: 10) {
                     Image(systemName: "play.fill")
@@ -43,6 +45,10 @@ struct SessionView: View {
             .disabled(s.items.isEmpty)
             .padding(.horizontal, 20).padding(.vertical, 14)
             .accessibilityLabel("\(model.t("Empezar sesión", "开始课程"))")
+            #else
+            // Espacio para que el contenido no quede tapado por los botones flotantes.
+            Color.clear.frame(height: 92)
+            #endif
         }
         .background(Theme.background)
         .navigationTitle("")
@@ -221,7 +227,11 @@ private struct SessionRow: View {
 
     var body: some View {
         if let g = model.game(item.gameID) {
+            #if os(iOS)
+            let active = selected   // sin hover en táctil: controles al seleccionar la fila
+            #else
             let active = selected || hover
+            #endif
             HStack(spacing: 10) {
                 Rectangle().fill(g.category.color).frame(width: 5)
                 Text(g.icon).font(.system(size: 20))
@@ -242,7 +252,13 @@ private struct SessionRow: View {
                     .buttonStyle(.plain)
                     .accessibilityLabel("\(model.t("Quitar de la sesión", "移出课程")): \(g.title.es)")
                 } else {
+                    #if os(iOS)
+                    Image(systemName: "line.3.horizontal").font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(Theme.secondary.opacity(0.6)).frame(width: 36, height: 36)
+                        .accessibilityHidden(true)
+                    #else
                     Color.clear.frame(width: 6, height: 1)
+                    #endif
                 }
             }
             .padding(.trailing, 4)

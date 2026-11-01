@@ -26,7 +26,8 @@ struct GameDetailView: View {
         let tpl = model.template(for: g)
         return ScrollView {
             VStack(alignment: .leading, spacing: 22) {
-                HStack(alignment: .center, spacing: 18) {
+                ViewThatFits(in: .horizontal) {
+                    HStack(alignment: .center, spacing: 18) {
                     Text(g.icon).font(.system(size: 46))
                         .frame(width: 80, height: 80)
                         .background(RoundedRectangle(cornerRadius: 24).fill(g.category.adaptiveTint))
@@ -37,7 +38,7 @@ struct GameDetailView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     HStack(spacing: 6) {
                         Button { play.play(g) } label: {
-                            Text(model.t("Jugar", "开始玩")).font(Theme.font(15, .semibold)).foregroundStyle(.white)
+                            Text(model.t("Jugar", "开始玩")).font(Theme.font(15, .semibold)).foregroundStyle(.white).lineLimit(1).fixedSize()
                                 .padding(.horizontal, 18).frame(minHeight: Theme.minTap)
                                 .background(Capsule().fill(Theme.ok)).contentShape(Capsule())
                         }
@@ -61,6 +62,44 @@ struct GameDetailView: View {
                         .accessibilityLabel(model.t("Más acciones", "更多操作"))
                     }
                     .alignmentGuide(VerticalAlignment.center) { $0[VerticalAlignment.center] }
+                }
+                    VStack(alignment: .trailing, spacing: 12) {
+                        HStack(alignment: .center, spacing: 18) {
+                    Text(g.icon).font(.system(size: 46))
+                        .frame(width: 80, height: 80)
+                        .background(RoundedRectangle(cornerRadius: 24).fill(g.category.adaptiveTint))
+                    VStack(alignment: .leading, spacing: 4) {
+                        BiText(g.title, size: 28, weight: .bold).foregroundStyle(Theme.ink)
+                        dataLine(g, tpl: tpl)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                    HStack(spacing: 6) {
+                        Button { play.play(g) } label: {
+                            Text(model.t("Jugar", "开始玩")).font(Theme.font(15, .semibold)).foregroundStyle(.white).lineLimit(1).fixedSize()
+                                .padding(.horizontal, 18).frame(minHeight: Theme.minTap)
+                                .background(Capsule().fill(Theme.ok)).contentShape(Capsule())
+                        }
+                        .buttonStyle(.plain)
+                        Menu {
+                            if !inSession(g) {
+                                Button { model.addToSession(g) } label: { Label(model.t("Añadir a la sesión", "加入课程"), systemImage: "plus") }
+                            }
+                            Button { model.toggleFavorite(g.id) } label: {
+                                Label(model.isFavorite(g.id) ? model.t("Quitar favorito", "取消收藏") : model.t("Favorito", "收藏"),
+                                      systemImage: model.isFavorite(g.id) ? "star.slash" : "star")
+                            }
+                            Button { model.edit(g) } label: { Label(model.t("Editar", "编辑"), systemImage: "pencil") }
+                            Button(role: .destructive) { model.hide(g.id) } label: { Label(model.t("Ocultar", "隐藏"), systemImage: "eye.slash") }
+                        } label: {
+                            Image(systemName: "ellipsis").font(.system(size: 16, weight: .bold)).foregroundStyle(Theme.ink)
+                                .frame(width: Theme.minTap, height: Theme.minTap)
+                                .background(Circle().stroke(Theme.border.opacity(1), lineWidth: 1).background(Circle().fill(Theme.surface)))
+                        }
+                        .menuStyle(.button).buttonStyle(.plain).menuIndicator(.hidden).fixedSize()
+                        .accessibilityLabel(model.t("Más acciones", "更多操作"))
+                    }
+                    }
                 }
 
                 VStack(alignment: .leading, spacing: 4) {

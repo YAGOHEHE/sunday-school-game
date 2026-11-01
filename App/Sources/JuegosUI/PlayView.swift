@@ -207,7 +207,9 @@ struct DrawPanel: View {
 public struct PlayView: View {
     @Environment(AppModel.self) private var model
     @Environment(PlayController.self) private var play
+    #if os(macOS)
     @FocusState private var focused: Bool
+    #endif
 
     public init() {}
 
@@ -226,11 +228,10 @@ public struct PlayView: View {
                 PlayOverlays(presenting: false)
             }
             .preferredColorScheme(.dark)
+            #if os(macOS)
             .focusable()
             .focused($focused)
-            #if os(macOS)
             .focusEffectDisabled()
-            #endif
             .onAppear { focused = true }
             .onKeyPress(.space) { play.primaryAction(template: template); return .handled }
             .onKeyPress(.rightArrow) { play.next(); return .handled }
@@ -239,8 +240,36 @@ public struct PlayView: View {
                 if play.showChallenge || play.showDraw { play.closeOverlays() } else { play.exit() }
                 return .handled
             }
+            #else
+            // Táctil: deslizar ← → cambia la carta/palabra; si la herramienta no tiene carta,
+            // cambia de juego (Anterior/Siguiente). Prev/Siguiente también en los botones del pie.
+            .gesture(
+                DragGesture(minimumDistance: 24)
+                    .onEnded { v in
+                        guard !play.showChallenge, !play.showDraw else { return }
+                        guard abs(v.translation.width) > 64,
+                              abs(v.translation.width) > abs(v.translation.height) * 1.6 else { return }
+                        let left = v.translation.width < 0
+                        if hasCardAction(game, template) {
+                            play.primaryAction(template: template)
+                        } else if left { play.next() } else { play.previous() }
+                    }
+            )
+            #endif
         }
     }
+
+    #if os(iOS)
+    /// La herramienta activa tiene una acción de «otra carta/palabra» (deslizar para cambiar).
+    private func hasCardAction(_ game: Game, _ template: PlayTemplate) -> Bool {
+        let idx = play.effectiveIndex(game: game, template: template)
+        guard game.tools.indices.contains(idx) else { return false }
+        switch game.tools[idx].kind {
+        case .generator, .deck, .caller, .colorFlash, .identity, .codeSequence: return true
+        default: return false
+        }
+    }
+    #endif
 }
 
 // MARK: - Proyector

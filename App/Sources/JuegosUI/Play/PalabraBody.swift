@@ -91,7 +91,9 @@ private struct OtherButton: View {
         Button(action: action) {
             HStack(spacing: 8) {
                 LT(es, zh)
+                #if os(macOS)
                 Text("(espacio)").font(Theme.font(14)).opacity(0.6)
+                #endif
             }
         }
         .buttonStyle(PlayButtonStyle(kind: .solid(Theme.inkFixed, .white), big: true, capsule: true))
