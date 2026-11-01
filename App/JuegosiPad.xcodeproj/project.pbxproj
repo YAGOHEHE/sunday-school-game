@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		087E99174FC6DB4572E96BF1 /* JuegosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F56BFA5E70CE39E8621AC7 /* JuegosApp.swift */; };
+		82BAC43904DEE39312ADC10B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8D8DBD57F4F7777BB0B8CE /* Assets.xcassets */; };
 		A94F6A554FCA6C2AF8157DFE /* JuegosUI in Frameworks */ = {isa = PBXBuildFile; productRef = 831B8CE0146870CB90109323 /* JuegosUI */; };
 		D677969912D0E0654CBDDE3F /* JuegosCore in Frameworks */ = {isa = PBXBuildFile; productRef = B4A2EF85B1B90CE4246B5D4A /* JuegosCore */; };
 		E3884CF4FC30FA9C15FB1B0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A12F9335A8506B2282F20C /* Foundation.framework */; };
@@ -18,6 +19,7 @@
 		496F6299B9CCB270A279538D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A10CC45DA8A47E2CB66841E /* JuegosiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuegosiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F56BFA5E70CE39E8621AC7 /* JuegosApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JuegosApp.swift; sourceTree = "<group>"; };
+		8F8D8DBD57F4F7777BB0B8CE /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = JuegosiPad/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 				FEF88545303044F4ED2A94D3 /* Products */,
 				9DE2250BC4C63A206448F250 /* Frameworks */,
 				BEFB5DD954C5E0BD6DB8FD8E /* JuegosiPad */,
+				8F8D8DBD57F4F7777BB0B8CE /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +68,6 @@
 				61F56BFA5E70CE39E8621AC7 /* JuegosApp.swift */,
 				496F6299B9CCB270A279538D /* Info.plist */,
 			);
-			name = JuegosiPad;
 			path = JuegosiPad;
 			sourceTree = "<group>";
 		};
@@ -119,11 +121,9 @@
 				Base,
 			);
 			mainGroup = 59044C5DE8D3C9ECAC2D9DE5;
-			minimizedProjectReferenceProxies = 0;
 			packageReferences = (
 				964DEF0BEA48328BB54C03CA /* XCLocalSwiftPackageReference "." */,
 			);
-			preferredProjectObjectVersion = 100;
 			productRefGroup = FEF88545303044F4ED2A94D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82BAC43904DEE39312ADC10B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +218,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TY454TD453;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = JuegosiPad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.juegosdominical.ipad;
 				PRODUCT_NAME = JuegosiPad;
 				SDKROOT = iphoneos;
@@ -299,10 +304,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TY454TD453;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = JuegosiPad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.juegosdominical.ipad;
 				PRODUCT_NAME = JuegosiPad;
 				SDKROOT = iphoneos;
