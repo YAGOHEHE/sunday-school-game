@@ -71,6 +71,21 @@ struct SessionView: View {
                     DatePicker("", selection: $model.userData.currentSession.date, displayedComponents: .date)
                         .datePickerStyle(.graphical).labelsHidden().padding(12)
                 }
+                saveButton
+                Menu {
+                    Button { model.archiveSession() } label: { Label(model.t("Guardar en el historial", "保存到历史"), systemImage: "square.and.arrow.down") }
+                        .disabled(s.items.isEmpty)
+                    Divider()
+                    Button { model.newSession() } label: { Label(model.t("Nueva sesión", "新课程"), systemImage: "doc.badge.plus") }
+                } label: {
+                    Image(systemName: "ellipsis").font(.system(size: 15, weight: .bold)).foregroundStyle(Theme.ink)
+                        .frame(width: 36, height: 36)
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Theme.surface))
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Theme.border))
+                        .frame(minHeight: Theme.minTap).contentShape(Rectangle())
+                }
+                .menuStyle(.button).buttonStyle(.plain).menuIndicator(.hidden).fixedSize()
+                .accessibilityLabel(model.t("Más acciones de la sesión", "更多课程操作"))
             }
             HStack(alignment: .firstTextBaseline, spacing: 6) {
                 Text("\(s.totalMinutes)").font(Theme.font(22, .bold)).foregroundStyle(Theme.ink)
@@ -94,6 +109,27 @@ struct SessionView: View {
                 Text("min").font(Theme.font(15)).foregroundStyle(Theme.secondary)
             }
         }
+    }
+
+    private var saveButton: some View {
+        let saved = model.isCurrentSessionSaved
+        let empty = model.session.items.isEmpty
+        return Button { model.archiveSession() } label: {
+            HStack(spacing: 6) {
+                Image(systemName: saved ? "checkmark" : "square.and.arrow.down")
+                Text(saved ? model.s("Guardada", "已保存") : model.s("Guardar", "保存"))
+            }
+            .font(Theme.font(14, .semibold)).lineLimit(1).fixedSize()
+            .foregroundStyle(saved ? Theme.ok : .white)
+            .padding(.horizontal, 12).frame(minHeight: 36)
+            .background(RoundedRectangle(cornerRadius: 10).fill(saved ? Theme.ok.opacity(0.15) : Theme.accentPlanificar))
+            .opacity(empty ? 0.4 : 1)
+            .frame(minHeight: Theme.minTap).contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .disabled(empty || saved)
+        .help(model.t("Guardar la sesión en el historial", "将课程保存到历史"))
+        .accessibilityLabel(saved ? model.t("Sesión guardada", "课程已保存") : model.t("Guardar sesión", "保存课程"))
     }
 
     private var shortDate: String {
@@ -236,57 +272,18 @@ private struct SessionRow: View {
         .buttonStyle(.plain).accessibilityLabel(label)
     }
 
-    private func remove() { model.userData.currentSession.items.removeAll { $0.id == item.id } }
+    /// Copia el id antes de mutar: leer `item` (binding dentro de `userData`) durante la mutación
+    /// provoca una violación de exclusividad y cierra la app.
+    private func remove() {
+        let id = item.id
+        model.userData.currentSession.items.removeAll { $0.id == id }
+    }
 
     private func move(_ d: Int) {
+        let id = item.id
         var items = model.session.items
-        guard let i = items.firstIndex(where: { $0.id == item.id }), items.indices.contains(i + d) else { return }
+        guard let i = items.firstIndex(where: { $0.id == id }), items.indices.contains(i + d) else { return }
         items.swapAt(i, i + d)
         model.userData.currentSession.items = items
-    }
-}
-
-// MARK: Historial (botón de la barra + popover)
-
-struct HistoryButton: View {
-    @Environment(AppModel.self) private var model
-    @State private var open = false
-
-    var body: some View {
-        Button { open = true } label: {
-            Label(model.t("Historial", "历史"), systemImage: "clock.arrow.circlepath")
-        }
-        .help(model.t("Historial de sesiones", "课程历史"))
-        .popover(isPresented: $open, arrowEdge: .bottom) { content }
-    }
-
-    private var content: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(model.t("Historial", "历史")).font(Theme.font(17, .semibold)).foregroundStyle(Theme.ink)
-            if model.userData.history.isEmpty {
-                Text(model.t("Aún no hay sesiones", "暂无记录")).font(Theme.font(14)).foregroundStyle(Theme.secondary)
-            }
-            ScrollView {
-                VStack(spacing: 8) {
-                    ForEach(model.userData.history.prefix(10)) { h in
-                        HStack(alignment: .center, spacing: 10) {
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text("\(h.date.formatted(date: .abbreviated, time: .omitted))\(h.title.isEmpty ? "" : " · \(h.title)")")
-                                    .font(Theme.font(14, .semibold)).foregroundStyle(Theme.ink).lineLimit(1)
-                                Text(h.items.compactMap { model.game($0.gameID)?.icon }.joined(separator: " ") + "  · \(h.totalMinutes) min")
-                                    .font(Theme.font(12)).foregroundStyle(Theme.secondary).lineLimit(1)
-                            }
-                            Spacer(minLength: 0)
-                            Button(model.t("Repetir", "重复")) { model.repeatSession(h); open = false }
-                                .buttonStyle(PillButtonStyle(color: Theme.accentPlanificar, filled: false))
-                        }
-                        .padding(.horizontal, 10).padding(.vertical, 6)
-                        .background(RoundedRectangle(cornerRadius: 12).fill(Theme.surface))
-                        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Theme.border))
-                    }
-                }
-            }
-        }
-        .padding(14).frame(width: 360).frame(maxHeight: 460)
     }
 }
