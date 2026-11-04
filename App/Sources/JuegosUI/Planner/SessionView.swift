@@ -63,9 +63,16 @@ struct SessionView: View {
         let s = model.session
         return VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .center, spacing: 12) {
-                TextField(model.t("Sesión de hoy", "今日课程"), text: $model.userData.currentSession.title)
-                    .textFieldStyle(.plain).font(Theme.font(28, .bold)).foregroundStyle(Theme.onBoard)
-                    .accessibilityLabel(model.t("Título de la sesión", "课程标题"))
+                ZStack(alignment: .leading) {
+                    // Placeholder propio legible: el del TextField ignora foregroundStyle y queda gris sobre el tablero.
+                    if model.session.title.isEmpty {
+                        Text(model.t("Sesión de hoy", "今日课程"))
+                            .font(Theme.font(28, .bold)).foregroundStyle(Theme.onBoard.opacity(0.6))
+                    }
+                    TextField("", text: $model.userData.currentSession.title)
+                        .textFieldStyle(.plain).font(Theme.font(28, .bold)).foregroundStyle(Theme.onBoard)
+                        .accessibilityLabel(model.t("Título de la sesión", "课程标题"))
+                }
                 Button { showDate = true } label: {
                     Text(shortDate).font(Theme.font(14)).foregroundStyle(Theme.ink).lineLimit(1).fixedSize()
                         .padding(.horizontal, 12).frame(minHeight: 36)
