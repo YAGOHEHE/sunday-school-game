@@ -12,13 +12,13 @@ struct GameDetailView: View {
         Group {
             if let g = model.selectedGame { detail(g) } else {
                 VStack(spacing: 8) {
-                    Image(systemName: "gamecontroller").font(.system(size: 48)).foregroundStyle(Theme.secondary)
-                    Text(model.t("Elige un juego", "选择一个游戏")).font(Theme.font(16)).foregroundStyle(Theme.secondary)
+                    Image(systemName: "gamecontroller").font(.system(size: 48)).foregroundStyle(Theme.onBoard.opacity(0.85))
+                    Text(model.t("Elige un juego", "选择一个游戏")).font(Theme.font(16)).foregroundStyle(Theme.onBoard.opacity(0.85))
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
-        .background(Theme.surface)
+        .background(Theme.background)
     }
 
     private func detail(_ g: Game) -> some View {
@@ -38,9 +38,11 @@ struct GameDetailView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     HStack(spacing: 6) {
                         Button { play.play(g) } label: {
-                            Text(model.t("Jugar", "开始玩")).font(Theme.font(15, .semibold)).foregroundStyle(.white).lineLimit(1).fixedSize()
-                                .padding(.horizontal, 18).frame(minHeight: Theme.minTap)
-                                .background(Capsule().fill(Theme.ok)).contentShape(Capsule())
+                            Text(model.t("Jugar", "开始玩")).font(Theme.font(16, .bold)).foregroundStyle(.white).lineLimit(1).fixedSize()
+                                .padding(.horizontal, 22).frame(minHeight: Theme.minTap)
+                                .background(RoundedRectangle(cornerRadius: 10).fill(Theme.primaryMagenta)
+                                    .shadow(color: Theme.cardShadow, radius: 0, x: 2, y: 3))
+                                .contentShape(RoundedRectangle(cornerRadius: 10))
                         }
                         .buttonStyle(.plain)
                         Menu {
@@ -56,7 +58,7 @@ struct GameDetailView: View {
                         } label: {
                             Image(systemName: "ellipsis").font(.system(size: 16, weight: .bold)).foregroundStyle(Theme.ink)
                                 .frame(width: Theme.minTap, height: Theme.minTap)
-                                .background(Circle().stroke(Theme.border.opacity(1), lineWidth: 1).background(Circle().fill(Theme.surface)))
+                                .overlay(Circle().stroke(Theme.ink, lineWidth: 2))
                         }
                         .menuStyle(.button).buttonStyle(.plain).menuIndicator(.hidden).fixedSize()
                         .accessibilityLabel(model.t("Más acciones", "更多操作"))
@@ -76,9 +78,11 @@ struct GameDetailView: View {
                         }
                     HStack(spacing: 6) {
                         Button { play.play(g) } label: {
-                            Text(model.t("Jugar", "开始玩")).font(Theme.font(15, .semibold)).foregroundStyle(.white).lineLimit(1).fixedSize()
-                                .padding(.horizontal, 18).frame(minHeight: Theme.minTap)
-                                .background(Capsule().fill(Theme.ok)).contentShape(Capsule())
+                            Text(model.t("Jugar", "开始玩")).font(Theme.font(16, .bold)).foregroundStyle(.white).lineLimit(1).fixedSize()
+                                .padding(.horizontal, 22).frame(minHeight: Theme.minTap)
+                                .background(RoundedRectangle(cornerRadius: 10).fill(Theme.primaryMagenta)
+                                    .shadow(color: Theme.cardShadow, radius: 0, x: 2, y: 3))
+                                .contentShape(RoundedRectangle(cornerRadius: 10))
                         }
                         .buttonStyle(.plain)
                         Menu {
@@ -94,7 +98,7 @@ struct GameDetailView: View {
                         } label: {
                             Image(systemName: "ellipsis").font(.system(size: 16, weight: .bold)).foregroundStyle(Theme.ink)
                                 .frame(width: Theme.minTap, height: Theme.minTap)
-                                .background(Circle().stroke(Theme.border.opacity(1), lineWidth: 1).background(Circle().fill(Theme.surface)))
+                                .overlay(Circle().stroke(Theme.ink, lineWidth: 2))
                         }
                         .menuStyle(.button).buttonStyle(.plain).menuIndicator(.hidden).fixedSize()
                         .accessibilityLabel(model.t("Más acciones", "更多操作"))
@@ -115,7 +119,7 @@ struct GameDetailView: View {
                         VStack(alignment: .leading, spacing: 14) {
                             ForEach(Array(g.steps.enumerated()), id: \.offset) { i, s in
                                 HStack(alignment: .top, spacing: 14) {
-                                    Text("\(i + 1)").font(Theme.font(15, .semibold)).foregroundStyle(.white)
+                                    Text("\(i + 1)").font(Theme.font(15, .semibold)).foregroundStyle(g.category.onColor)
                                         .frame(width: 30, height: 30).background(Circle().fill(g.category.color))
                                     BiText(s, size: 16).foregroundStyle(Theme.ink)
                                 }
@@ -159,9 +163,11 @@ struct GameDetailView: View {
                     }
                 }
             }
-            .padding(.horizontal, 36).padding(.vertical, 28)
-            .frame(maxWidth: 820, alignment: .leading)
+            .padding(.horizontal, 30).padding(.vertical, 26)
+            .frame(maxWidth: 860, alignment: .leading)
+            .pizarraCard(radius: 6, dx: 4, dy: 6)
             .frame(maxWidth: .infinity)
+            .padding(22)
         }
         .navigationTitle("")
     }

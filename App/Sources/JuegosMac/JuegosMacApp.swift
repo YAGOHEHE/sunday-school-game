@@ -16,7 +16,7 @@ struct JuegosMacApp: App {
     }
 
     var body: some Scene {
-        WindowGroup("Juegos Dominical · 主日学游戏", id: "main") {
+        WindowGroup("¡Juguemos! · 玩", id: "main") {
             RootView()
                 .environment(model)
                 .environment(play)

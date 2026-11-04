@@ -108,15 +108,19 @@ struct T: View {
 }
 
 extension Theme {
-    /// Verde de «Quedan X min» / Jugar (= categoría Equipo).
+    /// Verde de «Quedan X min» (= categoría Equipo).
     static let ok = GameCategory.equipo.color
-    static let danger = Color(light: 0xB91C1C, dark: 0xF87171)
-    static let fieldBorder = Color(light: 0xDAD5C9, dark: 0x3A3A48)
-    static let chipNeutral = Color(light: 0xF0EDE5, dark: 0x2A2A35)
+    /// Aviso de «te pasas X min»: ámbar del icono (evitamos el rojo, fuera de la paleta Pizarra).
+    static let danger = Color(hex: 0xF2A900)
+    static let fieldBorder = Theme.border
+    /// Chip/segmento neutro: papel cálido.
+    static let chipNeutral = Theme.paper
 }
 
-/// Color de texto de una categoría sobre su tinte adaptativo.
-func categoryInk(_ c: GameCategory, _ scheme: ColorScheme) -> Color { scheme == .dark ? c.onDark : c.color }
+/// Color de texto de una categoría sobre su tinte (papel teñido): tinta sobre el oro, el tono de la categoría en el resto.
+func categoryInk(_ c: GameCategory, _ scheme: ColorScheme) -> Color {
+    switch c { case .energia, .biblia: return Theme.ink; default: return c.color }
+}
 
 struct PillButtonStyle: ButtonStyle {
     var color: Color = Theme.accentPlanificar
@@ -135,6 +139,67 @@ struct PillButtonStyle: ButtonStyle {
             )
             .opacity(enabled ? (configuration.isPressed ? 0.75 : 1) : 0.4)
             .scaleEffect(configuration.isPressed ? 0.97 : 1)
+    }
+}
+
+// MARK: - Estilo «Pizarra» (tarjetas de papel, cinta washi, líneas discontinuas, wordmark)
+
+extension Int {
+    /// Rotación «nota pegada» alterna (±0.2–0.4°) según la posición de la tarjeta.
+    var pizarraTilt: Double { [-0.4, 0.3, -0.2, 0.4, -0.3][((self % 5) + 5) % 5] }
+}
+
+extension View {
+    /// Tarjeta de papel: esquina poco redondeada + sombra DURA desplazada (radio 0) + leve rotación.
+    /// La sombra va SOLO en la forma del fondo (si se aplicara al contenedor, el texto proyectaría su propia sombra).
+    func pizarraCard(radius: CGFloat = Theme.cornerRadius,
+                     tilt: Double = 0,
+                     fill: Color = Theme.surface,
+                     shadow: Color = Theme.cardShadow,
+                     dx: CGFloat = 2, dy: CGFloat = 3) -> some View {
+        self.background(
+            RoundedRectangle(cornerRadius: radius).fill(fill)
+                .shadow(color: shadow, radius: 0, x: dx, y: dy)
+        )
+        .rotationEffect(.degrees(tilt))
+    }
+
+    /// Línea discontinua blanca en el borde indicado (separa columnas del tablero).
+    func boardDivider(_ edge: HorizontalEdge) -> some View {
+        overlay(alignment: edge == .leading ? .leading : .trailing) {
+            VLine().stroke(Theme.boardLine, style: StrokeStyle(lineWidth: 1, dash: [6, 4])).frame(width: 1)
+        }
+    }
+}
+
+/// Línea vertical (para dibujarla discontinua).
+struct VLine: Shape {
+    func path(in r: CGRect) -> Path {
+        var p = Path(); p.move(to: CGPoint(x: r.midX, y: r.minY)); p.addLine(to: CGPoint(x: r.midX, y: r.maxY)); return p
+    }
+}
+
+/// Cinta «washi»: rectángulo del color de la categoría, girado unos grados, arriba a la izquierda de una tarjeta.
+struct WashiTape: View {
+    var color: Color
+    var rotation: Double = -4
+    var body: some View {
+        Rectangle().fill(color)
+            .frame(width: 44, height: 14)
+            .rotationEffect(.degrees(rotation))
+            .shadow(color: Theme.cardShadow.opacity(0.45), radius: 0, x: 1, y: 1)
+    }
+}
+
+/// Wordmark de la cabecera: «¡Juguemos!» (amarillo) + «玩» (blanco).
+struct Wordmark: View {
+    var size: CGFloat = 30
+    var body: some View {
+        HStack(alignment: .firstTextBaseline, spacing: 8) {
+            Text("¡Juguemos!").font(Theme.font(size, .bold)).foregroundStyle(Theme.accent)
+            Text("玩").font(Theme.fontZH(size * 0.72, .black)).foregroundStyle(Theme.onBoard)
+        }
+        .accessibilityElement().accessibilityLabel("¡Juguemos!")
     }
 }
 

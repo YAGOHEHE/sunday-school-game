@@ -16,6 +16,13 @@ public struct RootView: View {
 
     public init() {}
 
+    /// Wordmark «¡Juguemos! 玩» sobre pastilla magenta para la cabecera.
+    private var wordmarkPill: some View {
+        Wordmark(size: 20)
+            .padding(.horizontal, 12).padding(.vertical, 5)
+            .background(Capsule().fill(Theme.background))
+    }
+
     private var languageBinding: Binding<LanguageMode> {
         Binding(get: { model.language }, set: { model.language = $0 })
     }
@@ -61,6 +68,7 @@ public struct RootView: View {
                 .navigationSplitViewColumnWidth(min: 380, ideal: 700)
         }
         .toolbar {
+            ToolbarItem(placement: .navigation) { wordmarkPill }
             ToolbarItem(placement: .principal) {
                 Picker("Idioma", selection: languageBinding) {
                     Text("ES").tag(LanguageMode.es)
@@ -180,6 +188,7 @@ public struct RootView: View {
     }
 
     @ToolbarContentBuilder private func iosToolbar(regular: Bool) -> some ToolbarContent {
+        ToolbarItem(placement: .topBarLeading) { wordmarkPill }
         if regular {
             ToolbarItem(placement: .principal) {
                 Picker("Idioma", selection: languageBinding) {
@@ -217,14 +226,14 @@ public struct RootView: View {
         Button { play.startSession(model: model) } label: {
             HStack(spacing: 10) {
                 Image(systemName: "play.fill")
-                Text(model.t("Empezar", "开始")).font(Theme.font(20, .bold))
+                Text(model.t("¡Juguemos! · 开始", "¡Juguemos! · 开始")).font(Theme.font(20, .bold))
             }
-            .foregroundStyle(.white)
+            .foregroundStyle(Theme.onAccent)
             .padding(.horizontal, 28).frame(minHeight: 64)
-            .background(Capsule().fill(Theme.accentPlanificar))
-            .shadow(color: Theme.accentPlanificar.opacity(0.35), radius: 12, y: 6)
+            .background(RoundedRectangle(cornerRadius: 14).fill(Theme.accent)
+                .shadow(color: Theme.cardShadow, radius: 0, x: 3, y: 4))
             .opacity(model.session.items.isEmpty ? 0.4 : 1)
-            .contentShape(Capsule())
+            .contentShape(RoundedRectangle(cornerRadius: 14))
         }
         .buttonStyle(.plain)
         .disabled(model.session.items.isEmpty)
