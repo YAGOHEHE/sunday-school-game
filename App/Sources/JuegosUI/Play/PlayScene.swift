@@ -85,6 +85,11 @@ struct TemplateBody: View {
         Group {
             if idx == -1 {
                 SheetView(game: game, presenting: presenting)
+            } else if game.tools.indices.contains(idx), game.tools[idx].kind == .map {
+                // El mapa ocupa toda el área, sea herramienta central o de pestaña.
+                MapGameView(state: play.state(index: idx) { MapState(groups: game.tools[idx].groups ?? [], plate: game.tools[idx].plate) },
+                            presenting: presenting)
+                    .padding(.horizontal, 16).padding(.top, 4)
             } else if idx != main {
                 ToolBox(index: idx, presenting: presenting).padding(.horizontal, 32)
             } else {

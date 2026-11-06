@@ -53,7 +53,7 @@ final class JuegosCoreTests: XCTestCase {
                 case .boom: XCTAssertNotNil(t.multiple, w)
                 case .codeSequence: XCTAssertNotNil(t.length, w)
                 case .stopwatch: break
-                case .deck, .generator, .reference, .caller, .colorFlash, .identity:
+                case .deck, .generator, .reference, .caller, .colorFlash, .identity, .map:
                     XCTAssertFalse(t.groups?.isEmpty ?? true, w)
                 }
                 for grp in t.groups ?? [] {
@@ -133,6 +133,21 @@ final class JuegosCoreTests: XCTestCase {
         XCTAssertTrue(g.matches("慢"))
         XCTAssertTrue(g.matches("sitio"))
         XCTAssertFalse(g.matches("zzz"))
+    }
+
+    func testMediterraneanProjection() {
+        let w = GeoWindow.mediterranean
+        let roma = w.project(lon: 12.48, lat: 41.89)
+        XCTAssertEqual(roma.x, 0.481, accuracy: 0.001)
+        XCTAssertEqual(roma.y, 0.310, accuracy: 0.001)
+        let jer = w.project(lon: 35.23, lat: 31.78)
+        XCTAssertEqual(jer.x, 0.955, accuracy: 0.001)
+        XCTAssertEqual(jer.y, 0.844, accuracy: 0.001)
+        // La lámina usa aspect 2.0 (imagen 4000×2000, ya corregida por cos 38°); se guarda en MapPlate.aspect.
+        let plate = MapPlate(image: "mapa-mediterraneo.jpg", aspect: 2.0,
+                             lonMin: w.lonMin, lonMax: w.lonMax, latMin: w.latMin, latMax: w.latMax)
+        XCTAssertEqual(plate.aspect, 2.0, accuracy: 0.001)
+        XCTAssertEqual(plate.window, w)
     }
 
     func testSession() {

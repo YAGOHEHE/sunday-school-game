@@ -1,0 +1,1212 @@
+{
+  "games": [
+    {
+      "id": "emoji-biblico",
+      "icon": "😀",
+      "title": {
+        "es": "Emoji bíblico",
+        "zh": "圣经表情猜猜猜"
+      },
+      "category": "biblia",
+      "minMinutes": 5,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Adivinar personajes y escenas de la Biblia descritos solo con emoticonos.",
+        "zh": "只靠一串表情符号，猜出圣经里的人物和场景。"
+      },
+      "steps": [
+        {
+          "es": "El profe muestra o lee una tarjeta de emojis sin decir la respuesta.",
+          "zh": "老师出示或念出一张表情卡，不说出答案。"
+        },
+        {
+          "es": "Los jugadores (o equipos) levantan la mano para adivinar el personaje o la escena.",
+          "zh": "玩家（或各组）举手抢答，猜出那是哪个人物或场景。"
+        },
+        {
+          "es": "Quien acierta gana un punto; después se pulsa «Revelar» para ver la respuesta.",
+          "zh": "答对的得一分；然后按“揭晓”看答案。"
+        },
+        {
+          "es": "Si nadie acierta, el profe da una pista o pasa a la siguiente tarjeta.",
+          "zh": "若无人答对，老师给个提示或换下一张。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Puedes dividir a la clase en dos equipos y llevar la cuenta de puntos.",
+          "zh": "👉 可以把全班分成两组，记分比赛。"
+        },
+        {
+          "es": "👉 Deja que los mayores creen sus propias tarjetas de emojis para los demás.",
+          "zh": "👉 让大一点的孩子自己设计表情卡考大家。"
+        },
+        {
+          "es": "Adaptación: si un emoji no se ve igual en todos los móviles, descríbelo en voz alta.",
+          "zh": "适应课堂：若某个表情在不同手机显示不一样，就口头描述一下。"
+        }
+      ],
+      "why": {
+        "es": "Repasar la Biblia de forma visual ayuda a recordar las historias y a quienes les cuesta leer.",
+        "zh": "用图像复习圣经，能帮助记住故事，也照顾不擅长阅读的人。"
+      },
+      "tools": [
+        {
+          "kind": "deck",
+          "title": {
+            "es": "Tarjetas de emojis",
+            "zh": "表情卡"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Personajes",
+                "zh": "人物"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "🚢🌧️🦓🦒🕊️",
+                    "zh": "🚢🌧️🦓🦒🕊️"
+                  },
+                  "back": {
+                    "es": "Noé (el arca y el diluvio)",
+                    "zh": "挪亚（方舟与洪水）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🧺👶🌊👸",
+                    "zh": "🧺👶🌊👸"
+                  },
+                  "back": {
+                    "es": "Moisés (salvado del río)",
+                    "zh": "摩西（从河中获救）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "📜🔥⛰️✌️",
+                    "zh": "📜🔥⛰️✌️"
+                  },
+                  "back": {
+                    "es": "Moisés (recibe la ley en el monte)",
+                    "zh": "摩西（在山上领受律法）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🦁🕳️🙏😴",
+                    "zh": "🦁🕳️🙏😴"
+                  },
+                  "back": {
+                    "es": "Daniel (en el foso de los leones)",
+                    "zh": "但以理（在狮子坑）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🐋🌊🙏",
+                    "zh": "🐋🌊🙏"
+                  },
+                  "back": {
+                    "es": "Jonás (y el gran pez)",
+                    "zh": "约拿（与大鱼）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "💪🦁🦱✂️",
+                    "zh": "💪🦁🦱✂️"
+                  },
+                  "back": {
+                    "es": "Sansón (la fuerza y el cabello)",
+                    "zh": "参孙（力气与头发）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🪨🎯👑🎵",
+                    "zh": "🪨🎯👑🎵"
+                  },
+                  "back": {
+                    "es": "David (la honda, el rey músico)",
+                    "zh": "大卫（甩石的琴王）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "👑📜⚖️🦉",
+                    "zh": "👑📜⚖️🦉"
+                  },
+                  "back": {
+                    "es": "Salomón (el rey sabio)",
+                    "zh": "所罗门（智慧的王）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "✝️🙏🕊️❤️",
+                    "zh": "✝️🙏🕊️❤️"
+                  },
+                  "back": {
+                    "es": "Jesús",
+                    "zh": "耶稣"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🗝️🐓🎣",
+                    "zh": "🗝️🐓🎣"
+                  },
+                  "back": {
+                    "es": "Pedro (las llaves, el gallo, el pescador)",
+                    "zh": "彼得（钥匙、鸡叫、渔夫）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "✉️⛓️➡️💡",
+                    "zh": "✉️⛓️➡️💡"
+                  },
+                  "back": {
+                    "es": "Pablo (las cartas y la conversión)",
+                    "zh": "保罗（书信与悔改归主）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "👫🍎🐍🌳",
+                    "zh": "👫🍎🐍🌳"
+                  },
+                  "back": {
+                    "es": "Adán y Eva",
+                    "zh": "亚当和夏娃"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "👴🌟🏜️🐑",
+                    "zh": "👴🌟🏜️🐑"
+                  },
+                  "back": {
+                    "es": "Abraham (las estrellas y la promesa)",
+                    "zh": "亚伯拉罕（星星与应许）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🧥🌈💭👑",
+                    "zh": "🧥🌈💭👑"
+                  },
+                  "back": {
+                    "es": "José (la túnica y los sueños)",
+                    "zh": "约瑟（彩衣与异梦）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🪜😴👼☁️",
+                    "zh": "🪜😴👼☁️"
+                  },
+                  "back": {
+                    "es": "Jacob (la escalera y los ángeles)",
+                    "zh": "雅各（天梯与天使）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🍲🥣👬",
+                    "zh": "🍲🥣👬"
+                  },
+                  "back": {
+                    "es": "Esaú (vende la primogenitura por un plato)",
+                    "zh": "以扫（为一碗汤卖长子名分）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "👸🇮🇱🙏👑",
+                    "zh": "👸🇮🇱🙏👑"
+                  },
+                  "back": {
+                    "es": "Ester (la reina valiente)",
+                    "zh": "以斯帖（勇敢的王后）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌾👩‍🌾❤️",
+                    "zh": "🌾👩‍🌾❤️"
+                  },
+                  "back": {
+                    "es": "Rut (espigando en los campos)",
+                    "zh": "路得（在田里拾麦穗）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "💔🙏😭🪰",
+                    "zh": "💔🙏😭🪰"
+                  },
+                  "back": {
+                    "es": "Job (la paciencia en el sufrimiento)",
+                    "zh": "约伯（苦难中的忍耐）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🔥🐎☁️⬆️",
+                    "zh": "🔥🐎☁️⬆️"
+                  },
+                  "back": {
+                    "es": "Elías (el carro de fuego)",
+                    "zh": "以利亚（火车火马）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🐫🍯🦗💧",
+                    "zh": "🐫🍯🦗💧"
+                  },
+                  "back": {
+                    "es": "Juan el Bautista (el desierto y el bautismo)",
+                    "zh": "施洗约翰（旷野与洗礼）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🔪🐏⛰️👦",
+                    "zh": "🔪🐏⛰️👦"
+                  },
+                  "back": {
+                    "es": "Isaac (el sacrificio detenido)",
+                    "zh": "以撒（被拦下的献祭）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "⛲👩🏺💧",
+                    "zh": "⛲👩🏺💧"
+                  },
+                  "back": {
+                    "es": "La mujer samaritana (en el pozo)",
+                    "zh": "撒玛利亚妇人（在井旁）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌳👨⬆️🤲",
+                    "zh": "🌳👨⬆️🤲"
+                  },
+                  "back": {
+                    "es": "Zaqueo (sube al árbol)",
+                    "zh": "撒该（爬上树）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🪦😷➡️🚶",
+                    "zh": "🪦😷➡️🚶"
+                  },
+                  "back": {
+                    "es": "Lázaro (resucitado)",
+                    "zh": "拉撒路（从死里复活）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "👼🗣️👧🤰",
+                    "zh": "👼🗣️👧🤰"
+                  },
+                  "back": {
+                    "es": "María (la anunciación)",
+                    "zh": "马利亚（天使报喜）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🧍📏🪨💥",
+                    "zh": "🧍📏🪨💥"
+                  },
+                  "back": {
+                    "es": "Goliat (el gigante filisteo)",
+                    "zh": "歌利亚（非利士巨人）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🤚🩸👐❓",
+                    "zh": "🤚🩸👐❓"
+                  },
+                  "back": {
+                    "es": "Tomás (el que dudó)",
+                    "zh": "多马（起疑惑的门徒）"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Escenas e historias",
+                "zh": "场景与故事"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "🌊🚶🚶🐟🧱",
+                    "zh": "🌊🚶🚶🐟🧱"
+                  },
+                  "back": {
+                    "es": "El cruce del mar Rojo",
+                    "zh": "过红海"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🍞🍞🐟🐟👥",
+                    "zh": "🍞🍞🐟🐟👥"
+                  },
+                  "back": {
+                    "es": "La multiplicación de panes y peces",
+                    "zh": "五饼二鱼"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "💧➡️🍷🏺🎉",
+                    "zh": "💧➡️🍷🏺🎉"
+                  },
+                  "back": {
+                    "es": "Las bodas de Caná (agua en vino)",
+                    "zh": "迦拿的婚宴（水变酒）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "⛈️🌊🚶😮",
+                    "zh": "⛈️🌊🚶😮"
+                  },
+                  "back": {
+                    "es": "Jesús camina sobre el agua",
+                    "zh": "耶稣在水面上行走"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🔥👅🕊️🗣️",
+                    "zh": "🔥👅🕊️🗣️"
+                  },
+                  "back": {
+                    "es": "Pentecostés",
+                    "zh": "五旬节"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "⛰️📜🔟✌️",
+                    "zh": "⛰️📜🔟✌️"
+                  },
+                  "back": {
+                    "es": "Los diez mandamientos",
+                    "zh": "十诫"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🏰📯🧱💥",
+                    "zh": "🏰📯🧱💥"
+                  },
+                  "back": {
+                    "es": "La caída de Jericó",
+                    "zh": "耶利哥城倒塌"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🔥🔥🔥🚶🚶🚶",
+                    "zh": "🔥🔥🔥🚶🚶🚶"
+                  },
+                  "back": {
+                    "es": "Los tres jóvenes en el horno",
+                    "zh": "三个青年在火窑"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌟🐫👑🎁",
+                    "zh": "🌟🐫👑🎁"
+                  },
+                  "back": {
+                    "es": "La visita de los magos",
+                    "zh": "东方博士来朝拜"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "✝️⛰️🌑💔",
+                    "zh": "✝️⛰️🌑💔"
+                  },
+                  "back": {
+                    "es": "La crucifixión",
+                    "zh": "耶稣被钉十字架"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🪦➡️🌅🙌",
+                    "zh": "🪦➡️🌅🙌"
+                  },
+                  "back": {
+                    "es": "La resurrección (la tumba vacía)",
+                    "zh": "复活（空坟墓）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🍞🍷🕊️👥",
+                    "zh": "🍞🍷🕊️👥"
+                  },
+                  "back": {
+                    "es": "La última cena",
+                    "zh": "最后的晚餐"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🐑🔍🤷🎉",
+                    "zh": "🐑🔍🤷🎉"
+                  },
+                  "back": {
+                    "es": "La parábola de la oveja perdida",
+                    "zh": "迷失的羊的比喻"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🏃🏠🤗💍",
+                    "zh": "🏃🏠🤗💍"
+                  },
+                  "back": {
+                    "es": "El hijo pródigo",
+                    "zh": "浪子回头"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🛤️🤕❤️🧳",
+                    "zh": "🛤️🤕❤️🧳"
+                  },
+                  "back": {
+                    "es": "El buen samaritano",
+                    "zh": "好撒玛利亚人"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌾🌱🐦🪨",
+                    "zh": "🌾🌱🐦🪨"
+                  },
+                  "back": {
+                    "es": "La parábola del sembrador",
+                    "zh": "撒种的比喻"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🏗️🗣️🌍❓",
+                    "zh": "🏗️🗣️🌍❓"
+                  },
+                  "back": {
+                    "es": "La torre de Babel",
+                    "zh": "巴别塔"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🔥🌧️⛰️🐂",
+                    "zh": "🔥🌧️⛰️🐂"
+                  },
+                  "back": {
+                    "es": "Elías en el monte Carmelo",
+                    "zh": "以利亚在迦密山"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🐍🥉🪵✨",
+                    "zh": "🐍🥉🪵✨"
+                  },
+                  "back": {
+                    "es": "La serpiente de bronce",
+                    "zh": "铜蛇"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🍞☁️🏜️🧺",
+                    "zh": "🍞☁️🏜️🧺"
+                  },
+                  "back": {
+                    "es": "El maná en el desierto",
+                    "zh": "旷野中的吗哪"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "💧🪨⛏️🚶",
+                    "zh": "💧🪨⛏️🚶"
+                  },
+                  "back": {
+                    "es": "El agua de la roca",
+                    "zh": "磐石出水"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌈🕊️🚢🐑",
+                    "zh": "🌈🕊️🚢🐑"
+                  },
+                  "back": {
+                    "es": "El arcoíris después del diluvio",
+                    "zh": "洪水之后的彩虹之约"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌳🔥🚫💥",
+                    "zh": "🌳🔥🚫💥"
+                  },
+                  "back": {
+                    "es": "La zarza ardiente",
+                    "zh": "燃烧的荆棘"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌍💡💧🌙⭐🐟🐦🦁👫",
+                    "zh": "🌍💡💧🌙⭐🐟🐦🦁👫"
+                  },
+                  "back": {
+                    "es": "La creación",
+                    "zh": "创造万物"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mapa-biblico",
+      "icon": "🗺️",
+      "title": {
+        "es": "Mapa bíblico",
+        "zh": "圣经地图"
+      },
+      "category": "biblia",
+      "minMinutes": 5,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Situar en el mapa las ciudades y lugares de la Biblia; gana quien ponga el punto más cerca.",
+        "zh": "在地图上找出圣经里的城市和地点；点得最近的人获胜。"
+      },
+      "steps": [
+        {
+          "es": "En la lámina aparece un lugar: «Coloca este lugar».",
+          "zh": "图上会出现一个地点：“找出这个地点”。"
+        },
+        {
+          "es": "Dos jugadores por ronda. El Jugador 1 toca el mapa donde cree que está; luego el Jugador 2.",
+          "zh": "每轮两位玩家。玩家1点一下自己认为的位置，接着玩家2。"
+        },
+        {
+          "es": "Pulsa «Revelar»: una estrella muestra el sitio real y marca quién quedó más cerca.",
+          "zh": "点“揭晓”：星星显示真实位置，并标出谁离得最近。"
+        },
+        {
+          "es": "El punto más cercano gana; en caso de empate ganan los dos.",
+          "zh": "最近的人得分；平手则两人都得分。"
+        },
+        {
+          "es": "Pulsa «Siguiente lugar» y rota de jugadores.",
+          "zh": "点“下一个”，并轮换玩家。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Empieza por los lugares conocidos (Jerusalén, Belén, mar de Galilea) y sube la dificultad.",
+          "zh": "👉 先从熟悉的地点开始（耶路撒冷、伯利恒、加利利海），再逐渐加难。"
+        },
+        {
+          "es": "👉 Al revelar, lee la pista para explicar un poco de historia de cada lugar.",
+          "zh": "👉 揭晓后，读一读说明，讲讲每个地点的故事。"
+        },
+        {
+          "es": "👉 Egipto, Babilonia, Nínive y Ur quedan fuera de la lámina: se señalan hacia su borde.",
+          "zh": "👉 埃及、巴比伦、尼尼微和吾珥在图外：指向对应的边缘即可。"
+        }
+      ],
+      "why": {
+        "es": "Ubicar los lugares ayuda a entender los viajes y las historias de la Biblia en su geografía real.",
+        "zh": "知道地点在哪里，有助于理解圣经中的旅程和故事的真实地理背景。"
+      },
+      "tools": [
+        {
+          "kind": "map",
+          "title": {
+            "es": "Lugares",
+            "zh": "地点"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Judea y Jerusalén",
+                "zh": "犹太与耶路撒冷"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Jerusalén",
+                    "zh": "耶路撒冷"
+                  },
+                  "back": {
+                    "es": "En los montes de Judá; la capital, con el templo. 2 Samuel 5:7.",
+                    "zh": "在犹大山地；首都，有圣殿。撒母耳记下5:7。"
+                  },
+                  "x": 0.4956,
+                  "y": 0.5848
+                },
+                {
+                  "front": {
+                    "es": "Belén",
+                    "zh": "伯利恒"
+                  },
+                  "back": {
+                    "es": "En Judea, a unos 8 km al sur de Jerusalén; nació Jesús. Mateo 2:1.",
+                    "zh": "在犹太，耶路撒冷以南约8公里；耶稣降生之地。马太福音2:1。"
+                  },
+                  "x": 0.4889,
+                  "y": 0.5949
+                },
+                {
+                  "front": {
+                    "es": "Jericó",
+                    "zh": "耶利哥"
+                  },
+                  "back": {
+                    "es": "En el valle del Jordán, junto al mar Muerto; la ciudad de las murallas. Josué 6.",
+                    "zh": "在约旦河谷，靠近死海；城墙倒塌之城。约书亚记6章。"
+                  },
+                  "x": 0.5422,
+                  "y": 0.5734
+                },
+                {
+                  "front": {
+                    "es": "Hebrón",
+                    "zh": "希伯仑"
+                  },
+                  "back": {
+                    "es": "En los montes de Judá, al sur de Jerusalén; tumba de los patriarcas. Génesis 23.",
+                    "zh": "在犹大山地，耶路撒冷以南；列祖的坟地。创世记23章。"
+                  },
+                  "x": 0.4667,
+                  "y": 0.6165
+                },
+                {
+                  "front": {
+                    "es": "Betania",
+                    "zh": "伯大尼"
+                  },
+                  "back": {
+                    "es": "En la ladera este del monte de los Olivos, junto a Jerusalén; casa de Lázaro. Juan 11.",
+                    "zh": "在橄榄山东坡，紧邻耶路撒冷；拉撒路的家。约翰福音11章。"
+                  },
+                  "x": 0.5022,
+                  "y": 0.5861
+                },
+                {
+                  "front": {
+                    "es": "Betel",
+                    "zh": "伯特利"
+                  },
+                  "back": {
+                    "es": "En la sierra, al norte de Jerusalén; el sueño de Jacob. Génesis 28:19.",
+                    "zh": "在山区，耶路撒冷以北；雅各做梦之地。创世记28:19。"
+                  },
+                  "x": 0.4933,
+                  "y": 0.5658
+                },
+                {
+                  "front": {
+                    "es": "Emaús",
+                    "zh": "以马忤斯"
+                  },
+                  "back": {
+                    "es": "Cerca de Jerusalén (unos 11 km); Jesús resucitado camina con dos discípulos. Lucas 24:13.",
+                    "zh": "靠近耶路撒冷（约11公里）；复活的耶稣与两门徒同行。路加福音24:13。"
+                  },
+                  "x": 0.4422,
+                  "y": 0.5772
+                },
+                {
+                  "front": {
+                    "es": "Gabaón",
+                    "zh": "基遍"
+                  },
+                  "back": {
+                    "es": "En Benjamín, cerca de Jerusalén; allí el sol se detuvo. Josué 10:12.",
+                    "zh": "在便雅悯境内，靠近耶路撒冷；日头停住之地。约书亚记10:12。"
+                  },
+                  "x": 0.4844,
+                  "y": 0.5759
+                },
+                {
+                  "front": {
+                    "es": "Beerseba",
+                    "zh": "别是巴"
+                  },
+                  "back": {
+                    "es": "En el Néguev, al sur; marcaba el límite sur de Israel. Génesis 21:31.",
+                    "zh": "在南地（内盖夫）；以色列的南界。创世记21:31。"
+                  },
+                  "x": 0.3978,
+                  "y": 0.6519
+                },
+                {
+                  "front": {
+                    "es": "Gilgal",
+                    "zh": "吉甲"
+                  },
+                  "back": {
+                    "es": "En el valle del Jordán, cerca de Jericó; primer campamento al entrar en Canaán. Josué 4:19.",
+                    "zh": "在约旦河谷，靠近耶利哥；进迦南后的第一个营地。约书亚记4:19。"
+                  },
+                  "x": 0.5556,
+                  "y": 0.5734
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Galilea y el norte",
+                "zh": "加利利与北方"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Nazaret",
+                    "zh": "拿撒勒"
+                  },
+                  "back": {
+                    "es": "En las colinas de Galilea; donde creció Jesús. Lucas 2:39.",
+                    "zh": "在加利利的山丘；耶稣长大的地方。路加福音2:39。"
+                  },
+                  "x": 0.5111,
+                  "y": 0.4684
+                },
+                {
+                  "front": {
+                    "es": "Capernaúm",
+                    "zh": "迦百农"
+                  },
+                  "back": {
+                    "es": "En la orilla norte del mar de Galilea; base del ministerio de Jesús. Mateo 4:13.",
+                    "zh": "在加利利海北岸；耶稣传道的大本营。马太福音4:13。"
+                  },
+                  "x": 0.5711,
+                  "y": 0.4456
+                },
+                {
+                  "front": {
+                    "es": "Caná",
+                    "zh": "迦拿"
+                  },
+                  "back": {
+                    "es": "En Galilea, cerca de Nazaret; el primer milagro, el agua en vino. Juan 2.",
+                    "zh": "在加利利，靠近拿撒勒；第一个神迹——水变酒。约翰福音2章。"
+                  },
+                  "x": 0.52,
+                  "y": 0.462
+                },
+                {
+                  "front": {
+                    "es": "Naín",
+                    "zh": "拿因"
+                  },
+                  "back": {
+                    "es": "En Galilea, al sur del monte Tabor; Jesús resucita al hijo de la viuda. Lucas 7:11.",
+                    "zh": "在加利利，他泊山以南；耶稣使寡妇之子复活。路加福音7:11。"
+                  },
+                  "x": 0.5267,
+                  "y": 0.4759
+                },
+                {
+                  "front": {
+                    "es": "Tiberíades",
+                    "zh": "提比哩亚"
+                  },
+                  "back": {
+                    "es": "En la orilla oeste del mar de Galilea. Juan 6:23.",
+                    "zh": "在加利利海西岸。约翰福音6:23。"
+                  },
+                  "x": 0.5622,
+                  "y": 0.457
+                },
+                {
+                  "front": {
+                    "es": "Betsaida",
+                    "zh": "伯赛大"
+                  },
+                  "back": {
+                    "es": "En la orilla norte del mar de Galilea, cerca de la desembocadura del Jordán. Marcos 8:22.",
+                    "zh": "在加利利海北岸，约旦河入湖口附近。马可福音8:22。"
+                  },
+                  "x": 0.5844,
+                  "y": 0.4418
+                },
+                {
+                  "front": {
+                    "es": "Cesarea de Filipo",
+                    "zh": "该撒利亚·腓立比"
+                  },
+                  "back": {
+                    "es": "En el extremo norte, al pie del monte Hermón; «Tú eres el Cristo». Mateo 16:13.",
+                    "zh": "在最北端，黑门山脚下；“你是基督”。马太福音16:13。"
+                  },
+                  "x": 0.5978,
+                  "y": 0.3987
+                },
+                {
+                  "front": {
+                    "es": "Meguido",
+                    "zh": "米吉多"
+                  },
+                  "back": {
+                    "es": "En el valle de Jezreel, al norte-centro; lugar de Armagedón. Apocalipsis 16:16.",
+                    "zh": "在耶斯列平原，中北部；哈米吉多顿之地。启示录16:16。"
+                  },
+                  "x": 0.4844,
+                  "y": 0.4835
+                },
+                {
+                  "front": {
+                    "es": "Monte Tabor",
+                    "zh": "他泊山"
+                  },
+                  "back": {
+                    "es": "En el valle de Jezreel, en Galilea; Débora y Barac. Jueces 4:6.",
+                    "zh": "在加利利的耶斯列平原；底波拉与巴拉。士师记4:6。"
+                  },
+                  "x": 0.5311,
+                  "y": 0.4696
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Costa y tierra filistea",
+                "zh": "沿海与非利士地"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Jope (Jafa)",
+                    "zh": "约帕"
+                  },
+                  "back": {
+                    "es": "Puerto en la costa mediterránea; de allí zarpó Jonás y resucitó Tabita. Jonás 1:3.",
+                    "zh": "地中海沿岸的港口；约拿从此出海，多加在此复活。约拿书1:3。"
+                  },
+                  "x": 0.3889,
+                  "y": 0.5506
+                },
+                {
+                  "front": {
+                    "es": "Cesarea (marítima)",
+                    "zh": "凯撒利亚"
+                  },
+                  "back": {
+                    "es": "En la costa mediterránea; residencia romana, el centurión Cornelio. Hechos 10.",
+                    "zh": "在地中海沿岸；罗马驻地，百夫长哥尼流。使徒行传10章。"
+                  },
+                  "x": 0.4222,
+                  "y": 0.4937
+                },
+                {
+                  "front": {
+                    "es": "Gat",
+                    "zh": "迦特"
+                  },
+                  "back": {
+                    "es": "En la llanura filistea (suroeste); la ciudad de Goliat. 1 Samuel 17.",
+                    "zh": "在非利士平原（西南）；歌利亚的家乡。撒母耳记上17章。"
+                  },
+                  "x": 0.4111,
+                  "y": 0.5949
+                },
+                {
+                  "front": {
+                    "es": "Gaza",
+                    "zh": "迦萨"
+                  },
+                  "back": {
+                    "es": "En la costa sur, tierra filistea; allí Sansón derribó el templo. Jueces 16:21.",
+                    "zh": "在南部沿海的非利士地；参孙在此推倒庙宇。士师记16:21。"
+                  },
+                  "x": 0.3267,
+                  "y": 0.6203
+                },
+                {
+                  "front": {
+                    "es": "Asdod",
+                    "zh": "亚实突"
+                  },
+                  "back": {
+                    "es": "En la costa filistea; allí cayó el ídolo Dagón. 1 Samuel 5:1.",
+                    "zh": "在非利士沿海；大衮偶像在此倒下。撒母耳记上5:1。"
+                  },
+                  "x": 0.3667,
+                  "y": 0.5823
+                },
+                {
+                  "front": {
+                    "es": "Ascalón",
+                    "zh": "亚实基伦"
+                  },
+                  "back": {
+                    "es": "En la costa filistea, al sur. Jueces 14:19.",
+                    "zh": "在非利士沿海的南部。士师记14:19。"
+                  },
+                  "x": 0.3489,
+                  "y": 0.5987
+                },
+                {
+                  "front": {
+                    "es": "Tiro",
+                    "zh": "推罗"
+                  },
+                  "back": {
+                    "es": "En la costa fenicia, al norte (actual Líbano). Mateo 15:21.",
+                    "zh": "在腓尼基沿海的北方（今黎巴嫩）。马太福音15:21。"
+                  },
+                  "x": 0.4889,
+                  "y": 0.3962
+                },
+                {
+                  "front": {
+                    "es": "Sidón",
+                    "zh": "西顿"
+                  },
+                  "back": {
+                    "es": "En la costa fenicia, al norte de Tiro. Marcos 7:31.",
+                    "zh": "在腓尼基沿海，推罗以北。马可福音7:31。"
+                  },
+                  "x": 0.5267,
+                  "y": 0.3595
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Montes y ríos",
+                "zh": "山与河"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Río Jordán",
+                    "zh": "约旦河"
+                  },
+                  "back": {
+                    "es": "Baja del norte (Hermón) al mar Muerto; Jesús fue bautizado en él. Mateo 3:13.",
+                    "zh": "从北方（黑门山）流向死海；耶稣在此受洗。马太福音3:13。"
+                  },
+                  "x": 0.5667,
+                  "y": 0.519
+                },
+                {
+                  "front": {
+                    "es": "Mar de Galilea",
+                    "zh": "加利利海"
+                  },
+                  "back": {
+                    "es": "Lago de agua dulce en el norte; Jesús calmó la tormenta. Mateo 8:23-27.",
+                    "zh": "北方的淡水湖；耶稣在此平静风浪。马太福音8:23-27。"
+                  },
+                  "x": 0.5756,
+                  "y": 0.4532
+                },
+                {
+                  "front": {
+                    "es": "Mar Muerto",
+                    "zh": "死海"
+                  },
+                  "back": {
+                    "es": "En el sur, el punto más bajo de la tierra; muy salado. Ezequiel 47:8.",
+                    "zh": "在南部，地球最低点；盐分极高。以西结书47:8。"
+                  },
+                  "x": 0.5489,
+                  "y": 0.6203
+                },
+                {
+                  "front": {
+                    "es": "Monte de los Olivos",
+                    "zh": "橄榄山"
+                  },
+                  "back": {
+                    "es": "Junto a Jerusalén, al este; desde allí ascendió Jesús. Hechos 1:12.",
+                    "zh": "紧邻耶路撒冷东面；耶稣从此升天。使徒行传1:12。"
+                  },
+                  "x": 0.5,
+                  "y": 0.5848
+                },
+                {
+                  "front": {
+                    "es": "Monte Carmelo",
+                    "zh": "迦密山"
+                  },
+                  "back": {
+                    "es": "En la costa norte; Elías contra los profetas de Baal. 1 Reyes 18.",
+                    "zh": "在北部沿海；以利亚对抗巴力的先知。列王纪上18章。"
+                  },
+                  "x": 0.4511,
+                  "y": 0.4646
+                },
+                {
+                  "front": {
+                    "es": "Monte Hermón",
+                    "zh": "黑门山"
+                  },
+                  "back": {
+                    "es": "En el extremo norte, en la frontera; el monte nevado. Salmo 133:3.",
+                    "zh": "在最北端的边界；终年积雪的高山。诗篇133:3。"
+                  },
+                  "x": 0.6022,
+                  "y": 0.3772
+                },
+                {
+                  "front": {
+                    "es": "Monte Sinaí (Horeb)",
+                    "zh": "西奈山"
+                  },
+                  "back": {
+                    "es": "En la península del Sinaí, al sur; Dios dio la ley. Éxodo 19.",
+                    "zh": "在西奈半岛南部；神在此颁布律法。出埃及记19章。"
+                  },
+                  "x": 0.2156,
+                  "y": 0.98
+                },
+                {
+                  "front": {
+                    "es": "Monte Nebo",
+                    "zh": "尼波山"
+                  },
+                  "back": {
+                    "es": "Al este del Jordán, en Moab; Moisés vio la tierra prometida. Deuteronomio 34:1.",
+                    "zh": "在约旦河东的摩押地；摩西在此遥望应许之地。申命记34:1。"
+                  },
+                  "x": 0.6067,
+                  "y": 0.5861
+                },
+                {
+                  "front": {
+                    "es": "Monte Moria",
+                    "zh": "摩利亚山"
+                  },
+                  "back": {
+                    "es": "En Jerusalén; Abraham ofreció a Isaac y allí se alzó el templo. Génesis 22:2; 2 Crónicas 3:1.",
+                    "zh": "在耶路撒冷；亚伯拉罕献以撒、圣殿所在之处。创世记22:2；历代志下3:1。"
+                  },
+                  "x": 0.4978,
+                  "y": 0.5848
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Más allá de Israel",
+                "zh": "以色列境外"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Damasco",
+                    "zh": "大马士革"
+                  },
+                  "back": {
+                    "es": "En Siria, al noreste; de camino allí se convirtió Pablo. Hechos 9:3.",
+                    "zh": "在叙利亚东北；保罗在往此城的路上悔改归主。使徒行传9:3。"
+                  },
+                  "x": 0.7333,
+                  "y": 0.3658
+                },
+                {
+                  "front": {
+                    "es": "Antioquía",
+                    "zh": "安提阿"
+                  },
+                  "back": {
+                    "es": "En Siria, al norte; allí los creyentes se llamaron «cristianos» por primera vez. Hechos 11:26.",
+                    "zh": "在叙利亚北部；门徒在此第一次被称为“基督徒”。使徒行传11:26。"
+                  },
+                  "x": 0.7022,
+                  "y": 0.0253
+                },
+                {
+                  "front": {
+                    "es": "Egipto",
+                    "zh": "埃及"
+                  },
+                  "back": {
+                    "es": "Fuera de la lámina, al suroeste, junto al río Nilo; la esclavitud y el éxodo. Éxodo 1.",
+                    "zh": "在图外西南方的尼罗河畔；为奴与出埃及之地。出埃及记1章。"
+                  },
+                  "x": 0.06,
+                  "y": 0.9
+                },
+                {
+                  "front": {
+                    "es": "Babilonia",
+                    "zh": "巴比伦"
+                  },
+                  "back": {
+                    "es": "Fuera de la lámina, al este lejano, junto al Éufrates; el destierro de Judá. Daniel 1.",
+                    "zh": "在图外遥远东方的幼发拉底河畔；犹大人被掳之地。但以理书1章。"
+                  },
+                  "x": 0.9,
+                  "y": 0.47
+                },
+                {
+                  "front": {
+                    "es": "Nínive",
+                    "zh": "尼尼微"
+                  },
+                  "back": {
+                    "es": "Fuera de la lámina, al noreste; la gran ciudad asiria adonde fue enviado Jonás. Jonás 3.",
+                    "zh": "在图外东北方；约拿被差往的亚述大城。约拿书3章。"
+                  },
+                  "x": 0.9,
+                  "y": 0.12
+                },
+                {
+                  "front": {
+                    "es": "Ur de los caldeos",
+                    "zh": "迦勒底的吾珥"
+                  },
+                  "back": {
+                    "es": "Fuera de la lámina, al sureste lejano, junto al Éufrates; de allí salió Abraham. Génesis 11:31.",
+                    "zh": "在图外遥远东南的幼发拉底河畔；亚伯拉罕的家乡。创世记11:31。"
+                  },
+                  "x": 0.92,
+                  "y": 0.66
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -26,6 +26,7 @@ extension ToolKind {
         case .colorFlash: return L("Color", "颜色")
         case .identity: return L("Identidades", "身份")
         case .codeSequence: return L("Código", "密码")
+        case .map: return L("Mapa", "地图")
         }
     }
     public var symbol: String {
@@ -41,6 +42,7 @@ extension ToolKind {
         case .colorFlash: return "paintpalette"
         case .identity: return "person.crop.rectangle.stack"
         case .codeSequence: return "hand.tap"
+        case .map: return "map"
         }
     }
 }

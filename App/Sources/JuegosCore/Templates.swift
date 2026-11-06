@@ -22,7 +22,7 @@ public enum PlayLayout: String, Codable, CaseIterable, Sendable {
         case .generator, .caller, .colorFlash, .boom, .codeSequence: return .palabra
         case .timer, .stopwatch: return .reloj
         case .deck, .identity, .reference: return .tarjeta
-        case .scoreboard: return .palabra
+        case .scoreboard, .map: return .palabra
         case nil: return .tarjeta   // sin herramientas: tarjeta con la ficha
         }
     }

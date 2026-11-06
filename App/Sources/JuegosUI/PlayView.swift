@@ -47,6 +47,8 @@ struct ToolBody: View {
             IdentityToolView(state: play.state(index: i) { CardBagState(kind: .identity, groups: spec.groups ?? []) }, presenting: presenting)
         case .codeSequence:
             CodeSequenceToolView(state: play.state(index: i) { CodeSequenceState(length: spec.length ?? 4) }, presenting: presenting)
+        case .map:
+            MapGameView(state: play.state(index: i) { MapState(groups: spec.groups ?? [], plate: spec.plate) }, presenting: presenting)
         }
     }
 }
@@ -265,7 +267,7 @@ public struct PlayView: View {
         let idx = play.effectiveIndex(game: game, template: template)
         guard game.tools.indices.contains(idx) else { return false }
         switch game.tools[idx].kind {
-        case .generator, .deck, .caller, .colorFlash, .identity, .codeSequence: return true
+        case .generator, .deck, .caller, .colorFlash, .identity, .codeSequence, .map: return true
         default: return false
         }
     }
