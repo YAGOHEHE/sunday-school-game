@@ -226,15 +226,25 @@ public final class AppModel {
         session.items.compactMap { game($0.gameID) }
     }
 
-    /// Guarda una copia en el historial.
+    /// Guarda la sesión actual en el historial (si ya estaba, la actualiza; no duplica).
     public func archiveSession() {
-        var copy = session
-        copy.id = UUID()
-        copy.date = Date()
-        userData.history.insert(copy, at: 0)
-        if userData.history.count > 60 { userData.history.removeLast(userData.history.count - 60) }
+        userData.history.upsert(session)
     }
 
+    /// La sesión actual está en el historial y sin cambios pendientes.
+    public var isCurrentSessionSaved: Bool {
+        userData.history.first { $0.id == session.id } == session
+    }
+
+    public func isInHistory(_ id: UUID) -> Bool { userData.history.contains { $0.id == id } }
+
+    /// Empieza una sesión en blanco.
+    public func newSession() { userData.currentSession = Session() }
+
+    /// Carga una sesión del historial tal cual (al guardar se actualiza esa misma entrada).
+    public func openSession(_ s: Session) { userData.currentSession = s }
+
+    /// Copia de una sesión pasada con la fecha de hoy (nueva entrada al guardar).
     public func repeatSession(_ s: Session) { userData.currentSession = s.repeated() }
 
     public func deleteHistory(_ id: UUID) { userData.history.removeAll { $0.id == id } }

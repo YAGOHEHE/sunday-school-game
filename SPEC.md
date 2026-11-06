@@ -72,7 +72,26 @@ Categoría nueva `biblia` (📖, es «Biblia», zh «圣经»), tras `conocerse`
 
 Contenido: fiel a las fichas (objetivo, pasos, tips «👉 Puedes añadir», «Por qué funciona» → `why`, variantes). Traducir lo que falte. Quitar numeración «1.» «6.» de los títulos. Títulos: ES = nombre español; ZH = nombre chino (para los que no lo tienen, traducir: p. ej. 「数七 ¡Boom!」→ zh «数七»).
 
-### Plantillas del modo juego
+#### Ampliación 2026-11-05: Emoji bíblico (parts/partF.json)
+Un juego nuevo en la categoría `biblia`.
+- **`emoji-biblico`** (😀): herramienta `deck` (plantilla automática `tarjeta`). 52 tarjetas en 2 grupos (Personajes 28, Escenas 24); `front` = emojis (es y zh idénticos), `back` = respuesta es/zh.
+
+> Nota: `mapa-biblico` (lámina de pergamino dibujada en `Canvas`) existió en una versión previa de `partF.json` y se **retiró** el 2026-11-05; el único juego de mapa es ahora `viajes-pablo`. El modo sin imagen (pergamino de Canvas) sigue soportado por la herramienta `map`, aunque ningún juego del catálogo lo use.
+
+#### Ampliación 2026-11-05: Viajes de Pablo y herramienta `map` con lámina de imagen (parts/partG.json)
+Un juego nuevo en la categoría `biblia` (total catálogo = 41 juegos; biblia = 7). Recuentos de plantilla: palabra 22 · reloj 11 · tarjeta 8.
+- **`viajes-pablo`** (🧭): herramienta `map` sobre una **lámina de imagen**. 30 lugares de los viajes de Pablo y de Hechos en 4 grupos (primer viaje, segundo viaje, tercer viaje, viaje a Roma); juego de 2 jugadores con puntuación propia, gana quien señala más cerca. Nombres chinos de la versión Unión/和合本.
+
+Contrato de la herramienta `map` (Models.swift), compatible hacia atrás:
+- **`ToolKind.map`**: cada carta es un lugar con posición. `groups`. `PlayLayout.automatic(.map) = .palabra`, pero `TemplateBody` lo intercepta y renderiza `MapGameView` a pantalla completa.
+- **`Card.x`, `Card.y`** (`Double?`, 0…1): posición normalizada sobre la lámina (x = oeste→este, y = norte→sur). Solo para `map`; se omiten si son nil.
+- **`ToolSpec.plate: MapPlate?`** (solo `map`): si está presente, la herramienta usa una lámina de imagen en vez del pergamino de Canvas. `MapPlate` = `{ image, aspect, lonMin, lonMax, latMin, latMax }` (`image` = recurso de JuegosUI en `Resources/Maps`; `aspect` = ancho/alto; la ventana geográfica es la que cubre la imagen). Si `plate` es nil, se dibuja el pergamino de Canvas (aspect 0.80).
+- **`MapState.aspect`** no es constante estática: sale de `plate.aspect` (por defecto `MapState.defaultAspect` = 0.80). La distancia y el encaje de la lámina usan ese valor.
+- **Render (`MapBody.swift`)**: con `plate`, se dibuja la imagen con su proporción exacta dentro de `plate(in:)` (sin recortar ni deformar) y encima siguen el overlay, los pines, la estrella y los marcadores; la imagen ya trae borde y decoración, así que no se dibuja ni el pergamino ni etiquetas de borde. Sin `plate`, el Canvas de siempre.
+- **Proyección (`GeoWindow` en `MapProjection.swift`, JuegosCore)**: helper equirrectangular `project(lon:lat:) -> (x, y)` con `x = (lon − lonMin)/(lonMax − lonMin)`, `y = (latMax − lat)/(latMax − latMin)`. La lámina `mapa-mediterraneo.jpg` (4000×2000, aspect 2.0, ya corregida por cos 38°) usa `GeoWindow.mediterranean`: lon −10.6…37.4, lat 28.8377…47.75, es decir `x = (lon + 10.6)/48.0`, `y = (47.75 − lat)/18.9123`. Comprobado en test: Roma (12.48 E, 41.89 N) ≈ (0.481, 0.310), Jerusalén (35.23 E, 31.78 N) ≈ (0.955, 0.844). Las posiciones de `partG.json` se generan con esta proyección (`scripts/gen_viajes_pablo.py`), que además verifica que ningún lugar quede a < 0.012 de otro en la lámina.
+- **Recurso**: `App/Sources/JuegosUI/Resources/Maps/mapa-mediterraneo.jpg`, declarado en `Package.swift` (JuegosUI). Viaja automáticamente en el `.app` de macOS (`make_app.sh` copia el bundle de JuegosUI) y en el target iPad del `.xcodeproj` (producto SwiftPM), igual que las fuentes.
+
+## Plantillas del modo juego
 Contrato en `App/Sources/JuegosCore/Templates.swift` (Opus). Diseño: `diseno/02-Mapa-Plantillas.html` (mapa 14/4/5) y mockups 10–31, 40–41.
 
 - **`PlayLayout`** (disposición base): `palabra` (elemento enorme al centro + «otro», fondo de color de categoría), `reloj` (reloj grande + reglas a un lado, fondo oscuro), `tarjeta` (texto con cara oculta, ES | 中文 en columnas, «Revelar», fondo blanco). `PlayLayout.automatic(for: ToolKind?)` da la regla automática: `generator`, `caller`, `colorFlash`, `boom`, `codeSequence` y `scoreboard` → `palabra`; `timer`, `stopwatch` → `reloj`; `deck`, `identity`, `reference` y sin herramientas → `tarjeta`.

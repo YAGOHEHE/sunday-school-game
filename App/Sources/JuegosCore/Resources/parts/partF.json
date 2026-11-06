@@ -1,0 +1,602 @@
+{
+  "games": [
+    {
+      "id": "emoji-biblico",
+      "icon": "😀",
+      "title": {
+        "es": "Emoji bíblico",
+        "zh": "圣经表情猜猜猜"
+      },
+      "category": "biblia",
+      "minMinutes": 5,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Adivinar personajes y escenas de la Biblia descritos solo con emoticonos.",
+        "zh": "只靠一串表情符号，猜出圣经里的人物和场景。"
+      },
+      "steps": [
+        {
+          "es": "El profe muestra o lee una tarjeta de emojis sin decir la respuesta.",
+          "zh": "老师出示或念出一张表情卡，不说出答案。"
+        },
+        {
+          "es": "Los jugadores (o equipos) levantan la mano para adivinar el personaje o la escena.",
+          "zh": "玩家（或各组）举手抢答，猜出那是哪个人物或场景。"
+        },
+        {
+          "es": "Quien acierta gana un punto; después se pulsa «Revelar» para ver la respuesta.",
+          "zh": "答对的得一分；然后按“揭晓”看答案。"
+        },
+        {
+          "es": "Si nadie acierta, el profe da una pista o pasa a la siguiente tarjeta.",
+          "zh": "若无人答对，老师给个提示或换下一张。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Puedes dividir a la clase en dos equipos y llevar la cuenta de puntos.",
+          "zh": "👉 可以把全班分成两组，记分比赛。"
+        },
+        {
+          "es": "👉 Deja que los mayores creen sus propias tarjetas de emojis para los demás.",
+          "zh": "👉 让大一点的孩子自己设计表情卡考大家。"
+        },
+        {
+          "es": "Adaptación: si un emoji no se ve igual en todos los móviles, descríbelo en voz alta.",
+          "zh": "适应课堂：若某个表情在不同手机显示不一样，就口头描述一下。"
+        }
+      ],
+      "why": {
+        "es": "Repasar la Biblia de forma visual ayuda a recordar las historias y a quienes les cuesta leer.",
+        "zh": "用图像复习圣经，能帮助记住故事，也照顾不擅长阅读的人。"
+      },
+      "tools": [
+        {
+          "kind": "deck",
+          "title": {
+            "es": "Tarjetas de emojis",
+            "zh": "表情卡"
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Personajes",
+                "zh": "人物"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "🚢🌧️🦓🦒🕊️",
+                    "zh": "🚢🌧️🦓🦒🕊️"
+                  },
+                  "back": {
+                    "es": "Noé (el arca y el diluvio)",
+                    "zh": "挪亚（方舟与洪水）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🧺👶🌊👸",
+                    "zh": "🧺👶🌊👸"
+                  },
+                  "back": {
+                    "es": "Moisés (salvado del río)",
+                    "zh": "摩西（从河中获救）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "📜🔥⛰️✌️",
+                    "zh": "📜🔥⛰️✌️"
+                  },
+                  "back": {
+                    "es": "Moisés (recibe la ley en el monte)",
+                    "zh": "摩西（在山上领受律法）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🦁🕳️🙏😴",
+                    "zh": "🦁🕳️🙏😴"
+                  },
+                  "back": {
+                    "es": "Daniel (en el foso de los leones)",
+                    "zh": "但以理（在狮子坑）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🐋🌊🙏",
+                    "zh": "🐋🌊🙏"
+                  },
+                  "back": {
+                    "es": "Jonás (y el gran pez)",
+                    "zh": "约拿（与大鱼）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "💪🦁🦱✂️",
+                    "zh": "💪🦁🦱✂️"
+                  },
+                  "back": {
+                    "es": "Sansón (la fuerza y el cabello)",
+                    "zh": "参孙（力气与头发）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🪨🎯👑🎵",
+                    "zh": "🪨🎯👑🎵"
+                  },
+                  "back": {
+                    "es": "David (la honda, el rey músico)",
+                    "zh": "大卫（甩石的琴王）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "👑📜⚖️🦉",
+                    "zh": "👑📜⚖️🦉"
+                  },
+                  "back": {
+                    "es": "Salomón (el rey sabio)",
+                    "zh": "所罗门（智慧的王）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "✝️🙏🕊️❤️",
+                    "zh": "✝️🙏🕊️❤️"
+                  },
+                  "back": {
+                    "es": "Jesús",
+                    "zh": "耶稣"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🗝️🐓🎣",
+                    "zh": "🗝️🐓🎣"
+                  },
+                  "back": {
+                    "es": "Pedro (las llaves, el gallo, el pescador)",
+                    "zh": "彼得（钥匙、鸡叫、渔夫）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "✉️⛓️➡️💡",
+                    "zh": "✉️⛓️➡️💡"
+                  },
+                  "back": {
+                    "es": "Pablo (las cartas y la conversión)",
+                    "zh": "保罗（书信与悔改归主）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "👫🍎🐍🌳",
+                    "zh": "👫🍎🐍🌳"
+                  },
+                  "back": {
+                    "es": "Adán y Eva",
+                    "zh": "亚当和夏娃"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "👴🌟🏜️🐑",
+                    "zh": "👴🌟🏜️🐑"
+                  },
+                  "back": {
+                    "es": "Abraham (las estrellas y la promesa)",
+                    "zh": "亚伯拉罕（星星与应许）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🧥🌈💭👑",
+                    "zh": "🧥🌈💭👑"
+                  },
+                  "back": {
+                    "es": "José (la túnica y los sueños)",
+                    "zh": "约瑟（彩衣与异梦）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🪜😴👼☁️",
+                    "zh": "🪜😴👼☁️"
+                  },
+                  "back": {
+                    "es": "Jacob (la escalera y los ángeles)",
+                    "zh": "雅各（天梯与天使）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🍲🥣👬",
+                    "zh": "🍲🥣👬"
+                  },
+                  "back": {
+                    "es": "Esaú (vende la primogenitura por un plato)",
+                    "zh": "以扫（为一碗汤卖长子名分）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "👸🇮🇱🙏👑",
+                    "zh": "👸🇮🇱🙏👑"
+                  },
+                  "back": {
+                    "es": "Ester (la reina valiente)",
+                    "zh": "以斯帖（勇敢的王后）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌾👩‍🌾❤️",
+                    "zh": "🌾👩‍🌾❤️"
+                  },
+                  "back": {
+                    "es": "Rut (espigando en los campos)",
+                    "zh": "路得（在田里拾麦穗）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "💔🙏😭🪰",
+                    "zh": "💔🙏😭🪰"
+                  },
+                  "back": {
+                    "es": "Job (la paciencia en el sufrimiento)",
+                    "zh": "约伯（苦难中的忍耐）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🔥🐎☁️⬆️",
+                    "zh": "🔥🐎☁️⬆️"
+                  },
+                  "back": {
+                    "es": "Elías (el carro de fuego)",
+                    "zh": "以利亚（火车火马）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🐫🍯🦗💧",
+                    "zh": "🐫🍯🦗💧"
+                  },
+                  "back": {
+                    "es": "Juan el Bautista (el desierto y el bautismo)",
+                    "zh": "施洗约翰（旷野与洗礼）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🔪🐏⛰️👦",
+                    "zh": "🔪🐏⛰️👦"
+                  },
+                  "back": {
+                    "es": "Isaac (el sacrificio detenido)",
+                    "zh": "以撒（被拦下的献祭）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "⛲👩🏺💧",
+                    "zh": "⛲👩🏺💧"
+                  },
+                  "back": {
+                    "es": "La mujer samaritana (en el pozo)",
+                    "zh": "撒玛利亚妇人（在井旁）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌳👨⬆️🤲",
+                    "zh": "🌳👨⬆️🤲"
+                  },
+                  "back": {
+                    "es": "Zaqueo (sube al árbol)",
+                    "zh": "撒该（爬上树）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🪦😷➡️🚶",
+                    "zh": "🪦😷➡️🚶"
+                  },
+                  "back": {
+                    "es": "Lázaro (resucitado)",
+                    "zh": "拉撒路（从死里复活）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "👼🗣️👧🤰",
+                    "zh": "👼🗣️👧🤰"
+                  },
+                  "back": {
+                    "es": "María (la anunciación)",
+                    "zh": "马利亚（天使报喜）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🧍📏🪨💥",
+                    "zh": "🧍📏🪨💥"
+                  },
+                  "back": {
+                    "es": "Goliat (el gigante filisteo)",
+                    "zh": "歌利亚（非利士巨人）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🤚🩸👐❓",
+                    "zh": "🤚🩸👐❓"
+                  },
+                  "back": {
+                    "es": "Tomás (el que dudó)",
+                    "zh": "多马（起疑惑的门徒）"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Escenas e historias",
+                "zh": "场景与故事"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "🌊🚶🚶🐟🧱",
+                    "zh": "🌊🚶🚶🐟🧱"
+                  },
+                  "back": {
+                    "es": "El cruce del mar Rojo",
+                    "zh": "过红海"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🍞🍞🐟🐟👥",
+                    "zh": "🍞🍞🐟🐟👥"
+                  },
+                  "back": {
+                    "es": "La multiplicación de panes y peces",
+                    "zh": "五饼二鱼"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "💧➡️🍷🏺🎉",
+                    "zh": "💧➡️🍷🏺🎉"
+                  },
+                  "back": {
+                    "es": "Las bodas de Caná (agua en vino)",
+                    "zh": "迦拿的婚宴（水变酒）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "⛈️🌊🚶😮",
+                    "zh": "⛈️🌊🚶😮"
+                  },
+                  "back": {
+                    "es": "Jesús camina sobre el agua",
+                    "zh": "耶稣在水面上行走"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🔥👅🕊️🗣️",
+                    "zh": "🔥👅🕊️🗣️"
+                  },
+                  "back": {
+                    "es": "Pentecostés",
+                    "zh": "五旬节"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "⛰️📜🔟✌️",
+                    "zh": "⛰️📜🔟✌️"
+                  },
+                  "back": {
+                    "es": "Los diez mandamientos",
+                    "zh": "十诫"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🏰📯🧱💥",
+                    "zh": "🏰📯🧱💥"
+                  },
+                  "back": {
+                    "es": "La caída de Jericó",
+                    "zh": "耶利哥城倒塌"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🔥🔥🔥🚶🚶🚶",
+                    "zh": "🔥🔥🔥🚶🚶🚶"
+                  },
+                  "back": {
+                    "es": "Los tres jóvenes en el horno",
+                    "zh": "三个青年在火窑"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌟🐫👑🎁",
+                    "zh": "🌟🐫👑🎁"
+                  },
+                  "back": {
+                    "es": "La visita de los magos",
+                    "zh": "东方博士来朝拜"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "✝️⛰️🌑💔",
+                    "zh": "✝️⛰️🌑💔"
+                  },
+                  "back": {
+                    "es": "La crucifixión",
+                    "zh": "耶稣被钉十字架"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🪦➡️🌅🙌",
+                    "zh": "🪦➡️🌅🙌"
+                  },
+                  "back": {
+                    "es": "La resurrección (la tumba vacía)",
+                    "zh": "复活（空坟墓）"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🍞🍷🕊️👥",
+                    "zh": "🍞🍷🕊️👥"
+                  },
+                  "back": {
+                    "es": "La última cena",
+                    "zh": "最后的晚餐"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🐑🔍🤷🎉",
+                    "zh": "🐑🔍🤷🎉"
+                  },
+                  "back": {
+                    "es": "La parábola de la oveja perdida",
+                    "zh": "迷失的羊的比喻"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🏃🏠🤗💍",
+                    "zh": "🏃🏠🤗💍"
+                  },
+                  "back": {
+                    "es": "El hijo pródigo",
+                    "zh": "浪子回头"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🛤️🤕❤️🧳",
+                    "zh": "🛤️🤕❤️🧳"
+                  },
+                  "back": {
+                    "es": "El buen samaritano",
+                    "zh": "好撒玛利亚人"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌾🌱🐦🪨",
+                    "zh": "🌾🌱🐦🪨"
+                  },
+                  "back": {
+                    "es": "La parábola del sembrador",
+                    "zh": "撒种的比喻"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🏗️🗣️🌍❓",
+                    "zh": "🏗️🗣️🌍❓"
+                  },
+                  "back": {
+                    "es": "La torre de Babel",
+                    "zh": "巴别塔"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🔥🌧️⛰️🐂",
+                    "zh": "🔥🌧️⛰️🐂"
+                  },
+                  "back": {
+                    "es": "Elías en el monte Carmelo",
+                    "zh": "以利亚在迦密山"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🐍🥉🪵✨",
+                    "zh": "🐍🥉🪵✨"
+                  },
+                  "back": {
+                    "es": "La serpiente de bronce",
+                    "zh": "铜蛇"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🍞☁️🏜️🧺",
+                    "zh": "🍞☁️🏜️🧺"
+                  },
+                  "back": {
+                    "es": "El maná en el desierto",
+                    "zh": "旷野中的吗哪"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "💧🪨⛏️🚶",
+                    "zh": "💧🪨⛏️🚶"
+                  },
+                  "back": {
+                    "es": "El agua de la roca",
+                    "zh": "磐石出水"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌈🕊️🚢🐑",
+                    "zh": "🌈🕊️🚢🐑"
+                  },
+                  "back": {
+                    "es": "El arcoíris después del diluvio",
+                    "zh": "洪水之后的彩虹之约"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌳🔥🚫💥",
+                    "zh": "🌳🔥🚫💥"
+                  },
+                  "back": {
+                    "es": "La zarza ardiente",
+                    "zh": "燃烧的荆棘"
+                  }
+                },
+                {
+                  "front": {
+                    "es": "🌍💡💧🌙⭐🐟🐦🦁👫",
+                    "zh": "🌍💡💧🌙⭐🐟🐦🦁👫"
+                  },
+                  "back": {
+                    "es": "La creación",
+                    "zh": "创造万物"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

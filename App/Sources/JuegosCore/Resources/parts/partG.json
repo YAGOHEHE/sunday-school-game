@@ -1,0 +1,470 @@
+{
+  "games": [
+    {
+      "id": "viajes-pablo",
+      "icon": "🧭",
+      "title": {
+        "es": "Viajes de Pablo",
+        "zh": "保罗的旅程"
+      },
+      "category": "biblia",
+      "minMinutes": 5,
+      "maxMinutes": 10,
+      "objective": {
+        "es": "Situar en el mapa del Mediterráneo las ciudades de los viajes de Pablo; gana quien ponga el punto más cerca.",
+        "zh": "在地中海地图上找出保罗旅程中的城市；点得最近的人获胜。"
+      },
+      "steps": [
+        {
+          "es": "En la lámina aparece un lugar: «Coloca este lugar».",
+          "zh": "图上会出现一个地点：“找出这个地点”。"
+        },
+        {
+          "es": "Dos jugadores por ronda. El Jugador 1 toca el mapa donde cree que está; luego el Jugador 2.",
+          "zh": "每轮两位玩家。玩家1点一下自己认为的位置，接着玩家2。"
+        },
+        {
+          "es": "Pulsa «Revelar»: una estrella muestra el sitio real y marca quién quedó más cerca.",
+          "zh": "点“揭晓”：星星显示真实位置，并标出谁离得最近。"
+        },
+        {
+          "es": "El punto más cercano gana; en caso de empate ganan los dos.",
+          "zh": "最近的人得分；平手则两人都得分。"
+        },
+        {
+          "es": "Pulsa «Siguiente lugar» y rota de jugadores.",
+          "zh": "点“下一个”，并轮换玩家。"
+        }
+      ],
+      "tips": [
+        {
+          "es": "👉 Empieza por los lugares conocidos (Jerusalén, Antioquía, Roma) y sube la dificultad.",
+          "zh": "👉 先从熟悉的地点开始（耶路撒冷、安提阿、罗马），再逐渐加难。"
+        },
+        {
+          "es": "👉 Al revelar, lee la pista para contar qué pasó allí en los Hechos.",
+          "zh": "👉 揭晓后，读一读说明，讲讲使徒行传里在那里发生的事。"
+        },
+        {
+          "es": "👉 Sigue el orden de los grupos para repasar los cuatro viajes de Pablo.",
+          "zh": "👉 按分组顺序进行，复习保罗的四次旅程。"
+        }
+      ],
+      "why": {
+        "es": "Ver los viajes sobre el mapa ayuda a entender cómo el evangelio pasó de Jerusalén a Roma.",
+        "zh": "在地图上看旅程，有助于理解福音如何从耶路撒冷传到罗马。"
+      },
+      "tools": [
+        {
+          "kind": "map",
+          "title": {
+            "es": "Mapa del Mediterráneo",
+            "zh": "地中海地图"
+          },
+          "plate": {
+            "image": "mapa-mediterraneo.jpg",
+            "aspect": 2.0,
+            "lonMin": -10.6,
+            "lonMax": 37.4,
+            "latMin": 28.8377,
+            "latMax": 47.75
+          },
+          "groups": [
+            {
+              "name": {
+                "es": "Primer viaje y punto de partida",
+                "zh": "第一次旅行与起点"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Jerusalén",
+                    "zh": "耶路撒冷"
+                  },
+                  "back": {
+                    "es": "La iglesia madre; desde aquí se envía el evangelio. Hechos 15.",
+                    "zh": "母会所在地；福音从这里传开。使徒行传15章。"
+                  },
+                  "x": 0.9548,
+                  "y": 0.8444
+                },
+                {
+                  "front": {
+                    "es": "Antioquía de Siria",
+                    "zh": "安提阿"
+                  },
+                  "back": {
+                    "es": "La iglesia que envió a Pablo y Bernabé; aquí se les llamó cristianos. Hechos 13:1-3.",
+                    "zh": "差派保罗和巴拿巴的教会；门徒最初在这里被称为基督徒。使徒行传13:1-3。"
+                  },
+                  "x": 0.9742,
+                  "y": 0.6107
+                },
+                {
+                  "front": {
+                    "es": "Tarso",
+                    "zh": "大数"
+                  },
+                  "back": {
+                    "es": "Ciudad natal de Pablo, en Cilicia. Hechos 22:3.",
+                    "zh": "保罗的家乡，在基利家。使徒行传22:3。"
+                  },
+                  "x": 0.9479,
+                  "y": 0.5726
+                },
+                {
+                  "front": {
+                    "es": "Salamina (Chipre)",
+                    "zh": "撒拉米（居比路）"
+                  },
+                  "back": {
+                    "es": "Primera parada en Chipre; predican en las sinagogas. Hechos 13:5.",
+                    "zh": "在居比路的第一站；在会堂里传道。使徒行传13:5。"
+                  },
+                  "x": 0.9271,
+                  "y": 0.6646
+                },
+                {
+                  "front": {
+                    "es": "Pafos (Chipre)",
+                    "zh": "帕弗（居比路）"
+                  },
+                  "back": {
+                    "es": "Allí se convierte el procónsul Sergio Paulo. Hechos 13:6-12.",
+                    "zh": "方伯士求保罗在这里信主。使徒行传13:6-12。"
+                  },
+                  "x": 0.896,
+                  "y": 0.6869
+                },
+                {
+                  "front": {
+                    "es": "Perge",
+                    "zh": "别加"
+                  },
+                  "back": {
+                    "es": "En Panfilia; aquí Juan Marcos se vuelve a Jerusalén. Hechos 13:13.",
+                    "zh": "在旁非利亚；约翰·马可在这里离队回耶路撒冷。使徒行传13:13。"
+                  },
+                  "x": 0.8635,
+                  "y": 0.5705
+                },
+                {
+                  "front": {
+                    "es": "Antioquía de Pisidia",
+                    "zh": "彼西底的安提阿"
+                  },
+                  "back": {
+                    "es": "Gran sermón de Pablo en la sinagoga. Hechos 13:14-41.",
+                    "zh": "保罗在会堂里讲了一篇大道。使徒行传13:14-41。"
+                  },
+                  "x": 0.8706,
+                  "y": 0.4991
+                },
+                {
+                  "front": {
+                    "es": "Iconio",
+                    "zh": "以哥念"
+                  },
+                  "back": {
+                    "es": "Muchos creen, pero deben huir de una revuelta. Hechos 14:1-6.",
+                    "zh": "许多人信了，但因骚乱不得不离开。使徒行传14:1-6。"
+                  },
+                  "x": 0.8977,
+                  "y": 0.5224
+                },
+                {
+                  "front": {
+                    "es": "Listra",
+                    "zh": "路司得"
+                  },
+                  "back": {
+                    "es": "Sanan a un cojo; a Pablo lo apedrean. Patria de Timoteo. Hechos 14:8-20.",
+                    "zh": "医好瘸腿的人；保罗在这里被石头打。提摩太的家乡。使徒行传14:8-20。"
+                  },
+                  "x": 0.8933,
+                  "y": 0.5377
+                },
+                {
+                  "front": {
+                    "es": "Derbe",
+                    "zh": "特庇"
+                  },
+                  "back": {
+                    "es": "Punto más lejano del primer viaje; muchos discípulos. Hechos 14:20-21.",
+                    "zh": "第一次旅行最远的地方；收了许多门徒。使徒行传14:20-21。"
+                  },
+                  "x": 0.9137,
+                  "y": 0.5499
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Segundo viaje",
+                "zh": "第二次旅行"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Troas",
+                    "zh": "特罗亚"
+                  },
+                  "back": {
+                    "es": "La visión del varón macedonio: «Pasa a Macedonia». Hechos 16:8-10.",
+                    "zh": "看见马其顿人的异象：“请过到马其顿来”。使徒行传16:8-10。"
+                  },
+                  "x": 0.7644,
+                  "y": 0.423
+                },
+                {
+                  "front": {
+                    "es": "Filipos",
+                    "zh": "腓立比"
+                  },
+                  "back": {
+                    "es": "Se convierte Lidia; cárcel y terremoto. Primera iglesia en Europa. Hechos 16.",
+                    "zh": "吕底亚信主；下监与地震。欧洲的第一间教会。使徒行传16章。"
+                  },
+                  "x": 0.7267,
+                  "y": 0.3564
+                },
+                {
+                  "front": {
+                    "es": "Tesalónica",
+                    "zh": "帖撒罗尼迦"
+                  },
+                  "back": {
+                    "es": "Predican tres sábados; estalla un alboroto. Hechos 17:1-9.",
+                    "zh": "一连三个安息日讲道；城里起了骚乱。使徒行传17:1-9。"
+                  },
+                  "x": 0.6987,
+                  "y": 0.3759
+                },
+                {
+                  "front": {
+                    "es": "Berea",
+                    "zh": "庇哩亚"
+                  },
+                  "back": {
+                    "es": "Los de Berea examinan las Escrituras cada día. Hechos 17:10-12.",
+                    "zh": "庇哩亚人天天查考圣经。使徒行传17:10-12。"
+                  },
+                  "x": 0.6833,
+                  "y": 0.3823
+                },
+                {
+                  "front": {
+                    "es": "Atenas",
+                    "zh": "雅典"
+                  },
+                  "back": {
+                    "es": "Discurso en el Areópago sobre el «Dios no conocido». Hechos 17:16-34.",
+                    "zh": "在亚略巴古讲论“未识之神”。使徒行传17:16-34。"
+                  },
+                  "x": 0.7152,
+                  "y": 0.5166
+                },
+                {
+                  "front": {
+                    "es": "Corinto",
+                    "zh": "哥林多"
+                  },
+                  "back": {
+                    "es": "Pablo se queda año y medio con Aquila y Priscila. Hechos 18:1-11.",
+                    "zh": "保罗与亚居拉、百基拉同住一年半。使徒行传18:1-11。"
+                  },
+                  "x": 0.6985,
+                  "y": 0.5187
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Tercer viaje",
+                "zh": "第三次旅行"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Éfeso",
+                    "zh": "以弗所"
+                  },
+                  "back": {
+                    "es": "Dos años enseñando; el alboroto de los plateros de Diana. Hechos 19.",
+                    "zh": "教导了两年；银匠为亚底米起哄。使徒行传19章。"
+                  },
+                  "x": 0.7904,
+                  "y": 0.5187
+                },
+                {
+                  "front": {
+                    "es": "Mileto",
+                    "zh": "米利都"
+                  },
+                  "back": {
+                    "es": "Pablo se despide de los ancianos de Éfeso. Hechos 20:17-38.",
+                    "zh": "保罗在这里与以弗所的长老道别。使徒行传20:17-38。"
+                  },
+                  "x": 0.7892,
+                  "y": 0.5404
+                },
+                {
+                  "front": {
+                    "es": "Rodas",
+                    "zh": "罗底"
+                  },
+                  "back": {
+                    "es": "Escala de la isla rumbo a Jerusalén. Hechos 21:1.",
+                    "zh": "回耶路撒冷途中停靠的海岛。使徒行传21:1。"
+                  },
+                  "x": 0.809,
+                  "y": 0.5986
+                },
+                {
+                  "front": {
+                    "es": "Tiro",
+                    "zh": "推罗"
+                  },
+                  "back": {
+                    "es": "Los discípulos le ruegan que no suba a Jerusalén. Hechos 21:3-6.",
+                    "zh": "门徒劝他不要上耶路撒冷。使徒行传21:3-6。"
+                  },
+                  "x": 0.9542,
+                  "y": 0.7656
+                },
+                {
+                  "front": {
+                    "es": "Cesarea",
+                    "zh": "该撒利亚"
+                  },
+                  "back": {
+                    "es": "Casa de Felipe; luego Pablo estará preso aquí. Hechos 21:8; 23:23-35.",
+                    "zh": "腓利的家；后来保罗在这里被囚。使徒行传21:8；23:23-35。"
+                  },
+                  "x": 0.9479,
+                  "y": 0.8064
+                }
+              ]
+            },
+            {
+              "name": {
+                "es": "Viaje a Roma",
+                "zh": "前往罗马"
+              },
+              "cards": [
+                {
+                  "front": {
+                    "es": "Sidón",
+                    "zh": "西顿"
+                  },
+                  "back": {
+                    "es": "Primera escala del viaje como preso; le tratan con bondad. Hechos 27:3.",
+                    "zh": "作囚犯启程后的第一站；受到善待。使徒行传27:3。"
+                  },
+                  "x": 0.9579,
+                  "y": 0.7503
+                },
+                {
+                  "front": {
+                    "es": "Mira (Licia)",
+                    "zh": "每拉（吕家）"
+                  },
+                  "back": {
+                    "es": "Cambian a una nave de Alejandría rumbo a Italia. Hechos 27:5-6.",
+                    "zh": "换上一只往意大利去的亚历山大船。使徒行传27:5-6。"
+                  },
+                  "x": 0.8454,
+                  "y": 0.6081
+                },
+                {
+                  "front": {
+                    "es": "Buenos Puertos (Creta)",
+                    "zh": "佳澳（革哩底）"
+                  },
+                  "back": {
+                    "es": "Pablo avisa del peligro, pero zarpan igualmente. Hechos 27:8-13.",
+                    "zh": "保罗警告有危险，船还是开了。使徒行传27:8-13。"
+                  },
+                  "x": 0.7375,
+                  "y": 0.6795
+                },
+                {
+                  "front": {
+                    "es": "Malta",
+                    "zh": "米利大"
+                  },
+                  "back": {
+                    "es": "Naufragio; todos se salvan y la víbora no le daña. Hechos 27:39-28:6.",
+                    "zh": "船破了；众人都得救，毒蛇也没有害他。使徒行传27:39-28:6。"
+                  },
+                  "x": 0.5208,
+                  "y": 0.6266
+                },
+                {
+                  "front": {
+                    "es": "Siracusa (Sicilia)",
+                    "zh": "叙拉古（西西里）"
+                  },
+                  "back": {
+                    "es": "Tres días de escala en Sicilia. Hechos 28:12.",
+                    "zh": "在西西里停留了三天。使徒行传28:12。"
+                  },
+                  "x": 0.5394,
+                  "y": 0.5642
+                },
+                {
+                  "front": {
+                    "es": "Regio",
+                    "zh": "利基翁"
+                  },
+                  "back": {
+                    "es": "Escala en la punta de Italia. Hechos 28:13.",
+                    "zh": "停靠在意大利的尖端。使徒行传28:13。"
+                  },
+                  "x": 0.5469,
+                  "y": 0.5097
+                },
+                {
+                  "front": {
+                    "es": "Puteoli",
+                    "zh": "部丢利"
+                  },
+                  "back": {
+                    "es": "Desembarca en Italia; halla hermanos. Hechos 28:13-14.",
+                    "zh": "在意大利上岸；遇见弟兄。使徒行传28:13-14。"
+                  },
+                  "x": 0.515,
+                  "y": 0.3664
+                },
+                {
+                  "front": {
+                    "es": "Roma",
+                    "zh": "罗马"
+                  },
+                  "back": {
+                    "es": "Preso pero predicando con libertad en la capital del imperio. Hechos 28:16-31.",
+                    "zh": "虽被囚，却在帝国的京城放胆传道。使徒行传28:16-31。"
+                  },
+                  "x": 0.4808,
+                  "y": 0.3099
+                },
+                {
+                  "front": {
+                    "es": "España (Tarsis)",
+                    "zh": "西班牙（他施）"
+                  },
+                  "back": {
+                    "es": "El confín que Pablo deseaba alcanzar; lugar de reto. Romanos 15:24.",
+                    "zh": "保罗盼望去到的尽头；挑战地点。罗马书15:24。"
+                  },
+                  "x": 0.1167,
+                  "y": 0.5684
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

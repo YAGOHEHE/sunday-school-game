@@ -59,8 +59,11 @@ public struct Card: Codable, Hashable, Sendable {
     public var back: L?
     /// Solo para `colorFlash`: "red" | "yellow" | "blue" | "green" | "purple" | "orange".
     public var color: String?
-    public init(front: L, back: L? = nil, color: String? = nil) {
-        self.front = front; self.back = back; self.color = color
+    /// Solo para `map`: posición normalizada 0…1 sobre la lámina (x = oeste→este, y = norte→sur).
+    public var x: Double?
+    public var y: Double?
+    public init(front: L, back: L? = nil, color: String? = nil, x: Double? = nil, y: Double? = nil) {
+        self.front = front; self.back = back; self.color = color; self.x = x; self.y = y
     }
 }
 
@@ -82,6 +85,28 @@ public enum ToolKind: String, Codable, CaseIterable, Sendable {
     case colorFlash     // tarjeta de color a pantalla completa (cards con `color`, back = regla). `groups`
     case identity       // tarjetas de identidad (front = rol, back = cómo tratarle), imprimibles. `groups`
     case codeSequence   // genera secuencias de señales (捏/拍/压). `length`
+    case map            // lámina de mapa: cada carta es un lugar con posición (x, y); los jugadores señalan. `groups`
+}
+
+/// Lámina de imagen para la herramienta `map` (alternativa al pergamino dibujado en Canvas).
+/// Si una herramienta `map` no trae `plate`, se dibuja el Canvas de siempre (aspect 0.80).
+public struct MapPlate: Codable, Hashable, Sendable {
+    /// Nombre del recurso de imagen en JuegosUI (p. ej. "mapa-mediterraneo.jpg", en Resources/Maps).
+    public var image: String
+    /// Proporción ancho/alto de la lámina (ancho / alto).
+    public var aspect: Double
+    /// Ventana geográfica que cubre la imagen (grados). x = (lon − lonMin) / (lonMax − lonMin); y = (latMax − lat) / (latMax − latMin).
+    public var lonMin: Double
+    public var lonMax: Double
+    public var latMin: Double
+    public var latMax: Double
+    public init(image: String, aspect: Double, lonMin: Double, lonMax: Double, latMin: Double, latMax: Double) {
+        self.image = image; self.aspect = aspect
+        self.lonMin = lonMin; self.lonMax = lonMax; self.latMin = latMin; self.latMax = latMax
+    }
+
+    /// Ventana geográfica equivalente, para proyectar lon/lat a posiciones normalizadas.
+    public var window: GeoWindow { GeoWindow(lonMin: lonMin, lonMax: lonMax, latMin: latMin, latMax: latMax) }
 }
 
 public struct ToolSpec: Codable, Hashable, Sendable {
@@ -92,10 +117,12 @@ public struct ToolSpec: Codable, Hashable, Sendable {
     public var multiple: Int?
     public var length: Int?
     public var groups: [CardGroup]?
+    /// Solo para `map`: lámina de imagen. nil = pergamino dibujado en Canvas (comportamiento original).
+    public var plate: MapPlate?
     public init(kind: ToolKind, title: L? = nil, seconds: Int? = nil, teams: Int? = nil,
-                multiple: Int? = nil, length: Int? = nil, groups: [CardGroup]? = nil) {
+                multiple: Int? = nil, length: Int? = nil, groups: [CardGroup]? = nil, plate: MapPlate? = nil) {
         self.kind = kind; self.title = title; self.seconds = seconds; self.teams = teams
-        self.multiple = multiple; self.length = length; self.groups = groups
+        self.multiple = multiple; self.length = length; self.groups = groups; self.plate = plate
     }
 }
 

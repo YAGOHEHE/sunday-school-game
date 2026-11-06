@@ -109,3 +109,15 @@ public extension Session {
 
     var overBudget: Bool { totalMinutes > availableMinutes }
 }
+
+public extension Array where Element == Session {
+    static var historyLimit: Int { 60 }
+
+    /// Inserta o reemplaza (mismo `id`) y mantiene el orden por fecha descendente y el tope.
+    mutating func upsert(_ s: Session, limit: Int = historyLimit) {
+        removeAll { $0.id == s.id }
+        let i = firstIndex { $0.date < s.date } ?? endIndex
+        insert(s, at: i)
+        if count > limit { removeLast(count - limit) }
+    }
+}

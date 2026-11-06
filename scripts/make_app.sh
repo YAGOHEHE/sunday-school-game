@@ -4,6 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 VERSION="$(tr -d ' \n' < "$ROOT/VERSION")"
 NAME="Juegos Dominical"
+DISPLAY_NAME="¡Juguemos!"
 APP="$ROOT/build/$NAME.app"
 
 cd "$ROOT/App"
@@ -30,7 +31,7 @@ cat > "$APP/Contents/Info.plist" <<PLIST
 <dict>
   <key>CFBundleIdentifier</key><string>org.escueladominical.juegos</string>
   <key>CFBundleName</key><string>$NAME</string>
-  <key>CFBundleDisplayName</key><string>$NAME</string>
+  <key>CFBundleDisplayName</key><string>$DISPLAY_NAME</string>
   <key>CFBundleExecutable</key><string>$NAME</string>
   $ICON_KEY
   <key>CFBundlePackageType</key><string>APPL</string>

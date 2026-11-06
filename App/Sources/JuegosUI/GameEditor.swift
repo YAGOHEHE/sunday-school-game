@@ -18,7 +18,7 @@ private struct ToolDraft: Identifiable {
     var length = 4
     var groups: [GroupDraft] = []
 
-    static let groupKinds: Set<ToolKind> = [.deck, .generator, .reference, .caller, .colorFlash, .identity]
+    static let groupKinds: Set<ToolKind> = [.deck, .generator, .reference, .caller, .colorFlash, .identity, .map]
 
     init(kind: ToolKind) { self.kind = kind }
 

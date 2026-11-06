@@ -12,7 +12,7 @@ struct SessionView: View {
     @State private var showMinutes = false
     @State private var notesOpen = false
 
-    static let rowGap: CGFloat = 6
+    static let rowGap: CGFloat = 12
     static let rowH: CGFloat = 52
 
     var body: some View {
@@ -28,23 +28,31 @@ struct SessionView: View {
                 }
                 .padding(20)
             }
+            #if os(macOS)
+            // En iPad el botón «Empezar» es flotante (ver RootView); aquí solo en macOS.
             Button { play.startSession(model: model) } label: {
                 HStack(spacing: 10) {
                     Image(systemName: "play.fill")
-                    Text(model.t("Empezar sesión", "开始课程")).font(Theme.font(20, .semibold))
+                    Text(model.t("¡Juguemos! · 开始", "¡Juguemos! · 开始")).font(Theme.font(20, .bold))
                 }
-                .foregroundStyle(.white)
-                .frame(maxWidth: .infinity, minHeight: 60)
-                .background(RoundedRectangle(cornerRadius: 18).fill(Theme.accentPlanificar))
+                .foregroundStyle(Theme.onAccent)
+                .frame(maxWidth: .infinity, minHeight: 56)
+                .background(RoundedRectangle(cornerRadius: 12).fill(Theme.accent)
+                    .shadow(color: Theme.cardShadow, radius: 0, x: 3, y: 4))
                 .opacity(s.items.isEmpty ? 0.4 : 1)
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
             .disabled(s.items.isEmpty)
-            .padding(.horizontal, 20).padding(.vertical, 14)
+            .padding(.horizontal, 20).padding(.top, 14).padding(.bottom, 18)
             .accessibilityLabel("\(model.t("Empezar sesión", "开始课程"))")
+            #else
+            // Espacio para que el contenido no quede tapado por los botones flotantes.
+            Color.clear.frame(height: 92)
+            #endif
         }
         .background(Theme.background)
+        .boardDivider(.trailing)
         .navigationTitle("")
     }
 
@@ -55,9 +63,16 @@ struct SessionView: View {
         let s = model.session
         return VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .center, spacing: 12) {
-                TextField(model.t("Sesión de hoy", "今日课程"), text: $model.userData.currentSession.title)
-                    .textFieldStyle(.plain).font(Theme.font(28, .bold)).foregroundStyle(Theme.ink)
-                    .accessibilityLabel(model.t("Título de la sesión", "课程标题"))
+                ZStack(alignment: .leading) {
+                    // Placeholder propio legible: el del TextField ignora foregroundStyle y queda gris sobre el tablero.
+                    if model.session.title.isEmpty {
+                        Text(model.t("Sesión de hoy", "今日课程"))
+                            .font(Theme.font(28, .bold)).foregroundStyle(Theme.onBoard.opacity(0.6))
+                    }
+                    TextField("", text: $model.userData.currentSession.title)
+                        .textFieldStyle(.plain).font(Theme.font(28, .bold)).foregroundStyle(Theme.onBoard)
+                        .accessibilityLabel(model.t("Título de la sesión", "课程标题"))
+                }
                 Button { showDate = true } label: {
                     Text(shortDate).font(Theme.font(14)).foregroundStyle(Theme.ink).lineLimit(1).fixedSize()
                         .padding(.horizontal, 12).frame(minHeight: 36)
@@ -71,14 +86,29 @@ struct SessionView: View {
                     DatePicker("", selection: $model.userData.currentSession.date, displayedComponents: .date)
                         .datePickerStyle(.graphical).labelsHidden().padding(12)
                 }
+                saveButton
+                Menu {
+                    Button { model.archiveSession() } label: { Label(model.t("Guardar en el historial", "保存到历史"), systemImage: "square.and.arrow.down") }
+                        .disabled(s.items.isEmpty)
+                    Divider()
+                    Button { model.newSession() } label: { Label(model.t("Nueva sesión", "新课程"), systemImage: "doc.badge.plus") }
+                } label: {
+                    Image(systemName: "ellipsis").font(.system(size: 15, weight: .bold)).foregroundStyle(Theme.ink)
+                        .frame(width: 36, height: 36)
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Theme.surface))
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Theme.border))
+                        .frame(minHeight: Theme.minTap).contentShape(Rectangle())
+                }
+                .menuStyle(.button).buttonStyle(.plain).menuIndicator(.hidden).fixedSize()
+                .accessibilityLabel(model.t("Más acciones de la sesión", "更多课程操作"))
             }
             HStack(alignment: .firstTextBaseline, spacing: 6) {
-                Text("\(s.totalMinutes)").font(Theme.font(22, .bold)).foregroundStyle(Theme.ink)
-                Text(model.t("de", "/")).font(Theme.font(15)).foregroundStyle(Theme.secondary)
+                Text("\(s.totalMinutes)").font(Theme.font(24, .bold)).foregroundStyle(Theme.accent)
+                Text(model.t("de", "/")).font(Theme.font(15)).foregroundStyle(Theme.onBoard.opacity(0.85))
                 Button { showMinutes = true } label: {
-                    Text("\(s.availableMinutes)").font(Theme.font(22, .bold)).foregroundStyle(Theme.ink)
+                    Text("\(s.availableMinutes)").font(Theme.font(22, .bold)).foregroundStyle(Theme.onBoard)
                         .overlay(alignment: .bottom) {
-                            Rectangle().fill(Theme.secondary).frame(height: 2).offset(y: 3).mask(
+                            Rectangle().fill(Theme.onBoard.opacity(0.7)).frame(height: 2).offset(y: 3).mask(
                                 HStack(spacing: 2) { ForEach(0..<8, id: \.self) { _ in Rectangle().frame(width: 2) } })
                         }
                         .frame(minWidth: Theme.minTap, minHeight: Theme.minTap).contentShape(Rectangle())
@@ -91,9 +121,30 @@ struct SessionView: View {
                     }
                     .padding(16).frame(width: 190)
                 }
-                Text("min").font(Theme.font(15)).foregroundStyle(Theme.secondary)
+                Text("min").font(Theme.font(15)).foregroundStyle(Theme.onBoard.opacity(0.85))
             }
         }
+    }
+
+    private var saveButton: some View {
+        let saved = model.isCurrentSessionSaved
+        let empty = model.session.items.isEmpty
+        return Button { model.archiveSession() } label: {
+            HStack(spacing: 6) {
+                Image(systemName: saved ? "checkmark" : "square.and.arrow.down")
+                Text(saved ? model.s("Guardada", "已保存") : model.s("Guardar", "保存"))
+            }
+            .font(Theme.font(14, .semibold)).lineLimit(1).fixedSize()
+            .foregroundStyle(saved ? Theme.ok : .white)
+            .padding(.horizontal, 12).frame(minHeight: 36)
+            .background(RoundedRectangle(cornerRadius: 10).fill(saved ? Theme.ok.opacity(0.15) : Theme.accentPlanificar))
+            .opacity(empty ? 0.4 : 1)
+            .frame(minHeight: Theme.minTap).contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .disabled(empty || saved)
+        .help(model.t("Guardar la sesión en el historial", "将课程保存到历史"))
+        .accessibilityLabel(saved ? model.t("Sesión guardada", "课程已保存") : model.t("Guardar sesión", "保存课程"))
     }
 
     private var shortDate: String {
@@ -116,7 +167,7 @@ struct SessionView: View {
                     .accessibilityLabel(model.t("Notas", "备注"))
             } else {
                 Button { notesOpen = true } label: {
-                    Text(model.t("+ Añadir nota", "+ 添加备注")).font(Theme.font(14)).foregroundStyle(Theme.secondary)
+                    Text(model.t("+ Añadir nota", "+ 添加备注")).font(Theme.font(14)).foregroundStyle(Theme.onBoard.opacity(0.9))
                         .frame(minHeight: Theme.minTap, alignment: .leading).contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
@@ -159,14 +210,14 @@ struct SessionView: View {
         if over { text = model.t("Te pasas \(-free) min", "超时 \(-free) 分钟") }
         else if empty { text = model.t("Quedan \(free) min · arrastra un juego aquí o pulsa +", "还剩 \(free) 分钟 · 拖入游戏或点 +") }
         else { text = model.t("Quedan \(free) min · suelta un juego aquí", "还剩 \(free) 分钟 · 拖入游戏") }
-        let color = over ? Theme.danger : Theme.ok
+        let color = over ? Theme.accent : Theme.onBoard
         return Text(text)
-            .font(Theme.font(14, .semibold)).foregroundStyle(color).multilineTextAlignment(.center)
+            .font(Theme.font(14, .semibold)).foregroundStyle(color.opacity(over ? 1 : 0.9)).multilineTextAlignment(.center)
             .frame(maxWidth: .infinity, minHeight: Self.rowH)
             .padding(.horizontal, 8)
-            .background(RoundedRectangle(cornerRadius: 12).fill(dropTargeted ? Theme.accentPlanificar.opacity(0.12) : Color.clear))
-            .overlay(RoundedRectangle(cornerRadius: 12)
-                .strokeBorder(dropTargeted ? Theme.accentPlanificar : (over ? Theme.danger.opacity(0.6) : Color(light: 0xD6D0C3, dark: 0x3A3A48)), style: StrokeStyle(lineWidth: 2, dash: [6, 4])))
+            .background(RoundedRectangle(cornerRadius: Theme.cornerRadius).fill(dropTargeted ? Theme.accent.opacity(0.18) : Color.clear))
+            .overlay(RoundedRectangle(cornerRadius: Theme.cornerRadius)
+                .strokeBorder(dropTargeted ? Theme.accent : (over ? Theme.accent : Color.white.opacity(0.5)), style: StrokeStyle(lineWidth: 2, dash: [6, 4])))
             .padding(.top, 4)
     }
 }
@@ -185,9 +236,10 @@ private struct SessionRow: View {
 
     var body: some View {
         if let g = model.game(item.gameID) {
-            let active = selected || hover
+            // «Pizarra»: los −/+ solo aparecen en la fila seleccionada.
+            let active = selected
             HStack(spacing: 10) {
-                Rectangle().fill(g.category.color).frame(width: 5)
+                RoundedRectangle(cornerRadius: 2).fill(g.category.color).frame(width: 8, height: 34)
                 Text(g.icon).font(.system(size: 20))
                 BiText(g.title, size: 15, weight: .semibold)
                     .foregroundStyle(Theme.ink).lineLimit(1)
@@ -206,14 +258,22 @@ private struct SessionRow: View {
                     .buttonStyle(.plain)
                     .accessibilityLabel("\(model.t("Quitar de la sesión", "移出课程")): \(g.title.es)")
                 } else {
+                    #if os(iOS)
+                    Image(systemName: "line.3.horizontal").font(.system(size: 17, weight: .semibold))
+                        .foregroundStyle(Theme.secondary.opacity(0.6)).frame(width: 36, height: 36)
+                        .accessibilityHidden(true)
+                    #else
                     Color.clear.frame(width: 6, height: 1)
+                    #endif
                 }
             }
-            .padding(.trailing, 4)
+            .padding(.leading, 12).padding(.trailing, 6)
             .frame(height: SessionView.rowH)
-            .background(Theme.surface)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .overlay(RoundedRectangle(cornerRadius: 12).stroke(selected ? g.category.color : Theme.border, lineWidth: selected ? 1.5 : 1))
+            .overlay(RoundedRectangle(cornerRadius: Theme.cornerRadius).stroke(Theme.accent, lineWidth: 2).opacity(selected ? 1 : 0))
+            .pizarraCard(tilt: index.pizarraTilt,
+                         fill: selected ? Theme.paper : Theme.surface,
+                         shadow: selected ? Theme.accent.opacity(0.9) : Theme.cardShadow,
+                         dx: selected ? 3 : 2, dy: selected ? 4 : 3)
             .contentShape(Rectangle())
             .onHover { hover = $0 }
             .onTapGesture { model.selectedGameID = g.id }
@@ -228,65 +288,26 @@ private struct SessionRow: View {
 
     private func miniButton(_ symbol: String, label: String, action: @escaping () -> Void) -> some View {
         Button(action: action) {
-            Image(systemName: symbol).font(.system(size: 12, weight: .bold)).foregroundStyle(Theme.ink)
+            Image(systemName: symbol).font(.system(size: 14, weight: .bold)).foregroundStyle(Theme.ink)
                 .frame(width: 32, height: 32)
-                .background(RoundedRectangle(cornerRadius: 8).fill(Theme.chipNeutral))
+                .overlay(RoundedRectangle(cornerRadius: 8).stroke(Theme.ink, lineWidth: 2))
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain).accessibilityLabel(label)
     }
 
-    private func remove() { model.userData.currentSession.items.removeAll { $0.id == item.id } }
+    /// Copia el id antes de mutar: leer `item` (binding dentro de `userData`) durante la mutación
+    /// provoca una violación de exclusividad y cierra la app.
+    private func remove() {
+        let id = item.id
+        model.userData.currentSession.items.removeAll { $0.id == id }
+    }
 
     private func move(_ d: Int) {
+        let id = item.id
         var items = model.session.items
-        guard let i = items.firstIndex(where: { $0.id == item.id }), items.indices.contains(i + d) else { return }
+        guard let i = items.firstIndex(where: { $0.id == id }), items.indices.contains(i + d) else { return }
         items.swapAt(i, i + d)
         model.userData.currentSession.items = items
-    }
-}
-
-// MARK: Historial (botón de la barra + popover)
-
-struct HistoryButton: View {
-    @Environment(AppModel.self) private var model
-    @State private var open = false
-
-    var body: some View {
-        Button { open = true } label: {
-            Label(model.t("Historial", "历史"), systemImage: "clock.arrow.circlepath")
-        }
-        .help(model.t("Historial de sesiones", "课程历史"))
-        .popover(isPresented: $open, arrowEdge: .bottom) { content }
-    }
-
-    private var content: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(model.t("Historial", "历史")).font(Theme.font(17, .semibold)).foregroundStyle(Theme.ink)
-            if model.userData.history.isEmpty {
-                Text(model.t("Aún no hay sesiones", "暂无记录")).font(Theme.font(14)).foregroundStyle(Theme.secondary)
-            }
-            ScrollView {
-                VStack(spacing: 8) {
-                    ForEach(model.userData.history.prefix(10)) { h in
-                        HStack(alignment: .center, spacing: 10) {
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text("\(h.date.formatted(date: .abbreviated, time: .omitted))\(h.title.isEmpty ? "" : " · \(h.title)")")
-                                    .font(Theme.font(14, .semibold)).foregroundStyle(Theme.ink).lineLimit(1)
-                                Text(h.items.compactMap { model.game($0.gameID)?.icon }.joined(separator: " ") + "  · \(h.totalMinutes) min")
-                                    .font(Theme.font(12)).foregroundStyle(Theme.secondary).lineLimit(1)
-                            }
-                            Spacer(minLength: 0)
-                            Button(model.t("Repetir", "重复")) { model.repeatSession(h); open = false }
-                                .buttonStyle(PillButtonStyle(color: Theme.accentPlanificar, filled: false))
-                        }
-                        .padding(.horizontal, 10).padding(.vertical, 6)
-                        .background(RoundedRectangle(cornerRadius: 12).fill(Theme.surface))
-                        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Theme.border))
-                    }
-                }
-            }
-        }
-        .padding(14).frame(width: 360).frame(maxHeight: 460)
     }
 }

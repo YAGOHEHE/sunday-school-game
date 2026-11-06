@@ -177,14 +177,12 @@ final class CardBagState: ToolState {
     func shuffleAgain() { rebuild(); current = nil; revealed = false; reshuffled = false; shown = [] }
 
     func next() {
-        reshuffled = false
-        var c = bag.next()
-        if c == nil {
-            bag.reset()
-            c = bag.next()
-            reshuffled = true
-            shown = []
-        }
+        // ShuffleBag.next() nunca devuelve nil (se rebaraja solo al agotarse). Detectamos el fin
+        // de ronda por remaining == 0 ANTES de robar, para reiniciar el contador de mostradas y
+        // marcar el rebarajado. Así el contador no se pasa del total (antes salía «14 de 12»).
+        let newRound = bag.remaining == 0 && !shown.isEmpty
+        let c = bag.next()
+        if newRound { reshuffled = true; shown = [] } else { reshuffled = false }
         if let c { shown.append(c) }
         current = c
         revealed = false

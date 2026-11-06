@@ -14,6 +14,7 @@ struct LibraryView: View {
             content.frame(width: geo.size.width, height: geo.size.height, alignment: .topLeading)
         }
         .background(Theme.background)
+        .boardDivider(.trailing)
         .navigationTitle("")
     }
 
@@ -54,7 +55,7 @@ struct LibraryView: View {
                          selected: model.categoryFilter == nil) { model.categoryFilter = nil }
                     ForEach(GameCategory.allCases, id: \.self) { c in
                         chip(model.text(c.name).replacingOccurrences(of: "\n", with: " "),
-                             fg: categoryInk(c, scheme), bg: c.adaptiveTint, selFG: .white, selBG: c.color,
+                             fg: categoryInk(c, scheme), bg: c.adaptiveTint, selFG: c.onColor, selBG: c.color,
                              selected: model.categoryFilter == c) {
                             model.categoryFilter = model.categoryFilter == c ? nil : c
                         }
@@ -62,24 +63,29 @@ struct LibraryView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
 
-                Text("\(model.filteredGames.count) \(model.t("JUEGOS", "游戏"))")
-                    .font(Theme.font(12, .semibold)).tracking(0.5).foregroundStyle(Theme.secondary).lineLimit(1)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                HStack {
+                    Text(model.t("La caja de juegos", "游戏盒"))
+                        .font(Theme.font(22, .bold)).foregroundStyle(Theme.accent).lineLimit(1)
+                    Spacer()
+                    Text("\(model.filteredGames.count) \(model.t("JUEGOS", "游戏"))")
+                        .font(Theme.font(12, .semibold)).tracking(0.5).foregroundStyle(Theme.onBoard.opacity(0.85)).lineLimit(1)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
             .padding(.horizontal, 14).padding(.top, 12).padding(.bottom, 8)
 
             ScrollView {
-                LazyVStack(spacing: 8) {
-                    ForEach(model.filteredGames) { g in
-                        LibraryRow(game: g)
+                LazyVStack(spacing: 14) {
+                    ForEach(Array(model.filteredGames.enumerated()), id: \.element.id) { i, g in
+                        LibraryRow(game: g, index: i)
                             .draggable(g.id)
                     }
                     if model.hasHidden {
                         Button(model.t("Mostrar juegos ocultos", "显示已隐藏")) { model.unhideAll() }
-                            .buttonStyle(.link).font(.caption)
+                            .buttonStyle(.plain).font(Theme.font(13, .semibold)).foregroundStyle(Theme.onBoard.opacity(0.9))
                     }
                 }
-                .padding(.horizontal, 14).padding(.bottom, 14).padding(.top, 4)
+                .padding(.horizontal, 16).padding(.bottom, 14).padding(.top, 6)
             }
             .overlay {
                 if model.filteredGames.isEmpty {
@@ -142,37 +148,43 @@ struct LibraryRow: View {
     @Environment(AppModel.self) private var model
     @Environment(\.colorScheme) private var scheme
     let game: Game
+    var index: Int = 0
 
     private var minutesText: String {
         "\(game.minMinutes == game.maxMinutes ? "\(game.minMinutes)" : "\(game.minMinutes)–\(game.maxMinutes)") min"
     }
     private var titleText: String { model.language == .zh ? game.title.text(.zh) : game.title.text(.es) }
-    private var subtitle: String {
-        if model.language == .both, !game.title.zh.isEmpty, game.title.zh != game.title.es { return "\(game.title.zh) · \(minutesText)" }
-        return minutesText
+    private var zhSubtitle: String? {
+        (model.language == .both && !game.title.zh.isEmpty && game.title.zh != game.title.es) ? game.title.zh : nil
     }
     private var inSession: Bool { model.session.items.contains { $0.gameID == game.id } }
     private var selected: Bool { model.selectedGameID == game.id }
 
     var body: some View {
         HStack(spacing: 12) {
-            Text(game.icon).font(.system(size: 24))
-                .frame(width: 44, height: 44)
-                .background(RoundedRectangle(cornerRadius: 12).fill(game.category.adaptiveTint))
+            Text(game.icon).font(.system(size: 24)).frame(width: 30)
             VStack(alignment: .leading, spacing: 1) {
                 Text(titleText).font(model.language == .zh ? Theme.fontZH(15, .semibold) : Theme.font(15, .semibold))
-                    .foregroundStyle(Theme.ink).lineLimit(2)
-                Text(subtitle).font(Theme.fontZH(12)).foregroundStyle(Theme.secondary).lineLimit(1)
+                    .foregroundStyle(Theme.ink).lineLimit(1)
+                HStack(spacing: 0) {
+                    if let zh = zhSubtitle {
+                        Text(zh).lineLimit(1).truncationMode(.tail)
+                        Text(" · ").fixedSize()
+                    }
+                    Text(minutesText).lineLimit(1).fixedSize()
+                }
+                .font(Theme.fontZH(12)).foregroundStyle(Theme.secondary)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            if model.isFavorite(game.id) { Image(systemName: "star.fill").foregroundStyle(.yellow).font(.caption) }
+            if model.isFavorite(game.id) { Image(systemName: "star.fill").foregroundStyle(Theme.accent).font(.caption) }
             if inSession {
                 Text(model.t("En sesión", "已加入")).font(Theme.font(12, .semibold)).foregroundStyle(Theme.ok).lineLimit(1).fixedSize()
                     .padding(.trailing, 8)
             } else {
             Button { model.addToSession(game) } label: {
-                Image(systemName: "plus").font(.system(size: 16, weight: .bold)).foregroundStyle(.white)
-                    .frame(width: 36, height: 36).background(Circle().fill(game.category.color))
+                Image(systemName: "plus").font(.system(size: 18, weight: .bold)).foregroundStyle(Theme.ink)
+                    .frame(width: 36, height: 36)
+                    .overlay(Circle().stroke(Theme.ink, lineWidth: 2))
                     .frame(width: Theme.minTap, height: Theme.minTap).contentShape(Rectangle())
             }
             .buttonStyle(.plain)
@@ -180,10 +192,14 @@ struct LibraryRow: View {
             .help(model.t("Añadir a la sesión", "加入课程"))
             }
         }
-        .padding(.leading, 10).padding(.trailing, 4).padding(.vertical, 6)
-        .background(RoundedRectangle(cornerRadius: 16).fill(Theme.surface))
-        .overlay(RoundedRectangle(cornerRadius: 16).stroke(selected ? game.category.color : Theme.border, lineWidth: selected ? 2 : 1))
-        .contentShape(RoundedRectangle(cornerRadius: 16))
+        .padding(.leading, 12).padding(.trailing, 6).padding(.vertical, 10)
+        .overlay(RoundedRectangle(cornerRadius: Theme.cornerRadius).stroke(game.category.color, lineWidth: 2).opacity(selected ? 1 : 0))
+        .overlay(alignment: .topLeading) {
+            WashiTape(color: game.category.color, rotation: index.pizarraTilt * 8 - 4)
+                .offset(x: 16, y: -7)
+        }
+        .pizarraCard(tilt: index.pizarraTilt)
+        .contentShape(RoundedRectangle(cornerRadius: Theme.cornerRadius))
         .onTapGesture(count: 2) { model.addToSession(game) }
         .onTapGesture { model.selectedGameID = game.id }
         .accessibilityElement(children: .contain)

@@ -53,7 +53,7 @@ final class JuegosCoreTests: XCTestCase {
                 case .boom: XCTAssertNotNil(t.multiple, w)
                 case .codeSequence: XCTAssertNotNil(t.length, w)
                 case .stopwatch: break
-                case .deck, .generator, .reference, .caller, .colorFlash, .identity:
+                case .deck, .generator, .reference, .caller, .colorFlash, .identity, .map:
                     XCTAssertFalse(t.groups?.isEmpty ?? true, w)
                 }
                 for grp in t.groups ?? [] {
@@ -135,6 +135,21 @@ final class JuegosCoreTests: XCTestCase {
         XCTAssertFalse(g.matches("zzz"))
     }
 
+    func testMediterraneanProjection() {
+        let w = GeoWindow.mediterranean
+        let roma = w.project(lon: 12.48, lat: 41.89)
+        XCTAssertEqual(roma.x, 0.481, accuracy: 0.001)
+        XCTAssertEqual(roma.y, 0.310, accuracy: 0.001)
+        let jer = w.project(lon: 35.23, lat: 31.78)
+        XCTAssertEqual(jer.x, 0.955, accuracy: 0.001)
+        XCTAssertEqual(jer.y, 0.844, accuracy: 0.001)
+        // La lámina usa aspect 2.0 (imagen 4000×2000, ya corregida por cos 38°); se guarda en MapPlate.aspect.
+        let plate = MapPlate(image: "mapa-mediterraneo.jpg", aspect: 2.0,
+                             lonMin: w.lonMin, lonMax: w.lonMax, latMin: w.latMin, latMax: w.latMax)
+        XCTAssertEqual(plate.aspect, 2.0, accuracy: 0.001)
+        XCTAssertEqual(plate.window, w)
+    }
+
     func testSession() {
         let s = Session(title: "t", availableMinutes: 20,
                         items: [SessionItem(gameID: "a", minutes: 10), SessionItem(gameID: "b", minutes: 15)])
@@ -146,6 +161,23 @@ final class JuegosCoreTests: XCTestCase {
         XCTAssertEqual(r.items.map(\.minutes), [10, 15])
         XCTAssertTrue(zip(r.items, s.items).allSatisfy { $0.id != $1.id })
         XCTAssertFalse(Session(availableMinutes: 30).overBudget)
+    }
+
+    func testHistoryUpsert() {
+        var h: [Session] = []
+        var a = Session(date: Date(timeIntervalSince1970: 1_000), title: "a")
+        h.upsert(a)
+        h.upsert(a)
+        XCTAssertEqual(h.count, 1, "guardar dos veces la misma sesión no duplica")
+        a.title = "a2"
+        h.upsert(a)
+        XCTAssertEqual(h.map(\.title), ["a2"])
+        let older = Session(date: Date(timeIntervalSince1970: 500), title: "old")
+        let newer = Session(date: Date(timeIntervalSince1970: 2_000), title: "new")
+        h.upsert(older); h.upsert(newer)
+        XCTAssertEqual(h.map(\.title), ["new", "a2", "old"], "orden por fecha descendente")
+        for i in 0..<70 { h.upsert(Session(date: Date(timeIntervalSince1970: Double(10_000 + i)))) }
+        XCTAssertEqual(h.count, 60)
     }
 
     func testUserDataStore() throws {

@@ -36,7 +36,21 @@ struct PlayPalette {
         switch mode {
         case 0:
             p.isColored = true
-            p.accent = bgColor
+            if template.background == .category {
+                if category.isLightFill {
+                    // Fondo de categoría claro (oro): texto en tinta, acento magenta.
+                    p.fg = Theme.inkFixed; p.fg2 = Theme.inkFixed.opacity(0.65)
+                    p.panel = Color.black.opacity(0.10); p.line = Theme.inkFixed.opacity(0.25)
+                    p.primary = Theme.inkFixed; p.onPrimary = .white
+                    p.accent = Theme.primaryMagenta
+                } else {
+                    // Fondo de categoría oscuro: texto blanco, acento amarillo del icono.
+                    p.accent = Theme.accent
+                }
+            } else {
+                // Fondo personalizado de luminancia media: comportamiento anterior.
+                p.accent = bgColor
+            }
         case 1:
             p.fg = Color(hex: 0xF2F1F7); p.fg2 = Color(hex: 0xA09FB0)
             p.panel = Theme.darkSurface; p.line = Theme.darkBorder

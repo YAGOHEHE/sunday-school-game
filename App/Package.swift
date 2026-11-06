@@ -25,7 +25,8 @@ let package = Package(
             dependencies: ["JuegosCore"],
             path: "Sources/JuegosUI",
             // Fredoka (SIL OFL 1.1, Google Fonts). Se registra al arrancar en Theme.
-            resources: [.copy("Resources/Fonts")]
+            // Maps: láminas de imagen para la herramienta `map` (p. ej. mapa-mediterraneo.jpg).
+            resources: [.copy("Resources/Fonts"), .copy("Resources/Maps")]
         ),
         .executableTarget(
             name: "JuegosMac",

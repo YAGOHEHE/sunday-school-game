@@ -85,6 +85,11 @@ struct TemplateBody: View {
         Group {
             if idx == -1 {
                 SheetView(game: game, presenting: presenting)
+            } else if game.tools.indices.contains(idx), game.tools[idx].kind == .map {
+                // El mapa ocupa toda el área, sea herramienta central o de pestaña.
+                MapGameView(state: play.state(index: idx) { MapState(groups: game.tools[idx].groups ?? [], plate: game.tools[idx].plate) },
+                            presenting: presenting)
+                    .padding(.horizontal, 16).padding(.top, 4)
             } else if idx != main {
                 ToolBox(index: idx, presenting: presenting).padding(.horizontal, 32)
             } else {
@@ -116,12 +121,27 @@ struct PlayHeader: View {
             if !presenting {
                 Button { play.exit() } label: { Label { LT("Salir", "退出") } icon: { Image(systemName: "xmark") } }
                     .buttonStyle(pal.outline())
+                    .fixedSize()
                     .accessibilityLabel("Salir del modo juego")
             }
-            Text(game.icon).font(.system(size: presenting ? 54 : 40))
+            Text(game.icon).font(.system(size: presenting ? 54 : 40)).fixedSize()
+            #if os(iOS)
+            VStack(alignment: .leading, spacing: 6) {
+                BiText(game.title, size: presenting ? 36 : 26, weight: .bold, secondaryOpacity: 0.85)
+                if play.queue.count > 1 { progress.fixedSize() }
+            }
+            .layoutPriority(1)
+            #else
             BiText(game.title, size: presenting ? 36 : 26, weight: .bold, secondaryOpacity: 0.85)
             if play.queue.count > 1 { progress }
+            #endif
             Spacer(minLength: 8)
+            #if os(iOS)
+            if !presenting {
+                AirPlayButton(tint: pal.fg, activeTint: .white).frame(width: 34, height: 34)
+                    .accessibilityLabel("Enviar a la tele con AirPlay")
+            }
+            #endif
             if let end = endEstimate(main) {
                 Text("Fin previsto \(timeOfDay(end))").font(Theme.font(presenting ? 20 : 15)).foregroundStyle(pal.fg2)
             }
@@ -132,7 +152,7 @@ struct PlayHeader: View {
                         .foregroundStyle(play.clock.finished ? .red : pal.fg)
                 }
             } else if !relojClock {
-                CompactClock(state: play.clock)
+                CompactClock(state: play.clock).fixedSize().layoutPriority(2)
             }
         }
         .padding(.horizontal, 32).padding(.vertical, 16)

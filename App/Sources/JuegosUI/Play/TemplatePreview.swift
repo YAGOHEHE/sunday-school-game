@@ -37,7 +37,7 @@ public struct TemplatePreview: View {
                 Card(front: L($0.1, $0.2), back: L($0.3, $0.4), color: $0.0)
             }
             return ToolSpec(kind: k, groups: [CardGroup(name: L("Reglas", "规则"), cards: cards)])
-        case .deck, .generator, .caller, .identity, .reference: return ToolSpec(kind: k, groups: sample)
+        case .deck, .generator, .caller, .identity, .reference, .map: return ToolSpec(kind: k, groups: sample)
         case .stopwatch: return ToolSpec(kind: k)
         }
     }
