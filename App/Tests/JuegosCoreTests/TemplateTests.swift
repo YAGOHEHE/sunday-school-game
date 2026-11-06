@@ -13,7 +13,7 @@ final class TemplateTests: XCTestCase {
                      mainTool: mainTool, sidePanel: sidePanel)
     }
 
-    // MARK: - Mapa de plantillas del catálogo empaquetado (Palabra 23 · Reloj 11 · Tarjeta 8; ampliaciones 2026-10-31 y 2026-11-05)
+    // MARK: - Mapa de plantillas del catálogo empaquetado (Palabra 22 · Reloj 11 · Tarjeta 8; ampliaciones 2026-10-31 y 2026-11-05)
 
     private let expected: [(id: String, template: String)] = [
         ("letras-humanas", "palabra"), ("mimica", "palabra"), ("cambia-de-sitio", "palabra"),
@@ -31,16 +31,16 @@ final class TemplateTests: XCTestCase {
         ("verdadero-falso-biblico", "tarjeta"), ("telefono-versiculo", "palabra"),
         ("abecedario-biblico", "palabra"), ("rap-versiculo", "palabra"), ("fila-en-silencio", "palabra"),
         ("historia-palabra", "palabra"), ("submarino", "reloj"), ("isla-desierta", "reloj"),
-        // Ampliación 2026-11-05 (emoji + mapa) y Viajes de Pablo
-        ("emoji-biblico", "tarjeta"), ("mapa-biblico", "palabra"), ("viajes-pablo", "palabra"),
+        // Ampliación 2026-11-05 (emoji) y Viajes de Pablo (único juego de mapa)
+        ("emoji-biblico", "tarjeta"), ("viajes-pablo", "palabra"),
     ]
 
     func testBundledCatalogMapsToExpectedTemplates() throws {
         let catalog = try Catalog.loadBundled()
-        XCTAssertEqual(catalog.games.count, 42)
+        XCTAssertEqual(catalog.games.count, 41)
 
         let expectedIDs = expected.map(\.id)
-        XCTAssertEqual(expectedIDs.count, 42)
+        XCTAssertEqual(expectedIDs.count, 41)
         XCTAssertEqual(Set(expectedIDs).count, expectedIDs.count, "la tabla esperada tiene ids repetidos")
         XCTAssertEqual(Set(expectedIDs), Set(catalog.games.map(\.id)), "la tabla no cubre exactamente el catálogo")
 
@@ -52,7 +52,7 @@ final class TemplateTests: XCTestCase {
 
         let counts = Dictionary(grouping: catalog.games, by: { resolveTemplate(for: $0, custom: []).id })
             .mapValues(\.count)
-        XCTAssertEqual(counts["palabra"], 23)
+        XCTAssertEqual(counts["palabra"], 22)
         XCTAssertEqual(counts["reloj"], 11)
         XCTAssertEqual(counts["tarjeta"], 8)
     }
@@ -65,7 +65,7 @@ final class TemplateTests: XCTestCase {
         XCTAssertEqual(GameCategory.biblia.name.zh, "圣经")
         let catalog = try Catalog.loadBundled()
         for g in catalog.games { XCTAssertTrue(GameCategory.allCases.contains(g.category), g.id) }
-        XCTAssertEqual(catalog.games.filter { $0.category == .biblia }.count, 8)
+        XCTAssertEqual(catalog.games.filter { $0.category == .biblia }.count, 7)
     }
 
     // MARK: - resolveTemplate
